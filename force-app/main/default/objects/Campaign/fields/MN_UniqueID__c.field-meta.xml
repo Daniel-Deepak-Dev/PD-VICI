@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MN_UniqueID__c</fullName>
+    <description>MagNews campaign info: JSON data structure used to restore in case of app reset on the MagNews side</description>
+    <externalId>false</externalId>
+    <inlineHelpText>MagNews campaign info: JSON data structure used to restore in case of app reset on the MagNews side</inlineHelpText>
+    <label>MN_UniqueID</label>
+    <length>128</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Machines__c</fullName>
+    <description>All kind of machines the reseller is authorized to resell.</description>
+    <inlineHelpText>All kind of machines the reseller is authorized to resell.</inlineHelpText>
+    <label>Sales ability on</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MTL</fullName>
+                <default>true</default>
+                <label>MTL</label>
+            </value>
+            <value>
+                <fullName>MTP</fullName>
+                <default>false</default>
+                <label>MTP</label>
+            </value>
+            <value>
+                <fullName>FOV</fullName>
+                <default>false</default>
+                <label>FOV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

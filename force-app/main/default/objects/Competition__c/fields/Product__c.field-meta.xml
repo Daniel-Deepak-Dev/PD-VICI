@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Competitor__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>CS155</fullName>
+                <default>false</default>
+                <label>CS155</label>
+            </value>
+            <value>
+                <fullName>CS305</fullName>
+                <default>false</default>
+                <label>CS305</label>
+            </value>
+            <value>
+                <fullName>CS308</fullName>
+                <default>false</default>
+                <label>CS308</label>
+            </value>
+            <value>
+                <fullName>CS605</fullName>
+                <default>false</default>
+                <label>CS605</label>
+            </value>
+            <value>
+                <fullName>C203</fullName>
+                <default>false</default>
+                <label>C203</label>
+            </value>
+            <value>
+                <fullName>C305</fullName>
+                <default>false</default>
+                <label>C305</label>
+            </value>
+            <value>
+                <fullName>C310</fullName>
+                <default>false</default>
+                <label>C308</label>
+            </value>
+            <value>
+                <fullName>C314</fullName>
+                <default>false</default>
+                <label>C314</label>
+            </value>
+            <value>
+                <fullName>C505</fullName>
+                <default>false</default>
+                <label>C605</label>
+            </value>
+            <value>
+                <fullName>C510</fullName>
+                <default>false</default>
+                <label>C608</label>
+            </value>
+            <value>
+                <fullName>C514</fullName>
+                <default>false</default>
+                <label>C614</label>
+            </value>
+            <value>
+                <fullName>C810</fullName>
+                <default>false</default>
+                <label>C908</label>
+            </value>
+            <value>
+                <fullName>C814</fullName>
+                <default>false</default>
+                <label>C914</label>
+            </value>
+            <value>
+                <fullName>C1014</fullName>
+                <default>false</default>
+                <label>C1014</label>
+            </value>
+            <value>
+                <fullName>C1023</fullName>
+                <default>false</default>
+                <label>C1023</label>
+            </value>
+            <value>
+                <fullName>C1208</fullName>
+                <default>false</default>
+                <label>C1208</label>
+            </value>
+            <value>
+                <fullName>CA605</fullName>
+                <default>false</default>
+                <label>CA605</label>
+            </value>
+            <value>
+                <fullName>CA610</fullName>
+                <default>false</default>
+                <label>CA608</label>
+            </value>
+            <value>
+                <fullName>CA614</fullName>
+                <default>false</default>
+                <label>CA614</label>
+            </value>
+            <value>
+                <fullName>CA618</fullName>
+                <default>false</default>
+                <label>CA618</label>
+            </value>
+            <value>
+                <fullName>Tesa Scan 52 (horizontal)</fullName>
+                <default>false</default>
+                <label>Tesa Scan 52 (horizontal)</label>
+            </value>
+            <value>
+                <fullName>Tesa Scan 25</fullName>
+                <default>false</default>
+                <label>Tesa Scan 25</label>
+            </value>
+            <value>
+                <fullName>Tesa Scan 50</fullName>
+                <default>false</default>
+                <label>Tesa Scan 50</label>
+            </value>
+            <value>
+                <fullName>Tesa Scan 50 Plus</fullName>
+                <default>false</default>
+                <label>Tesa Scan 50 Plus</label>
+            </value>
+            <value>
+                <fullName>Mahr Shaft scope 350x80</fullName>
+                <default>false</default>
+                <label>Mahr Shaft scope 350x80</label>
+            </value>
+            <value>
+                <fullName>Mahr Shaft scope 350x120</fullName>
+                <default>false</default>
+                <label>Mahr Shaft scope 350x120</label>
+            </value>
+            <value>
+                <fullName>Mahr Shaft scope 750x80</fullName>
+                <default>false</default>
+                <label>Mahr Shaft scope 750x80</label>
+            </value>
+            <value>
+                <fullName>Mahr Shaft scope 750x120</fullName>
+                <default>false</default>
+                <label>Mahr Shaft scope 750x120</label>
+            </value>
+            <value>
+                <fullName>VMM100</fullName>
+                <default>false</default>
+                <label>VMM100</label>
+            </value>
+            <value>
+                <fullName>VMM300</fullName>
+                <default>false</default>
+                <label>VMM300</label>
+            </value>
+            <value>
+                <fullName>VMM600</fullName>
+                <default>false</default>
+                <label>VMM600</label>
+            </value>
+            <value>
+                <fullName>VMM1000</fullName>
+                <default>false</default>
+                <label>VMM1000</label>
+            </value>
+            <value>
+                <fullName>VMM1200</fullName>
+                <default>false</default>
+                <label>VMM1200</label>
+            </value>
+            <value>
+                <fullName>OPTOQUICK SET</fullName>
+                <default>false</default>
+                <label>OPTOQUICK SET</label>
+            </value>
+            <value>
+                <fullName>Quick Image</fullName>
+                <default>false</default>
+                <label>Quick Image</label>
+            </value>
+            <value>
+                <fullName>Quick Scope</fullName>
+                <default>false</default>
+                <label>Quick Scope</label>
+            </value>
+            <value>
+                <fullName>3D CNC Quick Vision</fullName>
+                <default>false</default>
+                <label>3D CNC Quick Vision</label>
+            </value>
+            <value>
+                <fullName>ZEISS O-SELECT</fullName>
+                <default>false</default>
+                <label>ZEISS O-SELECT</label>
+            </value>
+            <value>
+                <fullName>ZEISS O-INSPECT</fullName>
+                <default>false</default>
+                <label>ZEISS O-INSPECT</label>
+            </value>
+            <value>
+                <fullName>Easy scope 3D man</fullName>
+                <default>false</default>
+                <label>Easy scope 3D man</label>
+            </value>
+            <value>
+                <fullName>Quickinspect</fullName>
+                <default>false</default>
+                <label>Quickinspect</label>
+            </value>
+            <value>
+                <fullName>Flat Inspect</fullName>
+                <default>false</default>
+                <label>Flat Inspect</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mitutoyo</controllingFieldValue>
+            <valueName>Quick Image</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitutoyo</controllingFieldValue>
+            <valueName>Quick Scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitutoyo</controllingFieldValue>
+            <valueName>3D CNC Quick Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <controllingFieldValue>TESA</controllingFieldValue>
+            <controllingFieldValue>MAHR</controllingFieldValue>
+            <controllingFieldValue>MARPOSS</controllingFieldValue>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CS155</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CS305</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CS308</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CS605</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C203</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C305</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C310</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C314</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C505</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C510</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C514</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C810</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C814</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C1014</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C1023</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>C1208</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CA605</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CA610</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CA614</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hommel</controllingFieldValue>
+            <valueName>CA618</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TESA</controllingFieldValue>
+            <valueName>Tesa Scan 52 (horizontal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TESA</controllingFieldValue>
+            <valueName>Tesa Scan 25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TESA</controllingFieldValue>
+            <valueName>Tesa Scan 50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TESA</controllingFieldValue>
+            <valueName>Tesa Scan 50 Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MAHR</controllingFieldValue>
+            <valueName>Mahr Shaft scope 350x80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MAHR</controllingFieldValue>
+            <valueName>Mahr Shaft scope 350x120</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MAHR</controllingFieldValue>
+            <valueName>Mahr Shaft scope 750x80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MAHR</controllingFieldValue>
+            <valueName>Mahr Shaft scope 750x120</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARPOSS</controllingFieldValue>
+            <valueName>OPTOQUICK SET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>VMM100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>VMM300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>VMM600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>VMM1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dr. SCHNEIDER</controllingFieldValue>
+            <valueName>VMM1200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zeiss</controllingFieldValue>
+            <valueName>ZEISS O-SELECT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zeiss</controllingFieldValue>
+            <valueName>ZEISS O-INSPECT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Werth</controllingFieldValue>
+            <valueName>Easy scope 3D man</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Werth</controllingFieldValue>
+            <valueName>Quickinspect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Werth</controllingFieldValue>
+            <valueName>Flat Inspect</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

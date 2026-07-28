@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_event_type__c</fullName>
+    <label>Service event type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chiamata</fullName>
+                <default>false</default>
+                <label>Chiamata</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Connessione remota</fullName>
+                <default>false</default>
+                <label>Connessione remota</label>
+            </value>
+            <value>
+                <fullName>Training a rivenditore/cliente</fullName>
+                <default>false</default>
+                <label>Training a rivenditore/cliente</label>
+            </value>
+            <value>
+                <fullName>Formazione interna</fullName>
+                <default>false</default>
+                <label>Formazione interna</label>
+            </value>
+            <value>
+                <fullName>Riunione</fullName>
+                <default>false</default>
+                <label>Riunione</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Preparazione materiale</fullName>
+                <default>false</default>
+                <label>Preparazione materiale</label>
+            </value>
+            <value>
+                <fullName>Offerta/ordine</fullName>
+                <default>false</default>
+                <label>Offerta/ordine</label>
+            </value>
+            <value>
+                <fullName>Spedizione</fullName>
+                <default>false</default>
+                <label>Spedizione</label>
+            </value>
+            <value>
+                <fullName>Trasferta</fullName>
+                <default>false</default>
+                <label>Trasferta</label>
+            </value>
+            <value>
+                <fullName>Ferie</fullName>
+                <default>false</default>
+                <label>Ferie</label>
+            </value>
+            <value>
+                <fullName>Malattia</fullName>
+                <default>false</default>
+                <label>Malattia</label>
+            </value>
+            <value>
+                <fullName>Reperibilità</fullName>
+                <default>false</default>
+                <label>Reperibilità</label>
+            </value>
+            <value>
+                <fullName>Scadenza Contratto</fullName>
+                <default>false</default>
+                <label>Scadenza Contratto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

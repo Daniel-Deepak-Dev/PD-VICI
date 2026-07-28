@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Codice_Accessorio__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Codice Accessorio</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Articolo__c.Famiglia_articolo__c</field>
+            <operation>equals</operation>
+            <value>Accessori</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Articolo__c</referenceTo>
+    <relationshipLabel>Accessori</relationshipLabel>
+    <relationshipName>Accessori</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
