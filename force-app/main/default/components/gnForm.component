@@ -1,0 +1,49 @@
+<apex:component language="en_US" >
+<script type="text/x-template" id="templateGnForm" >
+  <div>   
+      
+   <div>
+   <button type="button" class="btn btn-form" v-on:click="saveFormField"  >
+    <span>Save</span>
+   </button>
+   <button type="button" class="btn btn-form" v-on:click="returnTable">
+    <span >Return {{config.objectName}} List</span>
+   </button> 
+   </div>
+    
+    <table class="table table-hover table-form ">
+     <tbody>   
+      <tr v-for="riga in arrayrow" >
+        <td class="section" v-if="riga.issection" colspan='4'> {{riga.label}}</td>
+        <td v-if="!riga.issection && riga[0].position=='L'">{{riga[0].label}}</td>
+        <td is="gn-field" v-if="!riga.issection && riga[0].position=='L'" sinistro="1"
+        v-bind:fieldtype="riga[0]"
+        v-bind:fieldsmap="fieldsmap"
+        v-bind:config='config'
+        v-bind:ro="ro"
+        v-bind:value="datiform[0][riga[0].field]"> 
+      </td>
+      
+      <td v-if="!riga.issection && riga[1].position=='R'">{{riga[1].label}}</td>
+      <td  is="gn-field" v-if="!riga.issection && riga[1].position=='R'" destro="1"
+      v-bind:fieldtype="riga[1]"
+      v-bind:fieldsmap="fieldsmap"
+      v-bind:config='config'
+      v-bind:ro="ro"
+      v-bind:value="datiform[0][riga[1].field]"> 
+    </td>
+  </tr>
+ </tbody>
+</table>
+   <div>
+   <button type="button" class="btn btn-form" v-on:click="saveFormField"  >
+    <span>Save</span>
+   </button>
+   <button type="button" class="btn btn-form" v-on:click="returnTable">
+    <span >Return {{config.objectName}} List</span>
+   </button> 
+   </div>      
+</div>    
+</script>
+<script src="{!$resource.gnForm}"></script>
+</apex:component>

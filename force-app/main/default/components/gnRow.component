@@ -1,0 +1,30 @@
+<apex:component language="en_US" >
+    <script type="text/x-template" id="templateGnRow" >
+    <tr>
+        <td is="gn-field" v-for="(colonna,index) in arraycolumn" 
+        v-bind:fieldtype="colonna"
+        v-bind:fieldsmap="fieldsmap"
+        v-bind:ro="ro"
+        v-bind:value="datiriga[colonna.field]"
+        v-on:openform="setForm"
+        v-on:updateenablesave="enableSave"
+        v-on:openlink="openLink"
+        v-bind:iddealer="iddealer"
+        v-bind:showdetail="showdetail">     
+        </td>
+        <td v-if="!ro && !enableSave()" class="align-icon">
+               <button type="button" class="btn" style="float:center" v-on:click="saveRow" >
+            		<span class="glyphicon glyphicon-floppy-disk" ></span>               
+            	</button>
+    	</td> 
+        <td v-if="!ro && enableSave()" class="align-icon">
+                <button type="button" class="btn" disabled=true>
+            		<span class="glyphicon glyphicon-floppy-disk" ></span>               
+            	</button>
+    	</td>     
+        <td v-if="ro">
+    	</td>      
+    </tr> 
+    </script>
+    <script src="{!$resource.gnRow}"></script>
+</apex:component>

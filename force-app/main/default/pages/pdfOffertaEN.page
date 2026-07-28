@@ -1,0 +1,343 @@
+<apex:page standardController="Case" showHeader="false" applyHtmlTag="false" applyBodyTag="false" renderAs="pdf">
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+                
+                @page {
+                padding: 0px 15px;
+                margin: 0px;
+                }
+                
+                #content {
+                padding: 30px 0 50px;
+                font-size: 14px;
+                margin: 0 auto;
+                font-family: Arial, Sans-serif;
+                }
+                
+                p {
+                margin: 5px 0 0;
+                padding: 0;
+                }
+                
+                table {
+                margin-top:20px;
+                border-collapse: collapse;
+                border: none;
+                width: auto;
+                }
+                
+                table th {
+                text-align: center;
+                padding: 5px 0;
+                }
+                
+                table td {
+                padding: 5px;
+                }
+                
+                #notes {
+                text-align: justify;
+                line-height: 18px;
+                width: 100%;
+                margin: 20px 0;
+                }
+                
+                #customerSignature {
+                margin-top: 30px;
+                }
+                
+                #footer {
+                width: 900px;
+                padding: 30px 0 50px;
+                font-size: 10px;
+                color:#545454;
+                position: absolute;
+                bottom:0px;
+                }
+                
+                .width100{
+                width: 100%;
+                }
+                
+                .noBorder{
+                border:0px;
+                }
+                
+                body{
+                font-size: 12px;
+                font-family: Calibri;
+                }
+                
+                @page{
+                margin: 0px;
+                }
+                
+                
+                .alignLeft {
+                padding-left:10px;
+                }
+                
+                .textCenter {
+                text-align:center;
+                
+                }
+                
+                .alignLeft {
+                text-align:left;
+                padding-right:10px;
+                }
+                
+                .alignRight {
+                text-align:right;
+                padding-right:10px;
+                }
+                
+                .cellWidth25{
+                width:25%;
+                }
+                
+                .cellWidth50{
+                width:50%;
+                }
+                
+                th {
+                background-color: rgb(240,240,240) !important;
+                border: 1px solid #ccc;
+                }
+                
+                
+                th, td {
+                border: 1px solid #ccc;
+                }
+                
+                img {
+                heigth:50px;
+                }
+            </style>
+    </head>
+    <body>
+
+    <div id="content">
+        <img style="width:200px" src="{!$resource.logovici}"/>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25" >
+                    <strong><apex:outputText value="Offer" rendered="{!not(Case.isConfermaOrdine__c)}"></apex:outputText></strong>
+                    <strong><apex:outputText value="Confirm order" rendered="{!Case.isConfermaOrdine__c}"></apex:outputText></strong>
+                </th>
+                <td class="cellWidth25 alignLeft" >
+                    <p><apex:outputText value="{!Case.Offerta__c}" /></p>
+                </td>
+                <th class="cellWidth25">
+                    <strong><apex:outputText value="Date Offer" rendered="{!not(Case.isConfermaOrdine__c)}"></apex:outputText></strong>
+                    <strong><apex:outputText value="Date Confirm order" rendered="{!Case.isConfermaOrdine__c}"></apex:outputText></strong>
+                </th>
+                <td class="cellWidth25 alignLeft"  >
+                    <apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_Offerta__c}"/></apex:outputText>
+                </td>
+            </tr>
+        </table>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Applicant</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Ordinante__r.Name}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Billing Street</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Ordinante__r.BillingStreet}" /></p>
+                </td>
+                <th class="cellWidth25">Postal Code</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Ordinante__r.BillingPostalCode}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">City</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Ordinante__r.BillingCity}" /></p>
+                </td>
+                <th class="cellWidth25">State</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Ordinante__r.BillingState}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Phone</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Ordinante__r.Phone}" /></p>
+                </td>
+                <th class="cellWidth25">Country</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Ordinante__r.BillingCountry}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">VAT number</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Ordinante__r.P_Iva__c}" /></p>
+                </td>
+            </tr>
+        </table>
+        <div class="textCenter">
+            <h3>below our best offer:</h3>
+        </div>
+        <table cellpadding="1" cellspacing="0" style="width:100%">
+            <!-- INTESTAZIONE TABELLA-->
+            <tr>
+                <th style="border: 1px solid #ccc;" width="20%">
+                    <strong>Code</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="40%">
+
+                    <strong>Description</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="15%">
+                    <strong>Unit price</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="10%">
+                    <strong>Quantity </strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="15%">
+                    <strong>Total</strong>
+                </th>
+            </tr>
+            <apex:repeat value="{!Case.Ricambi_Casi__r}" var="q" >
+                <tr >
+                    <apex:outputText rendered="{!Case.Tipo__c==q.Tipo_Riga__c}">
+                        <td  align="left">
+                            <p><apex:outputText value="{!q.Product__r.Name}" /></p>
+                        </td>
+                        <td  align="left">
+                            <p><apex:outputText value="{!q.Product__r.Description_EN__c}" rendered="{!q.Product__c!=null}"></apex:outputText></p>
+                            <p><apex:outputText value="{!q.Description__c}" rendered="{!q.Product__c==null && q.Description__c!=null}"></apex:outputText></p>
+                        </td>
+
+                        <td class="alignRight">
+                            <p>
+                                <apex:outputField rendered="{!q.Prezzo_unitario__c!=null}" value="{!q.Prezzo_unitario__c}" />
+                            </p>
+                        </td>
+                        <td class="alignRight">
+                            <p><apex:outputField value="{!q.Quantita__c}" /></p>
+                        </td>
+                        <td class="alignRight">
+                            <p><apex:outputField rendered="{!q.Prezzo_unitario__c!=null}" value="{!q.Totale__c}" /></p>
+                        </td>
+                    </apex:outputText>
+                </tr>
+            </apex:repeat>
+        </table>
+
+        <div class="alignRight">
+            <h5>for a total of VAT not included &euro; &nbsp;
+                <apex:outputField value="{!Case.Totale_Righe_Ricambi__c}" />
+            </h5>
+        </div>
+
+        <div class="textCenter">
+            <h3>under the following conditions:</h3>
+        </div>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth50">Terms of payment</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.Modalita_di_pagamento__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Bank support</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.Banca_Appoggio__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">IBAN</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.IBAN__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Delivery date</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_di_consegna__c}"/></apex:outputText></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Delivery methods</th>
+                <td class="cellWidth50">
+                    <p><apex:outputText value="{!Case.Modalita_di_consegna__c}" /></p>
+                </td>
+            </tr>
+        </table>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Recipient </th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Contact__r.Name}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Street</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Indirizzo_Offerta__c}" /></p>
+                </td>
+                <th class="cellWidth25">Postal Code</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.CAP_Offerta__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">City</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Localita_Offerta__c}" /></p>
+                </td>
+                <th class="cellWidth25">State</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Provincia_Offerta__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Phone</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Telefono_Offerta__c}" /></p>
+                </td>
+                <th class="cellWidth25">Country</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Paese_Offerta__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Note</th>
+                <td class="alignLeft">
+                    <p><apex:outputText value="{!Case.Note__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <table style="width:100%">
+            <tr class="noBorder">
+                <td class="cellWidth50 textCenter noBorder">
+                    <p><strong>Vici &amp; C. Service Department</strong></p>
+                    <br/><br/>
+                    <p>___________________</p>
+                </td>
+                <td class="cellWidth50 textCenter noBorder">
+                    <p><strong>THE ORDERING FOR ACCEPTANCE </strong></p>
+                    <br /><br/>
+                    <p>___________________</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    </body>
+    </html>
+</apex:page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>true</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <description>Flow for Test form Caterina</description>
+    <environments>Default</environments>
+    <interviewLabel>Test form Caterina Flow</interviewLabel>
+    <label>Test form Caterina Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Journey</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <form>marketing--Default_Content_Workspace.sfdc_cms__form--MC74LZFH2TY5CKLMMYMGDQXEW5XU</form>
+        <triggerType>FormSubmissionEvent</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

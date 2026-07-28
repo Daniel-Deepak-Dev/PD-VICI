@@ -1,0 +1,180 @@
+.portal-body-background{
+    background-color: rgb(248, 252, 248);
+}
+
+.portal-navbar{
+    background-color: #FFF;
+    border-bottom: 2px solid #009f41 !important;
+}
+
+.navbar-brand > img {
+    max-height: 100%;
+    height: 100%;
+    -o-object-fit: auto;
+    object-fit: auto;
+}
+
+
+.portal-panel-background{
+    background-color: #FFF;
+    border: 1px solid #ddd;
+}
+
+.portal-panel-header {
+    background-color: #FFF;
+}
+
+.portal-nav-title {
+    font-stretch: expanded;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    float:right!important;
+}
+
+.portal-form-button {
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: 0;
+    background: #339966;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+a {
+    color: #339966 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    color: #339966;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #009f41 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-form {
+    margin-bottom: 10px !important;
+    margin-left: 4px; 
+    float:right;
+    border: 1px solid gray !important;
+}
+
+.section{
+    background-color: rgb(248, 252, 248); 
+    padding: 6px; 
+    vertical-align: bottom; 
+    border-bottom: 1px solid #339966 !important; 
+    font-weight: bold;
+}
+
+.table {
+    font-size:14px;
+    vertical-align: center !important;
+}
+
+span {
+    padding-left: 3px;
+}
+
+.cell-date{
+    font-size:13px;
+    min-width: 100px;
+    
+}
+
+.table>tbody>tr>td {
+    padding: 5px 2px !important;
+    vertical-align: center !important;
+}
+
+.table th {
+    padding: 2px !important;
+}
+
+.editcell {
+    box-shadow: none !important;
+    padding: 0px 3px !important;
+}
+
+
+.table-form input {
+    width:80%;
+    margin: 5px 0px !important;
+    
+}
+
+.table-form select {
+    width:80%;
+    margin: 5px 0px !important;
+}
+
+.table-form span {
+    width:80%;
+    max-width:80%;
+    margin: 5px 0px !important;
+}
+
+.table-td {
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+.formlabel{
+    padding-left: 15px !important;
+    margin:0px !important;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.label-attachment{
+    font-weight: normal !important;
+    font-size:13px !important;
+}
+
+.textarea {
+    height:34px !important;
+    line-height: initial !important;
+}
+
+.texarea-focus{
+    height: 80px !important;
+    font-size:12px !important;
+}
+
+.required {
+    background-color: #FFF9F9 !important;
+}
+
+.align-icon{
+    vertical-align: middle !important;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

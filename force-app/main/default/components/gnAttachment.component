@@ -1,0 +1,42 @@
+<apex:component language="en_US" >
+<script type="text/x-template" id="templateGnAttachment" >
+  <div>
+    <table class="table table-hover">
+      <tr>
+        <td class="section" colspan='5'>Attachment</td>
+      </tr>
+      <tr>
+        <td class="table-td" >Title</td>
+        <td class="table-td" >Created Date</td>
+        <td class="table-td" >File Size</td>
+        <td></td>
+      </tr>
+      <tbody>
+        <tr v-for="riga in arrayattachment" >
+          <td>
+            <span>
+              <a target="__blank" v-on:click="downloadFile(riga.Id)">{{riga.Name}}</a>
+            </span>
+          </td>
+          <td>
+            <span>
+              {{riga.CreatedDate | formatDate}}
+            </span>
+          </td>
+          <td>
+            <span>
+              {{riga.BodyLength | formatSize}} KB
+            </span>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>   
+      <button type="button" class="btn btn-form">
+        <input type="file" name="file" id="file" class="inputfile" multiple="false" v-on:change="onchange"/>
+		<label class="label-attachment" for="file">Upload a file</label>
+      </button>
+  </div>    
+</script>
+<script src="{!$resource.gnAttachment}"></script>
+</apex:component>

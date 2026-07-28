@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <description>Flow for Form test_UMBRACO</description>
+    <environments>Default</environments>
+    <interviewLabel>Form test_UMBRACO Flow</interviewLabel>
+    <label>Form test_UMBRACO Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Journey</processType>
+    <recordCreates>
+        <name>Create_Prospect</name>
+        <label>Create_Prospect</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Form.Account_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>$Form.Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>$Form.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Prospect</object>
+    </recordCreates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Prospect</targetReference>
+        </connector>
+        <form>marketing--Default_Content_Workspace.sfdc_cms__form--MCJZCPVFGGVBB4FFK3I3F5S6MIG4</form>
+        <triggerType>FormSubmissionEvent</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

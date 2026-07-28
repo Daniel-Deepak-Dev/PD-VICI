@@ -1,0 +1,66 @@
+<apex:component access="global" >
+    <head>
+        <apex:attribute name="LeadId" type="String" description=""/>
+        <apex:attribute name="Language" type="String" description=""/>
+        <apex:attribute name="Nome" type="String" description=""/>
+        <apex:attribute name="Cognome" type="String" description=""/>
+        <title>VICI GDPR</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="{!URLFOR($resource.bootstrap3,'bootstrap-3.3.7-dist/css/bootstrap.min.css')}" />
+        <link rel="stylesheet" href="{!URLFOR($resource.bootstrap3,'bootstrap-3.3.7-dist/css/bootstrap-theme.min.css')}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            .informativa {
+            padding: 20px;
+            background-color:#fff                
+            }
+            
+            .logocontainer{padding:25px 25px;margin:0 auto;     border-bottom: 2px solid #009f41;}
+            
+            .title {
+            text-align:center;
+            }
+            
+        </style>            
+    </head>  
+    <body>
+        <div class="container-fluid">
+            <div class="row logocontainer">
+                <div class="col-lg-8 col-md-8 col-md-offset-2">
+                    <img src="https://c.eu7.content.force.com/servlet/servlet.ImageServer?id=0150J000004lmvH&oid=00D20000000Ci8r&lastMod=1538044612000" /> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-md-offset-2 informativa">
+                    <br/>               
+                    Gentile {!Nome} {!Cognome},
+                    <br/><br/>                    
+                    Se sta ricevendo questa e-mail è perché ci siamo conosciuti personalmente, o perché ha scaricato del materiale informativo.
+                    <br/><br/>
+                    Per confermare il suo interesse nel ricevere nostre comunicazioni clicchi il link sottostante:
+                    <br/>
+                    <a style="color:green" href="{!$Setup.Site_urls__c.GDPR_Url__c}?id={!LeadId}&language={!language}&link=s"><b>Conferma iscrizione</b></a>
+                    <br/>
+                    In questo modo potrà essere informato sulle novità relative alle macchine di misura e ricevere gli inviti fiera.
+                    <br/><br/>
+                    Potrà naturalmente annullare la sua iscrizione in qualsiasi momento da questo 
+                    <a style="color:black" href="{!$Setup.Site_urls__c.GDPR_Url__c}?id={!LeadId}&language={!language}&link=u">link</a>.
+                    <br/>
+                    Cogliamo l’occasione per ringraziarla dell’interesse dimostrato e rimaniamo a disposizione per qualsiasi informazione. 
+                    <br/><br/>
+                    <b>Vici &amp; C. S.p.A</b>   
+                    <br/>
+                    <a style="color:green" href="{!$Setup.Site_urls__c.lpGDPRlogo__c}" target="_blank" > www.vicivision.com </a>
+                    <br/>              
+                    Via J. Gutenberg, 5
+                    <br/>
+                    Santarcangelo di R. (RN)
+                    <br/>
+                    47822 | Italy | +39 0541 350411
+                    
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</apex:component>

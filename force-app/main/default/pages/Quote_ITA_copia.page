@@ -1,0 +1,279 @@
+<apex:page standardcontroller="Quote" showheader="false" renderas="" applyHtmlTag="false" applyBodyTag="false">
+<html >
+<head>
+<!-- contentType="application/msWord#Preventivo.doc"  xmlns:w="urn:schemas-microsoft-com:office:word" -->
+    <style>
+        body {
+            font-size: 12pt;
+            font-family: "Times New Roman", serif;
+        }
+        
+        p {
+            margin-top: 10px;
+            line-height: 20px;
+            font-size: 12pt;
+            font-family: "Times New Roman", serif;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            text-transform: capitalize;
+            margin-top: 20px;
+            color: #009900;
+            font-family: "Times New Roman", serif !important;
+        }
+        
+        ul {
+            font-size: 12pt;
+            font-family: "Times New Roman", serif;
+            margin-top: 10px;   
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: none;
+        }
+        
+        table h2 {
+            text-transform: capitalize;
+            color: #009900;
+            margin-top: 0;
+        }
+        
+        table p span {
+            font-size: 12pt !important;
+        }
+        
+        #letter {
+            padding: 70px 0;
+        }
+        
+        #addressTo {
+            text-align: left;
+            float: right;
+            width: 40%;
+        }
+        
+        #toTheAttention {
+            margin-top: 30px;
+        }
+        
+        #placeDate {
+            margin-top: 30px;
+        }
+        
+        #offerNr {
+            margin-top: 30px;
+        }
+        
+        #subject {
+            margin-top: 30px;
+        }
+        
+        #letterBody {
+            margin-top: 30px;
+            text-align: justify;
+        }
+        
+        #letterBody p {
+            margin-top: 5px;
+        }
+        
+        .biggerBold {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        
+        #productDesc table{
+            width: 100% !important;
+            margin-left: 0 !important;
+            border: 1px solid #000 !important;
+        }
+        
+        #productDesc table h2 {
+            text-align: center;
+        }
+        
+        #productDesc table td {
+            padding: 0 10px;
+        }
+        
+        #supplyConditions table {
+            font-size: 14pt;
+        }
+        
+        #supplyConditions table td {
+            font-family: "Times New Roman", serif !important;
+        }
+        
+        .accessoriesTable table {
+            margin-top: 5px;
+        }
+        
+        .accessoriesTable table td {
+            padding: 0;
+            font-family: "Times New Roman", serif;
+            font-size: 12pt !important;
+        }
+        
+        .accessoriesDesc {
+            font-size: 12pt !important;
+            line-height: 20px;
+            text-align: left !important;
+            font-family: "Times New Roman", serif;
+            width: 476px !important; 
+            padding: 3px !important; 
+        }
+        
+    </style>
+</head>
+
+
+<div id="letter" style="page-break-after:always;">
+<apex:image value="{!$Resource.LogoVici}" style="width: 300px; float: left;" />
+<div id="addressTo">   
+<p id="offerNr" style="font-weight: bold;">
+Offerta n°{!Quote.quotenumber}
+</p>
+Spett.le<br/>
+<strong><apex:outputField value="{!Quote.Opportunity.Account.Name}" /></strong><br />
+<apex:outputField value="{!Quote.Opportunity.Account.BillingStreet}" /><br/>
+<apex:outputField value="{!Quote.Opportunity.Account.BillingPostalCode}" />-
+<apex:outputField value="{!Quote.Opportunity.Account.BillingCity}" /><br />
+<apex:outputField value="{!Quote.Opportunity.Account.BillingState}" /><br/>
+<apex:outputField value="{!Quote.Opportunity.Account.BillingCountry}" /><br/>
+</div>
+<br />
+<p id="toTheAttention" style="clear: both; padding-top: 50px;">
+<strong>Alla cortese attenzione:</strong><br/>
+<apex:outputField value="{!Quote.Contact.Salutation}" /><apex:outputField value="{!Quote.Contact.Firstname}" />&nbsp;<apex:outputField value="{!Quote.Contact.Lastname}" />
+</p>
+
+<p id="placeDate">
+Santarcangelo di Romagna, <apex:outputField value="{!Quote.Quote_Date__c}" />
+</p>
+
+<div id="subject">
+Oggetto: <span class="biggerBold">Offerta tecnico economica per la fornitura di una macchina di misura ottica &nbsp;<apex:outputField value="{!Quote.Name}" /></span>
+</div>
+
+<div id="letterBody">
+<p>
+<apex:outputText value="In seguito alla Vs. gentile richiesta ci pregiamo sottoporVi la nostra migliore offerta per quanto in oggetto.
+In attesa di un Vs. cortese cenno di riscontro e rimanendo a Vs. disposizione per ogni eventuale chiarimento, cogliamo l'occasione per porgerVi i ns. più cordiali saluti." />
+</p>
+
+</div>
+
+<p>
+<strong><apex:outputField value="{!Quote.Firma__c}"/></strong><br />
+<i>Sales Manager</i>
+</p>
+</div>
+
+
+<apex:repeat value="{!Quote.QuotelineItems}" var="m" rows="1">
+<div id="productDesc" align="left">
+<apex:outputField value="{!m.pricebookentry.Product2.Long_Description__c}" /><br/>
+<p style="width: 100%; padding: 3px; text-align: right;">TOTALE: &nbsp;<strong><apex:outputField value="{!m.UnitPrice}" /></strong></p>
+</div>
+</apex:repeat>
+
+<div class="accessoriesTable" style="page-break-before:always;">
+<table cellpadding="0" cellspacing="0" style="width: 700px;" border="0">
+<apex:repeat value="{!Quote.QuotelineItems}" var="q" first="1">
+<tr>
+<td style="width: 64px; padding: 3px; text-align: right;"><strong>n.&nbsp;<apex:outputField value="{!q.Quantity}" /></strong></td>
+<td style="width: 94px; padding: 3px; text-align: center;"><strong><apex:outputField value="{!q.pricebookentry.Codice_Listino__c}" /></strong></td>
+<td style="width: 376px; padding: 3px; text-align: left;"><apex:outputField value="{!q.pricebookentry.Product2.Name}" /></td>
+<td style="width: 134px; padding: 3px; text-align: right;"><strong><apex:outputField value="{!q.UnitPrice}" /></strong></td>
+</tr>
+
+<tr>
+<td style="width: 64px; padding: 3px;">&nbsp;</td>
+<td colspan="2" class="accessoriesDesc"><apex:outputField value="{!q.pricebookentry.Product2.Long_Description__c}" /></td>
+<td style="width: 134px; padding: 3px;">&nbsp;</td>
+</tr>
+</apex:repeat>
+</table>
+
+<table cellpadding="0" cellspacing="0" style="width: 700px;" border="0">
+<tr>
+<td colspan="2" style="padding: 3px; width: 440px;">
+    <p style="width: 100%; font-size: 14px !important; font-style: italic;">I prezzi sopra indicati sono da intendersi IVA esclusa.</p>
+</td>
+</tr>
+
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">SPESE SPEDIZIONE:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.ShippingHandling}" /></strong></td>
+</tr>
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">TOTALE:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.GrandTotal}" /></strong></td>
+</tr>
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">PREZZO A VOI RISERVATO:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.Totale_finale_per_cliente__c}" /></strong></td>
+</tr>
+
+</table>
+    
+<table cellpadding="5" cellspacing="2" style="width: 700px; margin-top: 50px;" border="0">
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; "><span style="text-decoration: underline;">Pagamento:</span>&nbsp;<apex:outputField value="{!Quote.Pagamento__c}" /></td>
+    </tr>
+    <tr>    
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><span style="text-decoration: underline;">Tempi di consegna:</span>&nbsp;<apex:outputField value="{!Quote.Tempi_di_consegna__c}" /></td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><span style="text-decoration: underline;">Imballo:</span>&nbsp;<apex:outputField value="{!Quote.Imballo__c}" /></td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px;font-size: 14px !important;"><span style="text-decoration: underline;">Trasporto:</span>&nbsp;<apex:outputField value="{!Quote.ShippingHandling}" /></td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><span style="text-decoration: underline;">Condizioni generali di consegna:&nbsp;</span><apex:outputText value="L'impianto risulta, a tutti gli effetti, consegnato e tutti i rischi inerenti all’impianto passeranno in capo all’Acquirente dal momento in cui lo stesso sia pronto per la spedizione presso lo stabilimento della Vici & C. Spa" /></td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><span style="text-decoration: underline;">Garanzia Italia:</span></td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><apex:outputText value="12 mesi dalla data di messa in opera dell'impianto e comunque non oltre 15 mesi dalla data di spedizione dell'impianto stesso. La garanzia verrà applicata su tutte le parti risultanti difettose all'origine e non copre i guasti imputabili all'uso improprio dell’impianto o al mancato rispetto delle prescrizioni di uso e manutenzione contenute nella documentazione consegnata all'Acquirente. 
+            Dalla garanzia sono escluse le parti soggette a normale usura di funzionamento, i materiali di consumo e gli interventi di manutenzione ordinaria o programmata quali pulizie, revisioni o tarature che il cliente voglia effettuare. 
+            L'intervento per la riparazione o sostituzione dei pezzi durante la garanzia non implicheràf alcun prolungamento del periodo della garanzia stessa dell'impianto oltre i termini stabiliti. La garanzia non copre nessun indennizzo per il periodo di inefficienza dell'impianto.
+            La garanzia di cui sopra cesserà di operare qualora l'impianto sia stato riparato da altri che la Vici & C. Spa e/o sia stato manomesso, sovrautilizzato o male utilizzato in qualsiasi modo, o incidentato. 
+            Questa garanzia costituisce la sola ed esclusiva garanzia fornita dalla Vici & C. Spa in relazione all'impianto. 
+            L'acquirente non potrà comunque ritardare i pagamenti rispetto alle scadenze convenute né vantare diritti di ritenzione sul bene.
+Riserva di proprietà e clausola risolutiva espressa: Nel caso di pagamento dilazionato, la proprietà dell'impianto, si intenderà acquisita dall'Acquirente solo al momento del pagamento integrale del prezzo. 
+            Nel caso di mancato pagamento alla scadenza di una rata che superi l'ottava parte del prezzo complessivamente stabilito o nel caso di mancato pagamento di due rate, il contratto dovrà intendersi risolto di diritto ai sensi del combinato disposto dagli articoli 1525 e 1456 C.C. con diritto da parte del venditore alla restituzione dei prodotti e a trattenere l'importo dei pagamenti già riscossi a titolo di indennità per l'uso del bene, salvo eventuali maggiori danni. 
+            L'Acquirente si impegna inoltre a pagare tutte le spese relative alla restituzione e le spese legali sostenute dalla Vici & C. Spa nell'esercizio dei diritti conferitigli dalle presenti condizioni generali." />
+</td>
+    </tr>
+    <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-size: 14px !important;"><span style="text-decoration: underline;">Validit&agrave; offerta:</span>&nbsp;<apex:outputField value="{!Quote.ExpirationDate}" /></td>
+    </tr>
+</table>
+    
+<table cellpadding="0" cellspacing="0" style="width: 700px;" border="0">
+    <tr>
+        <td width="50%">&nbsp;</td>
+        <td width="50%" style="text-align: center;">
+            <p>
+                <strong><apex:outputField value="{!Quote.Firma__c}"/></strong><br />
+                <i>Sales Manager</i>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center; padding-top: 30px;">Per approvazione del committente:</td>
+        <td style="text-align: center; padding-top: 30px;">Per approvazione del fornitore:</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; padding-top: 20px;"><hr style="height: 1px; border: 0; background-color: #666; width: 80%;" /></td>
+        <td style="text-align: center; padding-top: 20px;"><hr style="height: 1px; border: 0; background-color: #666; width: 80%;" /></td>
+    </tr>    
+</table>
+</div>
+</html>
+</apex:page>

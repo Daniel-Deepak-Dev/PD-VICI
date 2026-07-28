@@ -1,0 +1,404 @@
+<apex:page standardController="Case" showHeader="false" applyHtmlTag="false" applyBodyTag="false" renderAs="pdf">
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+                
+                @page {
+                padding: 0px 15px;
+                margin: 0px;
+                }
+                
+                #content {
+                padding: 30px 0 50px;
+                font-size: 12px;
+                margin: 0 auto;
+                font-family: Arial, Sans-serif;
+                }
+                
+                p {
+                margin: 5px 0 0;
+                padding: 0;
+                }
+                
+                table {
+                margin-top:20px;
+                border-collapse: collapse;
+                border: none;
+                width: auto;
+                }
+                
+                table th {
+                text-align: center;
+                padding: 5px 0;
+                }
+                
+                table td {
+                padding: 5px;
+                }
+                
+                #notes {
+                text-align: justify;
+                line-height: 18px;
+                width: 100%;
+                margin: 20px 0;
+                }
+                
+                #customerSignature {
+                margin-top: 30px;
+                }
+                
+                #footer {
+                width: 900px;
+                padding: 30px 0 50px;
+                font-size: 10px;
+                color:#545454;
+                position: absolute;
+                bottom:0px;
+                }
+                
+                .width100{
+                width: 100%;
+                
+                }
+                
+                body{
+                font-size: 12px;
+                font-family: Calibri;
+                }
+                
+                @page{
+                margin: 0px;
+                }
+                
+                
+                .alignLeft {
+                padding-left:10px;
+                }
+                
+                .textCenter {
+                text-align:center;
+                
+                }
+                
+                .alignLeft {
+                text-align:left;
+                padding-right:10px;
+                }
+                
+                .alignRight {
+                text-align:right;
+                padding-right:10px;
+                }
+                
+                .cellWidth25{
+                width:25%;
+                }
+                
+                .cellWidth50{
+                width:50%;
+                }
+                
+                th {
+                background-color: rgb(240,240,240) !important;
+                border: 1px solid #ccc;
+                }
+                
+                
+                th, td {
+                border: 1px solid #ccc;
+                }
+                
+                img {
+                heigth:50px;
+                }
+            </style>
+    </head>
+    <body>
+
+    <div id="content">
+        <img style="width:200px" src="{!$resource.logovici}"/>
+        <div >
+            <h3>
+                GESTIONE RICAMBI
+            </h3>
+        </div>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25" >
+                    <strong>Ordine</strong>
+                </th>
+                <td class="cellWidth25 alignLeft" >
+                    <p><apex:outputText value="{!Case.Numero_ordine__c}" /></p>
+                </td>
+                <th class="cellWidth25">
+                    <strong>Data Ordine</strong>
+                </th>
+                <td class="cellWidth25 alignLeft"  >
+                    <apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_ordine__c}"/></apex:outputText>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">
+                    <strong>Nr. RMA</strong>
+                </th>
+                <td class="cellWidth25 alignLeft"  >
+                    <p><apex:outputText value="{!Case.Nr_RMA__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Matricola</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Codice</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Modello_Macchina__r.Name}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Tipo Macchina</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Modello_Macchina__r.Tipo_Macchina__c}" /></p>
+                </td>
+
+                <th class="cellWidth25">Garanzia Macchina</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Garanzia_macchina__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25" >
+                    <strong>Causale di bollettazione</strong>
+                </th>
+                <td class="cellWidth25 alignLeft" colspan="3" >
+                    <p><apex:outputText value="{!Case.Causale_di_bollettazione__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25" >
+                    <strong>Data prevista rientegro</strong>
+                </th>
+                <td class="cellWidth25 alignLeft" >
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_prevista_reintegro__c }"/></apex:outputText></p>
+                </td>
+                <th class="cellWidth25">
+                    <strong>Data effettiva reintegro</strong>
+                </th>
+                <td class="cellWidth25 alignLeft"  >
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_effettiva_reintegro__c  }"/></apex:outputText></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25" >
+                    <strong>Check pezzo rientrato</strong>
+                </th>
+                <td class="cellWidth25 alignLeft" >
+                    <p><apex:outputText value="{!Case.Check_pezzo_rientrato__c }" /></p>
+                </td>
+                <th class="cellWidth25">
+                    <strong>GG di reintegro</strong>
+                </th>
+                <td class="cellWidth25 alignLeft"  >
+                    <p><apex:outputText value="{!Case.GG_di_reintegro__c}" /></p>
+                </td>
+            </tr>
+        </table>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Cliente</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.Name}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Indirizzo</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingStreet}" /></p>
+                </td>
+                <th class="cellWidth25">Cap</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingPostalCode}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Località</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingCity}" /></p>
+                </td>
+                <th class="cellWidth25">Provincia</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingState}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Telefono</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.Phone}" /></p>
+                </td>
+                <th class="cellWidth25">Paese</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingCountry}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Partita IVA</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.P_Iva__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="textCenter">
+            <h3>di seguito i dettagli dell'ordine:</h3>
+        </div>
+        <table cellpadding="1" cellspacing="0" style="width:100%"  >
+            <!-- INTESTAZIONE TABELLA-->
+            <tr>
+                <th style="border: 1px solid #ccc;" width="20%">
+                    <strong>Codice</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="40%">
+
+                    <strong>Descrizione</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="15%">
+                    <strong>Prezzo Unitario</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="10%">
+                    <strong>Quantita</strong>
+                </th>
+                <th style="border: 1px solid #ccc;" width="15%">
+                    <strong>Totale</strong>
+                </th>
+            </tr>
+
+            <apex:repeat value="{!Case.Ricambi_Casi__r}" var="q" >
+                <tr>
+                    <apex:outputText rendered="{!Case.Tipo__c==q.Tipo_Riga__c}">
+                        <td  align="left">
+                            <p><apex:outputText value="{!q.Product__r.Name}" rendered="{!q.Product__c!=null}"></apex:outputText></p>
+
+                        </td>
+                        <td  align="left">
+                            <p><apex:outputText value="{!q.Product__r.Description}" rendered="{!q.Product__c!=null}"></apex:outputText></p>
+                            <p><apex:outputText value="{!q.Description__c}" rendered="{!q.Product__c==null && q.Description__c!=null}"></apex:outputText></p>
+                        </td>
+
+                        <td class="alignRight">
+                            <p>
+                                <!-- Prints the "XXX," and only renders if required -->
+                                <apex:outputField rendered="{!q.Prezzo_unitario__c!=null}" value="{!q.Prezzo_unitario__c}" />
+                                <!--<apex:outputText value="{!floor(q.Prezzo_unitario__c / 1000)}." rendered="{! q.Prezzo_unitario__c!=null && floor(q.Prezzo_unitario__c / 1000) > 0}"/>
+
+                                &lt;!&ndash; Prints the XXX before the decimal &ndash;&gt;
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null && mod(q.Prezzo_unitario__c,1000)<100 && q.Prezzo_unitario__c>=1000}" value="{! right('0' & text(floor(mod(q.Prezzo_unitario__c, 1000))),3)}" />
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null && mod(q.Prezzo_unitario__c,1000)<100 && q.Prezzo_unitario__c<1000}" value="{! floor(mod(q.Prezzo_unitario__c, 1000))}" />
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null && mod(q.Prezzo_unitario__c,1000)>=100}" value="{!floor(mod(q.Prezzo_unitario__c, 1000))}" />
+                                &lt;!&ndash; The decimal &ndash;&gt;
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null }" value=","/>
+                                &lt;!&ndash; The tenths value &ndash;&gt;
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null }" value="{!floor(mod(q.Prezzo_unitario__c, 1)*10)}"/>
+                                &lt;!&ndash; The hundredths value &ndash;&gt;
+                                <apex:outputText rendered="{! q.Prezzo_unitario__c!=null }" value="{!floor(mod(q.Prezzo_unitario__c, 0.1)*100)}"/>-->
+                            </p>
+                        </td>
+                        <td class="alignRight">
+                            <p><apex:outputField value="{!q.Quantita__c}" /></p>
+                        </td>
+                        <td class="alignRight">
+                            <p><apex:outputField rendered="{!q.Prezzo_unitario__c!=null}" value="{!q.Totale__c}" /></p>
+                        </td>
+                    </apex:outputText>
+                </tr>
+            </apex:repeat>
+        </table>
+
+        <div class="alignRight">
+            <h5>per un totale escluso IVA di &euro; &nbsp;&nbsp;
+                <apex:outputField value="{!Case.Totale_Righe_Ricambi_Ordine__c  }" />
+            </h5>
+        </div>
+
+        <div class="textCenter">
+            <h3>alle seguenti condizioni:</h3>
+        </div>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth50">Data consegna richiesta</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_consegna_richiesta__c}"/></apex:outputText></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Data spedizione prevista</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_spedizione_prevista__c}"/></apex:outputText></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Lavorazione/Programmazione materiale</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.Tempo_di_resa__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Corriere</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.Corriere__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Tracking nr</th>
+                <td class="cellWidth50">
+                    <p><apex:outputText value="{!Case.Tracking_Nr__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Peso collo (Kg)</th>
+                <td class="cellWidth50" >
+                    <p><apex:outputText value="{!Case.Peso_collo_Kg__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth50">Dim. collo (cm)</th>
+                <td class="cellWidth50">
+                    <p><apex:outputText value="{!Case.Dimensione_collo_cm__c}" /></p>
+                </td>
+            </tr>
+        </table>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Indirizzo di spedizione</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Indirizzo_Spedizione__c}" /></p>
+                </td>
+                <th class="cellWidth25">Cap</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Cap__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Località</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Localita__c}" /></p>
+                </td>
+                <th class="cellWidth25">Provincia</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Provincia__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Paese</th>
+                <td class="alignLeft cellWidth25" colspan='3' >
+                    <p><apex:outputText value="{!Case.Paese__c}" /></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    </html>
+</apex:page>

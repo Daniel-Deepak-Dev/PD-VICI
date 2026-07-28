@@ -1,0 +1,26 @@
+<apex:component language="en_US" >
+    <script type="text/x-template" id="templateGnTable" >
+    <table class="table table-striped table-hover">
+        <thead>
+            <th is='gn-column' v-for="colonna in arraycolumn"
+            v-bind:metadati="colonna">
+            </th>
+        </thead>
+        <tbody>
+            <tr is="gn-row" v-for="riga in arrayrow"
+                v-bind:datiriga="riga" 
+                v-bind:config="config"
+                v-bind:fieldsmap="fieldsmap"
+                v-bind:arraycolumn="arraycolumn"
+                v-on:openform="setForm"
+                v-on:openlink="openLink"
+                v-on:refreshtable="refreshTable"
+                v-bind:iddealer="iddealer"
+                v-bind:showdetail="showdetail"
+                >
+            </tr>                 
+        </tbody>
+	</table>
+</script>
+<script src="{!$resource.gnTable}"></script>
+</apex:component>

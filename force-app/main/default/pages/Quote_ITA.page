@@ -1,0 +1,696 @@
+<apex:page standardcontroller="Quote" showheader="false" renderas="" applyHtmlTag="false" applyBodyTag="false" contentType="application/vnd.ms-word; charset=Windows-1252#Preventivo.doc" cache="true">
+<html xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+<!-- contentType="application/msWord#Preventivo.doc"  xmlns:w="urn:schemas-microsoft-com:office:word" -->
+ <style>   
+        <!-- style di word -->
+         @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:"Cambria Math";
+    panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:"Bell MT";
+    panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+    {font-family:Estrangelo Edessa;
+    panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:Estrangelo Edessa;
+    panose-1:2 2 6 3 5 4 5 2 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:13.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+h1
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    page-break-after:avoid;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+h2
+    {mso-style-link:"Titolo 2 Carattere";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    page-break-after:avoid;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    font-weight:normal;
+    font-style:italic;}
+h3
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    page-break-after:avoid;
+    font-size:14.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:10.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+    {mso-style-link:"Titolo Carattere";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    font-size:18.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    font-weight:bold;
+    font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    font-size:14.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    text-autospace:none;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";
+    color:#009900;
+    font-weight:bold;
+    font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:6.0pt;
+    margin-left:0cm;
+    font-size:8.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+a:link, span.MsoHyperlink
+    {color:blue;
+    text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+    {color:purple;
+    text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.NormalParagraphStyle, li.NormalParagraphStyle, div.NormalParagraphStyle
+    {mso-style-name:NormalParagraphStyle;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:120%; 
+    text-autospace:none;
+    font-size:12.0pt;
+    font-family:Estrangelo Edessa;
+    color:black;}
+p.Testot, li.Testot, div.Testot
+    {mso-style-name:"Testo\.t";
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:13.0pt;
+    margin-left:0cm;
+    text-align:justify;
+    line-height:13.0pt;
+    font-size:11.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+p.Indirizzoind, li.Indirizzoind, div.Indirizzoind
+    {mso-style-name:"Indirizzo\.ind";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:justify;
+    line-height:13.0pt;
+    font-size:11.0pt;
+    font-family:"Estrangelo Edessa","serif";}
+span.Titolo2Carattere
+    {mso-style-name:"Titolo 2 Carattere";
+    mso-style-link:"Titolo 2";
+    font-style:italic;}
+span.TitoloCarattere
+    {mso-style-name:"Titolo Carattere";
+    mso-style-link:Titolo;
+    font-weight:bold;
+    font-style:italic;}
+.MsoChpDefault
+    {font-size:10.0pt;}
+ /* Page Definitions */
+ @page Section1
+    {size:21.0cm 842.0pt;
+    margin:34.0pt 43.4pt 17.0pt 47.9pt;}
+div.Section1
+    {page:Section1;}
+ /* List Definitions */
+ ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+        
+    </style>
+</head>
+
+
+<!--<div id="letter" style="page-break-after:always;">-->
+<!--<apex:image value="{!$Resource.LogoVici}" style="width: 300px; float: left;" />-->
+<!--header-->
+<table cellpadding="0" cellspacing="0" style="width: 100%;" border="0">
+<tr style="width: 100%;"><td valign="top" style="width:304px;">
+<div id="imglogo">
+<!--<img src="https://c.eu0.content.force.com/servlet/servlet.ImageServer?id=01520000001Y23S&oid=00D20000000Ci8r&lastMod=1354092975000">-->
+<img src="https://c.eu0.content.force.com/servlet/servlet.ImageServer?id=01520000002evHt&oid=00D20000000Ci8r&lastMod=1454688889000">
+</img></div>
+</td><td></td></tr>
+<tr style="width: 100%;height:150px;">
+<td style="width:304px;"></td>
+<td>  
+<p></p>
+<p class="Testot" align="right" style='text-align:right'><b><span style='font-size:16.0pt;'>Offerta N°{!Quote.quotenumber}</span></b></p>
+<!--numero offerta con numero versione-->
+<!--<apex:repeat value="{!Quote.Saved_Quotes__r}" var="s" first="3">
+<p class="Testot" align="right" style='text-align:right'><b><span style='font-size:16.0pt;'>Offerta N°<apex:outputField value="{!s.Name}" /></span></b></p>
+</apex:repeat>-->
+<!--end numero offerta -->
+
+<p class="Testot" align="right" style='text-align:right'><b><span style='font-size:15.0pt;'>Spett.le</span></b></p>
+
+<p class="Testot" align="right" style='text-align:right'><b><span
+style='font-size:15.0pt'><apex:outputField value="{!Quote.Opportunity.Account.Name}" /></span></b></p>
+
+<p class="Indirizzoind" align="right" style='text-align:right'><span
+style='font-size:13.0pt'><apex:outputField value="{!Quote.Opportunity.Account.BillingStreet}" /></span></p>
+
+<p class="Indirizzoind" align="right" style='text-align:right'><span
+style='font-size:13.0pt'><apex:outputField value="{!Quote.Opportunity.Account.BillingPostalCode}" />-<apex:outputField value="{!Quote.Opportunity.Account.BillingCity}" /></span></p>
+
+
+<p class="Indirizzoind" align="right" style='text-align:right'><span
+style='font-size:13.0pt'><apex:outputField value="{!Quote.Opportunity.Account.BillingState}" /></span></p>
+<br></br>
+<p class="Indirizzoind" align="right" style='text-align:right'><span
+style='font-size:13.0pt'><apex:outputField value="{!Quote.Opportunity.Account.BillingCountry}" /></span></p>
+</td></tr>
+</table>
+<!--end header-->
+<br></br><br></br>
+<p class="Testot"><b><span style='font-size:13.0pt'>Alla cortese attenzione:</span></b></p>
+
+<p class="MsoNormal"><apex:outputField value="{!Quote.Contact.Salutation}" /><apex:outputField value="{!Quote.Contact.Firstname}" />&nbsp;<apex:outputField value="{!Quote.Contact.Lastname}" />
+</p>
+
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">Santarcangelo di Romagna, <apex:outputField value="{!Quote.Quote_Date__c}" /></p>
+
+<p class="MsoNormal" style='margin-left:63.0pt;text-indent:-63.0pt'>&nbsp;</p>
+<p class="MsoNormal" style='margin-left:63.0pt;text-indent:-63.0pt'>&nbsp;</p>
+<!--<p class="MsoNormal" style='margin-left:63.0pt;text-indent:-63.0pt'>Oggetto:       <b>Offerta tecnico economica per la fornitura di una macchina di misura ottica &nbsp;<apex:outputField value="{!Quote.Name}" />
+</b></p>-->
+<!--oggetto-->
+<apex:repeat value="{!Quote.QuotelineItems}" var="m" rows="1">
+<p class="MsoNormal" style='margin-left:63.0pt;text-indent:-63.0pt'>Oggetto:       <b>Offerta tecnico economica per &nbsp;<apex:outputField value="{!m.pricebookentry.Product2.Name}" />
+</b></p>
+</apex:repeat>
+<!--end oggetto -->
+
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style='text-align:justify'>
+<apex:outputText value="In seguito alla Vs. gentile richiesta ci pregiamo sottoporVi la nostra migliore offerta per quanto in oggetto." />
+</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style='text-align:justify'>
+<apex:outputText value="In attesa di un Vs. cortese cenno di riscontro e rimanendo a Vs. disposizione per ogni eventuale chiarimento, cogliamo l'occasione per porgerVi i ns. più cordiali saluti." />
+</p>
+
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN-US"><apex:outputField value="{!Quote.Firma__c}"/></span></b></p>
+<p class="MsoNormal"><i><span lang="EN-US">Sales Manager</span></i></p>
+
+<br clear="all" style="mso-special-character:line-break;page-break-before:always;"/>
+
+<!--descrittivo macchina -->
+<apex:repeat value="{!Quote.QuotelineItems}" var="m" rows="1">
+<p class="MsoNormal" style='text-align:center'><b><span style='font-size:20.0pt;font-family:"Estrangelo Edessa";
+color:#009747'><apex:outputField value="{!m.pricebookentry.Product2.Tipo_di_macchina__c}" /></span></b></p>
+<!--<apex:outputField value="{!m.pricebookentry.Product2.Long_Description__c}" />--><br/>
+<p class="Paragrafobase" style='text-align:center'><img src="{!m.pricebookentry.Product2.Link_Immagine_Sito__c}"></img></p>
+
+<p class="Paragrafobase"><span style='font-size:13.0pt;line-height:120%;
+font-family:"Estrangelo Edessa";color:#404040'>
+<apex:outputField value="{!m.pricebookentry.Product2.Introduction__c}" />
+</span></p>
+
+<p class="Paragrafobase"><span style='font-size:13.0pt;line-height:120%;
+font-family:"Estrangelo Edessa";color:#404040'>
+<apex:outputText value="{!m.pricebookentry.Product2.Struct__c}" escape="false" /></span></p>
+
+<!--tabella macchina -->
+<p class="Paragrafobase"><span style='font-size:13.0pt;line-height:120%;
+font-family:"Estrangelo Edessa";color:#404040'>
+<apex:outputText value="{!m.pricebookentry.Product2.Table__c}" escape="false" /></span></p>
+
+<p class="Paragrafobase"><span style='font-size:13.0pt;line-height:120%;
+font-family:"Estrangelo Edessa";color:#404040'>
+<apex:outputText value="{!m.pricebookentry.Product2.Summary__c}" escape="false" /></span></p>
+<!--<apex:outputText value="{!m.pricebookentry.Product2.Struct__c}" escape="false"/>-->
+
+</apex:repeat>
+<!--end descrittivo macchina -->
+
+<!--tabella condizioni di fornitura-->
+<br clear="all" style="mso-special-character:line-break;page-break-before:always;"/>
+
+<p class="Paragrafobase" style='line-height:95%'><span style='position:relative;
+z-index:-3'><span style='position:absolute;left:2px;top:-14px;width:643px;
+height:4px'></span></span><span
+style='font-size:15.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>Condizioni
+di fornitura                                                                                     Totale</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="637"
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <!--PRODUCT DESC -->
+ <apex:repeat value="{!Quote.QuotelineItems}" var="m" rows="1">
+ <tr style='height:1.0pt'>
+  <td width="38" valign="top" style='width:1.0cm;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>n.&nbsp; <apex:outputField value="{!m.Quantity}" /></span></p>
+  </td>
+  <td width="57" valign="top" style='width:42.5pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;<apex:outputField value="{!m.pricebookentry.Codice_Listino__c}" />&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="454" valign="top" style='width:340.15pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid #009747 2.25pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:left;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa";color:#404040'><b><apex:outputField value="{!m.pricebookentry.Product2.Name}" /></b></span>
+  <span
+  style='font-family:"Estrangelo Edessa";color:#404040'><br></br><apex:outputField value="{!m.pricebookentry.Product2.Description}" /></span>
+  <p class="Paragrafobase" style='text-align:left;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </p>
+  </td>
+  <td width="89" valign="top" style='width:66.75pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:1.4pt 1.4pt 1.4pt 2.85pt;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>
+  <apex:outputField value="{!m.UnitPrice}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ </apex:repeat>
+ 
+ <!--ACCESSORI -->
+ <apex:repeat value="{!Quote.QuotelineItems}" var="q" first="1">
+ <tr style='height:1.0pt'>
+  <td width="38" valign="top" style='width:1.0cm;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'><p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>n.<apex:outputField value="{!q.Quantity}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="57" valign="top" style='width:42.5pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'><p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'><apex:outputField value="{!q.pricebookentry.Codice_Listino__c}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="454" valign="top" style='width:340.15pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid #009747 2.25pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'><p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa";color:#404040'><apex:outputField value="{!q.pricebookentry.Product2.Name}" /></span></p>
+  <p class="Paragrafobase" style='text-align:left;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa";color:#404040'><apex:outputField value="{!q.pricebookentry.Product2.Description}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="89" valign="top" style='width:66.75pt;border-top:solid #009747 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;;border-right:none;
+  padding:1.4pt 1.4pt 1.4pt 2.85pt;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>
+  <apex:outputField value="{!q.UnitPrice}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  
+  </td>
+ </tr>
+ </apex:repeat>
+ 
+ <!--trasporto-->
+ <tr style="height:1.0pt">
+  <td width='38' valign='top' style='width:1.0cm;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>n.1   
+  </span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="57" valign="top" style='width:42.5pt;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  </td>
+  <td width="454" valign="top" style='width:340.15pt;border-top:solid #009747 2.25pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid #009747 2.25pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#404040'>SPESE DI SPEDIZIONE</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="89" valign="top" style='width:66.75pt;border-top:solid #009747 2.25pt;border-left:
+  none;border-bottom:solid black 1.0pt;
+  padding:1.4pt 1.4pt 1.4pt 2.85pt;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#222720'><apex:outputField value="{!Quote.ShippingHandling}" /></span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width="38" valign="top" style='width:1.0cm;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="57" valign="top" style='width:42.5pt;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="454" valign="top" style='width:340.15pt;border-top:solid #009747 2.25pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid #009747 2.25pt;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><b><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>TOTALE</span></b></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#404040'>&nbsp;</span></p>
+  </td>
+  <td width="89" valign="top" style='width:66.75pt;border-top:solid #009747 2.25pt;border-bottom:solid black 1.0pt;border-left:none;
+  padding:1.4pt 1.4pt 1.4pt 2.85pt;height:1.0pt'>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#222720'>&nbsp;</span></p>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa"'><apex:outputField value="{!Quote.Subtotal}" /></span></p>
+  </td>
+ </tr>
+
+
+<tr style='height:1.0pt'>
+  <td width="38" valign="top" style='width:1.0cm;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:none;border-right:none;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="57" valign="top" style='width:42.5pt;border-top:solid #009747 2.25pt;border-left:none;
+  border-bottom:none;border-right:none;padding:1.4pt 1.4pt 1.4pt 0cm;
+  height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  </td>
+  <td width="454" valign="top" style='width:340.15pt;border-top:solid #009747 2.25pt;border-left:
+  none;border-bottom:none;border-right:none;
+  padding:1.4pt 1.4pt 1.4pt 0cm;height:1.0pt'>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><b><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'><apex:outputText rendered="{!Quote.Totale_finale_per_cliente__c != NULL}" value="PREZZO A VOI RISERVATO" /></span></b></p>
+  <p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#404040'>&nbsp;</span></p>
+  </td>
+  <td width="89" valign="top" style='width:66.75pt;border-top:solid #009747 2.25pt;border-bottom:none;border-left:none;
+  padding:1.4pt 1.4pt 1.4pt 2.85pt;height:1.0pt'>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa";
+  color:#222720'>&nbsp;</span></p>
+  <p class="Paragrafobase" align="right" style='text-align:right;line-height:95%'><span
+  style='font-family:"Estrangelo Edessa"'><apex:outputField rendered="{!Quote.Totale_finale_per_cliente__c != NULL}" value="{!Quote.Totale_finale_per_cliente__c}" /></span></p>
+  
+  </td>
+ </tr>
+
+ <!--end trasporto -->
+ 
+ </table>
+<!-- end tabella condizioni di fornitura-->
+
+<!-- totali e condizioni -->
+
+
+<p class="Paragrafobase" style='text-align:justify;line-height:95%'><span
+style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>I
+prezzi sopra indicati sono da intendersi IVA esclusa.</span></p>
+
+<p class="Paragrafobase" align="center" style='text-align:center;line-height:95%'><span
+style='font-size:11.0pt;line-height:95%;font-family:"Estrangelo Edessa"'>&nbsp;</span></p>
+
+
+<p class="Paragrafobase"><span style='position:absolute;z-index:-1;margin-left:
+0px;margin-top:24px;width:642px;height:4px'></span><b><span style='font-size:15.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040'>Condizioni di
+fornitura:</span></b></p>
+
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Pagamento:&nbsp; <apex:outputField value="{!Quote.Pagamento__c}" /></span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Tempi di consegna:&nbsp; <apex:outputField value="{!Quote.Tempi_di_consegna__c}" /></span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Imballo:&nbsp; <apex:outputField value="{!Quote.Imballo__c}" /></span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Trasporto:&nbsp; <apex:outputField value="{!Quote.ShippingHandling}" /></span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Condizioni generali di consegna: L’impianto risulta, a tutti gli
+effetti, consegnato e tutti i rischi inerenti all’impianto passeranno in capo
+all’Acquirente dal momento in cui lo stesso sia pronto per la spedizione presso
+lo stabilimento della Vici &amp; C. S.p.A.</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Garanzia Italia: 12 mesi dalla data di messa in opera dell’impianto e
+comunque non oltre 24 mesi dalla data di spedizione dell’impianto stesso. La
+garanzia verrà applicata su tutte le parti risultanti difettose all’origine e
+non copre i guasti imputabili all’uso improprio dell’impianto o al mancato
+rispetto delle prescrizioni di uso e manutenzione contenute nella
+documentazione consegnata all’Acquirente. Le richieste di sostituzione di parti
+in garanzia saranno ritenute valide solamente se complete di indirizzo e
+ragione sociale dell’azienda utilizzatrice e se il software installato sulla
+macchina risulta regolarmente registrato presso la Vici &amp; C S.p.A.</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Dalla garanzia sono escluse le parti soggette a normale usura di funzionamento,
+i materiali di con- sumo e gli interventi di manutenzione ordinaria o
+programmata quali pulizie, revisioni o tarature che il cliente voglia
+effettuare. L’intervento per la riparazione o sostituzione dei pezzi durante la
+garanzia non implicherà alcun prolungamento del periodo della garanzia stessa
+dell’impianto oltre i termini stabiliti. La garanzia non copre nessun
+indennizzo per il periodo di inefficienza dell’impianto.  La garanzia di cui
+sopra cesserà di operare qualora l’impianto sia stato riparato da altri che la
+Vici &amp; C. S.p.A. e/o sia stato manomesso, sovrautilizzato o male utilizzato
+in qualsiasi modo, o incidentato. Questa garanzia costituisce la sola ed
+esclusiva garanzia fornita dalla Vici &amp; C. S.p.A. in relazione all’impianto.
+L’acquirente non potrà comunque ritardare i pagamenti rispetto alle scadenze
+convenu- te né vantare diritti di ritenzione sul bene.</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Riserva di proprietà e clausola risolutiva espressa: Nel caso di
+pagamento dilazionato, la proprietà dell’impianto, si intenderà acquisita
+dall’Acquirente solo al momento del pagamento integrale del prezzo. Nel caso di
+mancato pagamento alla scadenza di una rata che superi l’ottava parte del
+prezzo complessivamente stabilito o nel caso di mancato pagamento di due rate,
+il contratto dovrà intendersi risolto di diritto ai sensi del combinato
+disposto dagli articoli 1525 e 1456 C.C. con diritto da parte del venditore
+alla restituzione dei prodotti e a trattenere l’importo dei pagamenti già
+riscossi a titolo di indennità per l’uso del bene, salvo eventuali maggiori
+danni. L’Acquirente si impegna inoltre a pagare tutte le spese relative alla
+restituzione e le spese legali sostenute dalla Vici &amp; C. S.p.A.
+nell’esercizio dei diritti conferitigli dalle presenti condizioni generali.</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Validità offerta: &nbsp;<apex:outputField value="{!Quote.ExpirationDate}" /></span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><b><span style='font-size:
+13.0pt;line-height:120%;font-family:"Estrangelo Edessa";color:#404040;
+letter-spacing:-.2pt'><apex:outputField value="{!Quote.Firma__c}"/></span></b></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Sales Manager</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Per approvazione del committente: </span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>____________________________</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>&nbsp;</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>Per approvazione del fornitore:</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>                                                                                                                                                                                     </span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.2pt'>__________________________</span></p>
+
+<p class="Paragrafobase" style='text-align:justify'><span style='font-size:13.0pt;
+line-height:120%;font-family:"Estrangelo Edessa";color:#404040;letter-spacing:
+-.3pt'>&nbsp;</span></p>
+
+
+
+<!-- <p class=MsoNormal><i>I prezzi sopra indicati sono da intendersi IVA esclusa</i></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:8.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="_Toc192924066"><span style='font-size:14.0pt'>Totale
+fornitura     €</span></a></p>
+
+
+
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">SPESE SPEDIZIONE:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.ShippingHandling}" /></strong></td>
+</tr>
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">TOTALE:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.GrandTotal}" /></strong></td>
+</tr>
+<tr>
+<td style="width: 94px; padding: 3px; text-align: right;" width="70%">PREZZO A VOI RISERVATO:</td>
+<td style="width: 134px; padding: 3px; text-align: right;" width="70%"><strong><apex:outputField value="{!Quote.Totale_finale_per_cliente__c}" /></strong></td>
+</tr>
+
+-->
+
+
+
+
+<!--</div>-->
+</html>
+</apex:page>

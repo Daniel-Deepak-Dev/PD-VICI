@@ -1,0 +1,368 @@
+<apex:page standardController="Case" showHeader="false" applyHtmlTag="false" applyBodyTag="false" renderAs="pdf">
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+                
+                @page {
+                padding: 0px 15px;
+                margin: 0px;
+                }
+                #content {
+                padding: 30px 0 50px;
+                font-size: 12px;
+                margin: 0 auto;
+                font-family: Arial, Sans-serif;
+                }
+                
+                p {
+                margin: 5px 0 0;
+                padding: 0;
+                }
+                
+                table {
+                margin-top:20px;
+                border-collapse: collapse;
+                border: none;
+                width: auto;
+                }
+                
+                table th {
+                text-align: center;
+                padding: 5px 0;
+                }
+                
+                table td {
+                padding: 5px;
+                }
+                
+                #notes {
+                text-align: justify;
+                line-height: 18px;
+                width: 100%;
+                margin: 20px 0;
+                }
+                
+                #customerSignature {
+                margin-top: 30px;
+                }
+                
+                #footer {
+                width: 900px;
+                padding: 30px 0 50px;
+                font-size: 10px;
+                color:#545454;
+                position: absolute;
+                bottom:0px;
+                }
+                
+                .width100{
+                width: 100%;
+                
+                }
+                
+                body{
+                font-size: 12px;
+                font-family: Calibri;
+                }
+                
+                @page{
+                margin: 0px;
+                }
+                
+                
+                .alignLeft {
+                padding-left:10px;
+                }
+                
+                .textCenter {
+                text-align:center;
+                
+                }
+                
+                .alignLeft {
+                text-align:left;
+                padding-right:10px;
+                }
+                
+                .alignRight {
+                text-align:right;
+                padding-right:10px;
+                }
+                
+                .cellWidth25{
+                width:25%;
+                }
+                
+                .cellWidth16{
+                width:16%;
+                }
+                
+                .cellWidth50{
+                width:50%;
+                }
+                
+                th {
+                background-color: rgb(240,240,240) !important;
+                border: 1px solid #ccc;
+                }
+                
+                
+                th, td {
+                border: 1px solid #ccc;
+                }
+                
+                img {
+                heigth:50px;
+                }
+            </style>
+    </head>
+    <body>
+
+    <div id="content">
+        <img style="width:200px" src="{!$resource.logovici}"/>
+        <div class="textCenter">
+            <h2>
+                RAPPORTO DI NON CONFORMITA'
+            </h2>
+        </div>
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Numero NC </th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Numero_NC__c }" /></p>
+                </td>
+                <th class="cellWidth25">Numero Caso</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.CaseNumber}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Data di rilevazione</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_rilevazione_NC__c}"/></apex:outputText></p>
+                </td>
+                <th class="cellWidth25">Data chiusura NC</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_chiusura_NC__c}"/></apex:outputText></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Gravità NC</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Gravita_NC__c }" /></p>
+                </td>
+                <th class="cellWidth25">Stato NC</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Stato_NC__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Tipo NC</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Tipo_NC__c}" /></p>
+                </td>
+                <th class="cellWidth25">Risoluzione NC</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Risoluzione_NC__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">
+                    <apex:outputText rendered="{!Case.Tipo_NC__c=='Cliente'}">Cliente</apex:outputText>
+                    <apex:outputText rendered="{!Case.Tipo_NC__c=='Fornitore'}">Fornitore</apex:outputText>
+                    <apex:outputText rendered="{!Case.Tipo_NC__c=='Interna'}">Reparto</apex:outputText>
+                    <apex:outputText rendered="{!Case.Tipo_NC__c=='Terzista '}">Terzista</apex:outputText>
+                </th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.Name}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.Name}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Reparto__c}" rendered="{!Case.Tipo_NC__c=='Interna'}"></apex:outputText>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Indirizzo</th>
+                <td class="alignLeft cellWidth25" >
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.BillingStreet}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.BillingStreet}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+                <th class="cellWidth25">Cap</th>
+                <td class="alignLeft cellWidth25" >
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.BillingPostalCode}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.BillingPostalCode}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Località</th>
+                <td class="alignLeft cellWidth25">
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.BillingCity}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.BillingCity}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+                <th class="cellWidth25">Provincia</th>
+                <td class="alignLeft cellWidth25">
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.BillingState}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.BillingState}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Telefono</th>
+                <td class="alignLeft cellWidth25">
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.Phone}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.Phone}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+                <th class="cellWidth25">Paese</th>
+                <td class="alignLeft cellWidth25" >
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.BillingCountry}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.BillingCountry}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Partita IVA</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p>
+                        <apex:outputText value="{!Case.Cliente__r.P_Iva__c}" rendered="{!Case.Tipo_NC__c=='Cliente'}"></apex:outputText>
+                        <apex:outputText value="{!Case.Fornitore__r.P_Iva__c}" rendered="{!Case.Tipo_NC__c=='Fornitore'}"></apex:outputText>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <div class="textCenter">
+            <h3>RIFERIMENTI NC</h3>
+        </div>
+
+        <table  style="width:100%">
+            <tr>
+                <th class="cellWidth25">Descrizione parte</th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Descrizione_parte__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Codice parte</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Codice_parte__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Matricola parte</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Matricola_parte__c}"/></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Codice macchina</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Modello_Macchina__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Quantità</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Quantita__c}"/></p>
+                </td>
+            </tr>
+            <tr>
+
+                <th class="cellWidth25">Causale</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Causale__c}" /></p>
+                </td>
+                <th class="cellWidth25">Matricola macchina</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Name}"/></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">NC rilevata da</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.NC_rilevata_da__r.Name }" /></p>
+                </td>
+                <th class="cellWidth25">Ordine di lavoro</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Ordine_di_lavoro__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Descrizione NC </th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Descrizione_NC__c}" /></p>
+                </td>
+            </tr>
+        </table>
+        <div class="textCenter">
+            <h3>RISOLUZIONE NC</h3>
+        </div>
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth25">Risolta da operatore 1</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Operatore_1__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Risolta da operatore 2</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Operatore_2__r.Name}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Descrizione risoluzione </th>
+                <td class="alignLeft cellWidth25" colspan='3'>
+                    <p><apex:outputText value="{!Case.Descrizione_risoluzione__c}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth16">Ore rilevazione</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Ore_rilevazione__c }" /></p>
+                </td>
+                <th class="cellWidth16">Ore risoluzione operatore 1</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Ore_risoluzione_operatore_1__c}" /></p>
+                </td>
+                <th class="cellWidth16">Ore risoluzione operatore 2</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Ore_risoluzione_operatore_2__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth16">Costo vario</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Costo_vario__c}" /></p>
+                </td>
+                <th class="cellWidth16">Costo rottamazione</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Costo_rottamazione__c}" /></p>
+                </td>
+                <th class="cellWidth16">Costo riparazione</th>
+                <td class="alignLeft cellWidth16" >
+                    <p><apex:outputText value="{!Case.Costo_riparazione__c}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Note Assicuratore qualità </th>
+                <td class="alignLeft cellWidth25" colspan='5'>
+                    <p><apex:outputText value="{!Case.Note_assicuratore_qualita__c}" /></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    </html>
+</apex:page>

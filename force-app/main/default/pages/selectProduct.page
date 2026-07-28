@@ -1,0 +1,112 @@
+<apex:page title="Select Product" tabStyle="quote" standardController="quote" extensions="cQuote">
+    <apex:includeScript value="/soap/ajax/20.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/20.0/apex.js"/>
+    
+<script>
+
+    function doSort(result)
+    {
+        var form = document.createElement("form");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", "/oppitm/lineitemsort.jsp");
+        
+        //set the id of the request to the opportunity ID
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", 'hidden');
+        hiddenField.setAttribute("name", 'id');
+        hiddenField.setAttribute("value", '{!quote.Id}');   
+        form.appendChild(hiddenField);
+        
+        //the name of the sorted OLI list that the JSP is expecting is "duel0"
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", 'hidden');
+        hiddenField.setAttribute("name", 'duel0');
+        hiddenField.setAttribute("value", String(result));
+        form.appendChild(hiddenField);
+        
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", 'hidden');
+        hiddenField.setAttribute("name", 'retURL');
+        hiddenField.setAttribute("value", '/{!quote.Id}');
+        form.appendChild(hiddenField);
+        
+        //set to save
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", 'hidden');
+        hiddenField.setAttribute("name", 'save');
+        hiddenField.setAttribute("value", ' Save ');
+        form.appendChild(hiddenField);
+        
+        //need to do this so it works in IE
+        document.body.appendChild(form);
+        
+        //submit!!
+        form.submit();
+    }
+</script>    
+    
+<apex:form >
+    <apex:actionFunction action="{!doConfirm}" name="jDoConfirm"/>
+
+<apex:pageBlock rendered="{!not(fPriceBook)}">
+<apex:pageBlockButtons >
+<apex:commandButton value="Select" action="{!doSelectPB}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection title="Pricebook Choose" collapsible="false" columns="2">
+<apex:selectList value="{!myquote.Pricebook2Id}" size="1" multiselect="false" required="true">
+<apex:selectOptions value="{!pricebooks}" />
+</apex:selectList>
+</apex:pageBlockSection>
+</apex:pageBlock>
+    
+<apex:pageBlock rendered="{!fPriceBook}">
+<apex:pageBlockButtons >
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+<!-- <apex:commandButton value="Confirm&Add" disabled="{!idMachine=null}" id="buttons" onclick="jDoConfirm(); dosort('{!order}'); alert('ok');"/> -->
+<apex:commandButton value="Confirm&Add" disabled="{!idMachine=null}" id="buttons" action="{!doConfirm}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection title="Quote Details" collapsible="false" columns="2">
+<apex:outputField value="{!quote.name}"/>
+<apex:outputField value="{!quote.accountid}"/>
+<apex:outputField value="{!quote.quotenumber}"/>
+<apex:outputField value="{!quote.opportunityid}"/>
+<apex:outputField value="{!quote.Pricebook2Id}"/>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Main Product" collapsible="false" columns="1" id="machine" >
+<apex:pageBlockTable value="{!machines}" var="m">
+<apex:column >
+<apex:commandLink action="{!doSelectMachine}" reRender="machine, accessories, buttons" rendered="{!idMachine=null}">
+Select
+<apex:param assignTo="{!idMachine}" name="idMachine" value="{!m.product2id}"/>
+</apex:commandLink>
+<apex:commandLink action="{!doDESelectMachine}" reRender="machine, accessories, buttons" rendered="{!idMachine!=null}">
+DESelect
+<apex:param assignTo="{!idMachine}" name="idMachine" value="{!m.product2id}"/>
+</apex:commandLink>
+</apex:column>
+<apex:column value="{!m.productcode}"/>
+<apex:column value="{!m.product2id}"/>
+<apex:column value="{!m.unitprice}"/>
+</apex:pageBlockTable>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Accessories" collapsible="false" columns="1" id="accessories">
+<apex:commandButton value="All" rendered="{!idMachine!=null}" action="{!doSelectAll}" reRender="accessories"/>
+<apex:pageBlockTable value="{!accessories}" var="m">
+<apex:column >
+<apex:inputField value="{!m.fSelect__c}"/>
+</apex:column>
+<apex:column value="{!m.productcode}"/>
+<apex:column value="{!m.product2id}"/>
+<apex:column value="{!m.unitprice}"/>
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

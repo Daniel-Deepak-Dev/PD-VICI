@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>true</areMetricsLoggedToDataCloud>
+    <dataSpace>default</dataSpace>
+    <description>Flow for Crea prospect form</description>
+    <environments>Default</environments>
+    <interviewLabel>Crea prospect form Flow</interviewLabel>
+    <label>Crea prospect form Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Prospect</name>
+        <label>Create_Prospect</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>$Form.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <elementReference>$Form.LastName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Prospect</object>
+    </recordCreates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Prospect</targetReference>
+        </connector>
+        <form>marketing--Default_Content_Workspace.sfdc_cms__form--MCYWNJDD467VFBXDF5WGWFESXQGQ</form>
+        <triggerType>FormSubmissionEvent</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

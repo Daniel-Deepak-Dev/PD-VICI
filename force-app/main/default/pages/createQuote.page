@@ -1,0 +1,82 @@
+<apex:page title="Select Product" tabStyle="quote" standardController="quote" extensions="cCreateQuote">
+<apex:form >
+
+<apex:pageBlock >
+<apex:pageBlockButtons >
+<apex:commandButton value="Create" action="{!doCreate}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection title="Quote Details" collapsible="false" columns="2">
+<apex:outputField value="{!quote.name}"/>
+<apex:outputField value="{!quote.accountid}"/>
+<apex:outputField value="{!quote.quotenumber}"/>
+<apex:outputField value="{!quote.opportunityid}"/>
+<apex:outputField value="{!quote.Pricebook2Id}"/>
+<apex:outputField value="{!quote.GrandTotal}"/>
+</apex:pageBlockSection>
+<apex:pageBlockSection collapsible="false" columns="2">
+<apex:inputField value="{!squote.Language__c}"/>
+<apex:inputField value="{!squote.Version__c}"/>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection columns="1" title="Quote Lines" collapsible="false">
+
+<apex:pageBlockTable value="{!Quote.QuotelineItems}" var="m">
+<apex:column value="{!m.pricebookentry.Product2.Name}" />
+<apex:column value="{!m.pricebookentry.Product2.description}" />
+<apex:column value="{!m.pricebookentry.Codice_Listino__c}" />
+<apex:column value="{!m.quantity}" />
+<apex:column value="{!m.UnitPrice}" />
+<apex:column value="{!m.pricebookentry.Product2.Tipo_di_macchina__c}" rendered="false"/>
+<apex:column value="{!m.pricebookentry.Product2.Link_Immagine_Sito__c}" rendered="false"/>
+<apex:column value="{!m.pricebookentry.Product2.Introduction__c}" rendered="false"/>
+<apex:column value="{!m.pricebookentry.Product2.Struct__c}" rendered="false"/>
+<apex:column value="{!m.pricebookentry.Product2.Table__c}"  rendered="false"/>
+<apex:column value="{!m.pricebookentry.Product2.Summary__c}"  rendered="false"/>
+</apex:pageBlockTable>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Saved Quotes" collapsible="false" columns="1">
+<apex:pageBlockTable value="{!lsaved}" var="s">
+<apex:column value="{!s.name}"/>
+<apex:column value="{!s.Version__c}"/>
+<apex:column value="{!s.Date__c}"/>
+<apex:column value="{!s.Amount__c}"/>
+<apex:column value="{!s.Language__c}"/>
+</apex:pageBlockTable>
+
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>
+
+</apex:form>
+
+<apex:outputPanel layout="none" rendered="false">
+
+{!Quote.Opportunity}
+{!quote.Opportunity.Account}
+{!quote.Opportunity.Account.name}
+{!quote.Opportunity.Account.billingstreet}
+{!quote.Opportunity.Account.billingpostalcode}
+{!quote.Opportunity.Account.billingcity}
+{!quote.Opportunity.Account.billingstate}
+{!quote.Opportunity.Account.billingcountry}
+{!quote.contact}
+{!quote.contact.salutation}
+{!quote.contact.firstname}
+{!quote.contact.lastname}
+{!quote.Quote_Date__c}
+{!quote.Firma__c}
+{!quote.ShippingHandling}
+{!quote.Subtotal}
+{!quote.Totale_finale_per_cliente__c}
+{!quote.Pagamento__c}
+{!quote.Tempi_di_consegna__c}
+{!quote.Imballo__c}
+{!quote.ExpirationDate}
+
+</apex:outputPanel>
+
+</apex:page>

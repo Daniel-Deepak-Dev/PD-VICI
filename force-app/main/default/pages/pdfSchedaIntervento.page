@@ -1,0 +1,1058 @@
+<apex:page standardController="Case" showHeader="false" applyHtmlTag="false" applyBodyTag="false" renderAs="pdf" >
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+                
+                @page {
+                padding: 0px 15px;
+                margin: 0px;
+                }
+                
+                #content {
+                font-size: 11px;
+                margin: 0 auto;
+                padding:0px;
+                font-family: Arial, Sans-serif;
+                }
+                
+                p {
+                margin: 5px 0 0;
+                padding: 0;
+                }
+                
+                table {
+                width:100%;
+                margin-top:5px !important;
+                border-collapse: collapse;
+                border: none;
+                width: auto;
+                }
+                
+                table th {
+                text-align: center;
+                padding: 5px 0;
+                }
+                
+                .thTextLeft{
+                text-align:left !important; 
+                padding-left:5px;
+                }
+                
+                table td {
+                padding: 5px;
+                margin-top:5px;
+                }
+                
+                #notes {
+                text-align: justify;
+                line-height: 18px;
+                width: 100%;
+                }
+                
+                #customerSignature {
+                margin-top: 30px;
+                }
+                
+                #footer {
+                width: 900px;
+                padding: 30px 0 50px;
+                font-size: 9px;
+                color:#545454;
+                position: absolute;
+                bottom:0px;
+                }
+                
+                .width100{
+                width: 100%;
+                }
+                
+                body{
+                font-size: 10px;
+                font-family: Calibri;
+                }
+                
+                @page{
+                margin: 0px;
+                }
+                
+                
+                .alignLeft {
+                padding-left:10px;
+                }
+                
+                .textCenter {
+                text-align:center;
+                }
+                
+                .textLeft {
+                text-align:left;
+                }
+                
+                .alignLeft {
+                text-align:left;
+                padding-right:10px;
+                }
+                
+                .alignRigth {
+                text-align:rigth;
+                padding-right:10px;
+                }
+                
+                .alignRight {
+                text-align:right;
+                padding-right:10px;
+                }
+                
+                .cellWidth25{
+                width:25%;
+                }
+                
+                .cellWidth45{
+                width:45%;
+                }
+                
+                .cellWidth60{
+                width:60%;
+                }
+                
+                .cellWidth10{
+                width:10%;
+                }
+                
+                .cellWidth15{
+                width:15%;
+                }
+                
+                .cellWidth12{
+                width:12%;
+                }
+                
+                .cellWidth5{
+                width:5%;
+                }
+                
+                .cellWidth16{
+                width:16%;
+                }
+                
+                .cellWidth8{
+                width:7%;
+                }
+                
+                .cellWidth4{
+                width:4%;
+                }
+                
+                .cellWidth50{
+                width:50%;
+                }
+                
+                th {
+                background-color: rgb(240,240,240) !important;
+                border: 1px solid #ccc;
+                }
+                
+                .noBorder{
+                border:0px;
+                }
+                
+                th, td {
+                border: 1px solid #ccc;
+                }
+                
+                img {
+                heigth:50px;
+                }
+            </style>
+    </head>
+    <body>
+
+    <div id="content">
+        <div>
+            <table style="width:100%; margin-bottom:20px;">
+                <tr class="noBorder">
+                    <td class="cellWidth50 noBorder">
+                        <img style="width:200px" src="{!$resource.logovici}"/>
+                    </td>
+                    <td class="cellWidth50 noBorder alignLeft">
+                        <p>
+                            <strong>SCHEDA DI INTERVENTO NR. </strong><apex:outputText value="{!Case.Numero_scheda_intervento__c}"/></p>
+                        <p>
+                            <strong>DEL </strong><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_scheda_intervento__c}"/></apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div >
+            <h3>
+                RELAZIONE INTERVENTO
+            </h3>
+        </div>
+        <table style="width:100%">
+            <tr>
+                <th class="cellWidth25">Cliente richiedente</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Telefono</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.Phone}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Luogo intervento</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingStreet}" /></p>
+                </td>
+                <th class="cellWidth25">Cap</th>
+                <td class="alignLeft cellWidth25" >
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingPostalCode}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Località</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingCity}" /></p>
+                </td>
+                <th class="cellWidth25">Provincia</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Account_Final_Customer__r.BillingState}" /></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="cellWidth25">Tecnico incaricato</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Tecnico_incaricato__r.Name}" /></p>
+                </td>
+                <th class="cellWidth25">Matricola</th>
+                <td class="alignLeft cellWidth25">
+                    <p><apex:outputText value="{!Case.Asset_Final_Customer__r.Name}" /></p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="textCenter">
+            <h3>
+                TIPOLOGIA INTERVENTO
+            </h3>
+        </div>
+
+        <table  style="width:100%" >
+            <tr>
+                <th class="cellWidth12">Installazione</th>
+                <td class="alignLeft cellWidth12">
+                    <p><apex:outputText value="{!Case.Installazione__c}" /></p>
+                </td>
+                <th class="cellWidth12">Tipo Intervento</th>
+                <td class="alignLeft cellWidth12">
+                    <p><apex:outputText value="{!Case.Tipologia_Intervento__c }" /></p>
+                </td>
+                <th class="cellWidth12">Garanzia</th>
+                <td class="alignLeft cellWidth12">
+                    <p><apex:outputText value="{!Case.Garanzia__c}" /></p>
+                </td>
+                <th class="cellWidth12">Data richiesta intervento</th>
+                <td class="alignLeft cellWidth12">
+                    <p><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_Richiesta_Intervento__c}"/></apex:outputText></p>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px !important;">
+            <tr>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+                <th class="cellWidth8" colspan='4'>ORE DI VIAGGIO</th>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+            </tr>
+            <tr>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+                <th class="cellWidth8" colspan='2'>ANDATA</th>
+                <th class="cellWidth8" colspan='2'>RITORNO</th>
+                <td class="cellWidth8 noBorder" > </td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">GIORNO</th>
+                <th class="cellWidth8">DATA</th>
+                <th class="cellWidth8">DALLE</th>
+                <th class="cellWidth8">ALLE</th>
+                <th class="cellWidth8">DALLE</th>
+                <th class="cellWidth8">ALLE</th>
+                <th class="cellWidth8">ORE</th>
+                <th class="cellWidth8">KM</th>
+                <td class="cellWidth8 noBorder" colspan='5'></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">LUNEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">MARTEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">MERCOLEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">GIOVEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">VENERDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">SABATO</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">DOMENICA</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+            </tr>
+        </table>
+        <table style="margin-top:20px !important;">
+            <tr>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+                <th class="cellWidth8" colspan='4'>ORE DI LAVORO</th>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+            </tr>
+            <tr>
+                <td class="cellWidth8 noBorder" colspan='2'>    </td>
+                <th class="cellWidth8" colspan='2'>MATTINA</th>
+                <th class="cellWidth8" colspan='2'>POMERIGGIO</th>
+                <td class="cellWidth8 noBorder"> </td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">GIORNO</th>
+                <th class="cellWidth8">DATA</th>
+                <th class="cellWidth8">DALLE</th>
+                <th class="cellWidth8">ALLE</th>
+                <th class="cellWidth8">DALLE</th>
+                <th class="cellWidth8">ALLE</th>
+                <th class="cellWidth8">ORE</th>
+                <th class="cellWidth8">PRANZO</th>
+                <th class="cellWidth8">CENA</th>
+                <th class="cellWidth8">PERNOTTO</th>
+                <td class="cellWidth4 noBorder"></td>
+                <th class="cellWidth12">gg Trasferta</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">LUNEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <th class="cellWidth12">gg Trasferta</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">MARTEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <th class="cellWidth12">Km Percorsi</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">MERCOLEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <th class="cellWidth12">Ore ord.</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">GIOVEDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8 noBorder"></td>
+                <th class="cellWidth8">Ore viag.</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">VENERDI'</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <th class="cellWidth12">Ore straor.</th>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">SABATO</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth12 noBorder"></td>
+                <td class="cellWidth8 noBorder"></td>
+            </tr>
+            <tr>
+                <th class="cellWidth8">DOMENICA</th>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth12 noBorder"></td>
+                <td class="cellWidth8 noBorder"></td>
+            </tr>
+        </table>
+        <div >
+            <p>
+                Con la sottoscrizione della presente si dichiara di aver ricevuto la visita del tecnico della VICI &amp; C. S.p.A., il quale ha provveduto ad eseguire l'intervento di seguito descritto, nelle date e per le ore sopra riportate.
+            </p>
+        </div>
+
+        <table style="width:100%">
+            <tr class="noBorder">
+                <td class="cellWidth50 textCenter noBorder">
+                    <p><strong>FIRMA TECNICO VICI &amp; C. S.p.A.</strong></p>
+                    <br/><br/>
+                    <p>___________________</p>
+                </td>
+                <td class="cellWidth50 textCenter noBorder">
+                    <p><strong>FIRMA RESPONSABILE CLIENTE </strong></p>
+                    <br /><br/>
+                    <p>___________________</p>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <div >
+            <h4>N.B. Lasciare copia controfirmata al cliente</h4>
+        </div>
+        <br/><br/><br/><br/><br/><br/>
+        <div>
+            <table style="width:100%; margin-bottom:20px; margin-top:40px !important;">
+                <tr class="noBorder">
+                    <td class="cellWidth50 noBorder">
+                        <img style="width:200px" src="{!$resource.logovici}"/>
+                    </td>
+                    <td class="cellWidth50 noBorder alignLeft">
+                        <p>
+                            <strong>SCHEDA DI INTERVENTO NR.</strong> <apex:outputText value="{!Case.Numero_scheda_intervento__c}"/></p>
+                        <p>
+                            <strong>DEL </strong><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_scheda_intervento__c}"/></apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="textCenter">
+            <h4>
+                DESCRIZIONE INTERVENTO E LAVORI ESEGUITI
+            </h4>
+        </div>
+        <table  style="width:100%" >
+            <tr>
+                <td style="height:450px"></td>
+            </tr>
+        </table>
+
+        <div class="textCenter">
+            <h4>
+                IN SEGUITO ALLE VERIFICHE FUNZIONALI, SI AFFERMA CHE LA MACCHINA VIENE LASCIATA IN:
+            </h4>
+        </div>
+
+        <table style="width:100%">
+            <tr>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45" >STATO PERFETTAMENTE FUNZIONANTE</th>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45" >PIANIFICAZIONE INTERVENTO/ASSISTENZA</th>
+            </tr>
+            <tr>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45"  >STATO FUNZIONANTE CON LIMITAZIONI* </th>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45">PIANIFICAZIONE RITIRO IMPIANTO</th>
+            </tr>
+            <tr>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45"  >STATO NON FUNZIONANTE</th>
+                <td class="cellWidt4 noBorder"></td>
+                <td class="cellWidth4"></td>
+                <th class="cellWidth45">PIANIFICAZIONE IMPIANTO IN SOSTITUZIONE</th>
+            </tr>
+        </table>
+
+        <div class="textCenter">
+            <h4>
+                *DETTAGLI LIMITAZIONI (QUALORA PRESENTI)
+            </h4>
+            <P>
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+            </P>
+        </div>
+
+        <div class="textCenter">
+            <h4>
+                FORMAZIONE TECNICA DELLE SEGUENTI PERSONE:
+            </h4>
+            <table  style="width:100%" >
+                <tr style="border: 0px;">
+                    <td style="border: 0px;"  class="cellWidth50">
+                        <p>______________________________________</p>
+                        <p>______________________________________</p>
+                        <p>______________________________________</p>
+                    </td>
+                    <td style="border: 0px;"  class="cellWidth50">
+                        <p>______________________________________</p>
+                        <p>______________________________________</p>
+                        <p>______________________________________</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <table  style="width:100%" >
+            <tr style="border: 0px;">
+                <td style="border: 0px;"  class="cellWidth50 textCenter">
+                    <p><strong>FIRMA TECNICO VICI &amp; C. S.p.A.</strong></p>
+                    <br/><br/>
+                    <p>___________________</p>
+                </td>
+                <td style="border: 0px;" class="cellWidth50 textCenter">
+                    <p><strong>FIRMA RESPONSABILE CLIENTE </strong></p>
+                    <br /><br/>
+                    <p>___________________</p>
+                </td>
+            </tr>
+        </table>
+        <div >
+            <h4>N.B. Lasciare copia controfirmata al cliente</h4>
+        </div>
+        <br/><br/><br/><br/><br/>
+        <div>
+            <table style="width:100%; margin-bottom:20px; margin-top:40px !important;">
+                <tr class="noBorder">
+                    <td class="cellWidth50 noBorder">
+                        <img style="width:200px" src="{!$resource.logovici}"/>
+                    </td>
+                    <td class="cellWidth50 noBorder alignLeft">
+                        <p>
+                            <strong>SCHEDA DI INTERVENTO NR.</strong> <apex:outputText value="{!Case.Numero_scheda_intervento__c}"/></p>
+                        <p>
+                            <strong>DEL </strong><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_scheda_intervento__c}"/></apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="textCenter">
+            <h4>
+                VERIFICA CORRETTO FUNZIONAMENTO (secondo MOD.1081)
+            </h4>
+        </div>
+
+        <table style="width:100%">
+            <tr>
+                <td class="cellWidth60 noBorder"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <th class="cellWidth10" colspan='3'> ESITO</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60 noBorder"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <th class="cellWidth10">POSITIVO</th>
+                <td class="cellWidth5 noBorder"></td>
+                <th class="cellWidth10">NEGATIVO</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICHE CONTENUTO DELL'IMBALLAGGIO (solo per installazione) (step.1)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICHE VISIVE (step.2)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>CONTROLLO DEI SISTEMI SI SICUREZZA E PROTEZIONE(step.3)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>AUTODIAGNOSI (step.4)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA DEL FUOCO E DEL TONO DI GRIGIO DELL'IMMAGINE (step.5)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA DEGLI ALLINEAMENTI MECCANICI (step.6)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA DELLA PLANARITA' DELLA TELECAMERA(step.7)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA DELL'ACCURATEZZA DI MISURA(step.8)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>CALCOLO DEGLI OFFSET DELLE CONTROPUNTE OPZIONALI(step.9)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA ASSENZA RUMORI DURANTE LE MOVIMENTAZIONI(step.10)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>VERIFICA STABILITA' PIANO DI APPOGGIO MACCHINA(step.10)</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+        </table>
+
+        <table style="width:100%">
+            <tr>
+                <td class="cellWidth60 noBorder"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <th class="cellWidth10">OLD</th>
+                <td class="cellWidth5 noBorder"></td>
+                <th class="cellWidth10">NEW</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60"><strong>RELEASE SOFTWARE</strong></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth5 noBorder"></td>
+                <td class="cellWidth10"></td>
+            </tr>
+        </table>
+
+        <div class="textCenter">
+            <h4>
+                NOTE E DETTAGLI ESITI NEGATIVI(QUALORA PRESENTI)
+            </h4>
+            <P>
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+                ________________________________________________________________________________________________________________________
+            </P>
+        </div>
+
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="6">Step 01 - Rilevamento delle condizioni ambientali</th>
+            </tr>
+            <tr>
+                <td class="cellWidth30" >Temperatura ambiente</td>
+                <td class="cellWidth20" >(°C)</td>
+                <td class="cellWidth50"  colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth30" >Ambiente di lavoro</td>
+                <td class="cellWidth20" >(°C)</td>
+                <td class="cellWidth15">Laboratorio
+                    <br/> Ufficio</td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth15">Linea di produzione
+                    <br/> Officina</td>
+                <td class="cellWidth8"></td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <td class="cellWidth30" >Piano di appoggio</td>
+                <td class="cellWidth20" ></td>
+                <td class="cellWidth50"  colspan="4">Marmo &nbsp;&nbsp;&nbsp; Carpenteria saldata &nbsp;&nbsp;&nbsp; Tavolino</td>
+            </tr>
+            <tr>
+                <td class="cellWidth30" >Distanza minima da pareti o ingombri</td>
+                <td class="cellWidth20" >(mm)</td>
+                <td class="cellWidth50"  colspan="4"></td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="6">Step 06 - Verifiche funzionali - Verifica del tono di colore della telecamera e del fuoco</th>
+            </tr>
+            <tr>
+                <td class="cellWidth30" rowspan="2" >Valori min-max della tonalità di nero a luce spenta</td>
+                <td class="cellWidth20" rowspan="2">[0..255]</td>
+                <td class="cellWidth15">Min </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth15">Max </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth30" rowspan="2" >Valori min-max della tonalità di grigio a luce accesa</td>
+                <td class="cellWidth20" rowspan="2">[0..255]</td>
+                <td class="cellWidth15">Min </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth15">Max </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+        </table>
+        <div >
+            <h4>N.B. Documento riservato interno</h4>
+        </div>
+        <br/><br/>
+        <div>
+            <table style="width:100%; margin-bottom:20px; margin-top:40px !important;">
+                <tr class="noBorder">
+                    <td class="cellWidth50 noBorder">
+                        <img style="width:200px" src="{!$resource.logovici}"/>
+                    </td>
+                    <td class="cellWidth50 noBorder alignLeft">
+                        <p>
+                            <strong>SCHEDA DI INTERVENTO NR.</strong> <apex:outputText value="{!Case.Numero_scheda_intervento__c}"/></p>
+                        <p>
+                            <strong>DEL </strong><apex:outputText value="{0,date, dd/MM/yyyy}"><apex:param value="{!Case.Data_scheda_intervento__c}"/></apex:outputText>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="6">Step 06 - Verifiche funzionali - Verifica del fuoco della telecamera</th>
+            </tr>
+            <tr>
+                <td class="cellWidth30" rowspan="2" >Ampiezza transizione chiaro-scuro (fuoco)</td>
+                <td class="cellWidth20" rowspan="2">[pixel]</td>
+                <td class="cellWidth15">Sx </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth15">Dx </td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth15">nuovo valore </td>
+                <td class="cellWidth10"></td>
+            </tr>
+        </table>
+
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="9">Step 06 - Verifiche funzionali - Verifica della posizione orizzontale delle contropunte</th>
+            </tr>
+            <tr>
+                <td class="cellWidth20">Centro della controp. superiore</td>
+                <td class="cellWidth10">[pixel]</td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth10">nuovo valore </td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth20">Variazione in rotazione</td>
+                <td class="cellWidth10">[pixel]</td>
+                <td class="cellWidth8"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth20">Centro della controp. inferiore</td>
+                <td class="cellWidth10">[pixel]</td>
+                <td class="cellWidth10"></td>
+                <td class="cellWidth10">nuovo valore </td>
+                <td class="cellWidth8"></td>
+                <td class="cellWidth4 noBorder"></td>
+                <td class="cellWidth20">Variazione in rotazione</td>
+                <td class="cellWidth10">[pixel]</td>
+                <td class="cellWidth8"></td>
+            </tr>
+        </table>
+
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="5">Step 06 - Verifiche funzionali - Verifica della planarità della telecamera</th>
+            </tr>
+            <tr>
+                <td class="cellWidth50">Variazione del piano Sx da quello Dx</td>
+                <td class="cellWidth10">[mm]</td>
+                <td class="cellWidth15"></td>
+                <td class="cellWidth10">nuovo valore </td>
+                <td class="cellWidth15"></td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="3">Step 07 - Verifiche dell'accuratezza di misura dei diametri</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60">Scostamento della temperatura ambientale da 20°C -> &#916; T</td>
+                <td class="cellWidth10">(°C)</td>
+                <td class="cellWidth30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60" colspan="2">Codice calibro diametri</td>
+                <td class="cellWidth30"></td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="4">Misure diametri con scostamento maggiore del valore nominale</th>
+            </tr>
+            <tr>
+                <td class="cellWidth10 textCenter" ><strong>N.</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Valore certificato (mm)</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Valore misurato (mm)</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Scostamento (mm)</strong></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>1</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>2</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>3</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+        </table>
+
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="3">Step 07 - Verifiche dell'accuratezza di misura delle altezze</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60">Scostamento della temperatura master da 20°C -> &#916; T</td>
+                <td class="cellWidth10">(°C)</td>
+                <td class="cellWidth30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidth60" colspan="2">Codice calibro altezze</td>
+                <td class="cellWidth30"></td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="4">Misure altezze con scostamento maggiore dal valore nominale</th>
+            </tr>
+            <tr>
+                <td class="cellWidth10 textCenter" ><strong>N.</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Valore certificato (mm)</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Valore misurato (mm)</strong></td>
+                <td class="cellWidth30 textCenter"><strong>Scostamento (mm)</strong></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>1</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>2</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+            <tr>
+                <td class="cellWidtd10 textCenter" ><strong>3</strong></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+                <td class="cellWidtd30"></td>
+            </tr>
+        </table>
+
+        <table style="width:100%; margin-top:20px !important;">
+            <tr>
+                <th class="thTextLeft" colspan="3">Step 08 - Calcolo dell'offset delle contropunte opzionali</th>
+            </tr>
+            <tr>
+                <td class="cellWidth60">Presenza contropunte opzionali</td>
+                <td class="cellWidth20">SI</td>
+                <td class="cellWidth20">NO</td>
+            </tr>
+        </table>
+        <div >
+            <h4>N.B. Documento riservato interno</h4>
+        </div>
+    </div>
+    </body>
+    </html>
+</apex:page>

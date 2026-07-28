@@ -1,0 +1,53 @@
+<apex:component language="en_US">
+<script type="text/x-template" id="templateGnField" >
+  <td v-bind:class="{'align-icon': (fieldtype.type=='id')}"  >
+      
+    <div v-if="fieldtype.type=='text'" v-bind:class="{'has-error': (fieldValue=='' && fieldtype.required==true )}">
+      <input v-if="!ro && !fieldtype.ro" type="text" class="form-control editcell"  v-model="fieldValue" v-on:blur="save" v-bind:class="{'required': (fieldValue=='' && fieldtype.required==true )}"/>
+      <span v-if="fieldtype.ro || ro" > {{value}} </span>    
+    </div>
+    
+    <div v-if="fieldtype.type=='textarea'" v-bind:class="{'has-error': (fieldValue=='' && fieldtype.required==true )}">
+      <textarea  v-if="!ro && !fieldtype.ro" type="textarea" rows="1" class="form-control editcell textarea" v-model="fieldValue" v-on:blur="save" v-on:click="focustextarea = true"  v-bind:class="{'texarea-focus': (focustextarea==true), 'required': (fieldValue=='' && fieldtype.required==true)}" />
+      <span v-if="fieldtype.ro || ro" > {{value}} </span>    
+    </div> 
+      
+	<div v-if="fieldtype.type=='url'" v-bind:class="{'has-error': (fieldValue=='' && fieldtype.required==true )}">
+      <input v-if="!ro && !fieldtype.ro" type="text" class="form-control editcell" v-model="fieldValue" v-on:blur="save" v-bind:class="{'required': (fieldValue=='' && fieldtype.required==true )}"/>
+      <a v-if="fieldtype.ro || ro"  v-on:click="link">{{value}}</a>
+    </div> 
+      
+    <div v-if="fieldtype.type=='date'" v-bind:class="{'has-error': (fieldValue==undefined && fieldtype.required==true )}">
+      <input v-if="showInputDate && !fieldtype.ro && !ro" type="date" v-model="fieldValue"  class="form-control editcell" v-on:blur="save" v-bind:class="{'required': (fieldValue=='' && fieldtype.required==true )}"/>
+      <span v-if="value!=undefined && (fieldtype.ro || ro)" class=" cell-date"> {{value | formatDate}} </span>    
+      <span  v-if="!showInputDate && !fieldtype.ro && !ro" class="form-control  cell-date" v-on:click="showInputDate=!showInputDate"> {{value | formatDate}} </span>    
+    </div>
+      
+    <div v-if="fieldtype.type=='datetime'" v-bind:class="{'has-error': (fieldValue==undefined && fieldtype.required==true )}">
+      <input v-if="showInputDate && !fieldtype.ro && !ro" type="date" v-model="fieldValue"  class="form-control editcell" v-on:blur="save" v-bind:class="{'required': (fieldValue=='' && fieldtype.required==true )}"/>
+      <span v-if="value!=undefined && (fieldtype.ro || ro)" class=" cell-date"> {{value | formatDateTime}} </span>    
+      <span  v-if="!showInputDate && !fieldtype.ro && !ro" class="form-control  cell-date" v-on:click="showInputDate=!showInputDate"> {{value | formatDateTime}} </span>    
+    </div>  
+      
+    <div v-if="fieldtype.type=='picklist'" v-bind:class="{'has-error': (fieldValue=='' && fieldtype.required==true )}">
+      <select v-if="!ro && !fieldtype.ro " class="form-control editcell" v-model="fieldValue" v-on:change="save" v-bind:class="{'required': (fieldValue=='' && fieldtype.required==true )}">
+        <option v-for="(v, index) in fieldsmap[fieldtype.field].labels.split(';')"  v-bind:value="fieldsmap[fieldtype.field].values.split(';')[index]" >{{v }}</option>
+      </select>  
+      <span v-if="fieldtype.ro || ro" > {{value}}</span>  
+    </div>
+      
+    <div v-if="fieldtype.type=='img'">
+        <img v-bind:src="value" style="max-width: 30px;"></img>
+    </div>
+        
+    <div v-if="fieldtype.type=='id'">
+      <a v-if="value!='' && showdetail" v-on:click="linkDetail"> <span class="glyphicon glyphicon-search" ></span></a>
+      <span v-if="value==''"> </span>
+
+    </div>  
+
+
+  </td>
+</script>
+<script src="{!$resource.gnField}"></script>
+</apex:component>
