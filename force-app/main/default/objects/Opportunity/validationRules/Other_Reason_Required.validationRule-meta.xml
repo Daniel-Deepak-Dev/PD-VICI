@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Reason_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Chiuse/Perse&quot;),
+  ISPICKVAL(Motivo_chiusa_persa__c, &quot;Competition&quot;),
+  ISPICKVAL(Competition_Closed_Lost_Reason__c, &quot;Other reasons&quot;),
+  ISBLANK(Other_reasons__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_reasons__c</errorDisplayField>
+    <errorMessage>Please specify the other reason.</errorMessage>
+</ValidationRule>

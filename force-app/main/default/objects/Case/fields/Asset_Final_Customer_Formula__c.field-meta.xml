@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Final_Customer_Formula__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <formula>IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PA&quot;),&quot;MTL&quot;,
+ IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PB&quot;),&quot;MTL&quot;,
+  IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PC&quot;),&quot;MTL&quot;,
+   IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PD&quot;),&quot;MTL&quot;,
+    IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PE&quot;),&quot;MTL&quot;,
+     IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PF&quot;),&quot;MTL&quot;,
+      IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PG&quot;),&quot;MTL&quot;,
+       IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PH&quot;),&quot;MTP&quot;,
+        IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PK&quot;),&quot;MTL&quot;,
+         IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PM&quot;),&quot;MTL&quot;,
+          IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PN&quot;),&quot;MTL&quot;,
+           IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PT&quot;),&quot;MTL&quot;,
+            IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PQ&quot;),&quot;MTL&quot;,
+             IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PP&quot;),&quot;MTL&quot;,
+              IF(BEGINS(Asset_Final_Customer__r.Name,&quot;PZ&quot;),&quot;METRIOS&quot;,
+               IF(BEGINS(Asset_Final_Customer__r.Name,&quot;0&quot;),&quot;MTL&quot;,
+                IF(BEGINS(Asset_Final_Customer__r.Name,&quot;&quot;),&quot;&quot;,&quot;&quot;
+                )
+               )
+              )
+             )
+            )
+           )
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)</formula>
+    <label>Asset Final Customer Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

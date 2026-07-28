@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PDF_Ordine</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>PDF Ordine</masterLabel>
+    <openType>replace</openType>
+    <page>pdfGestioneRicambi</page>
+    <protected>false</protected>
+</WebLink>

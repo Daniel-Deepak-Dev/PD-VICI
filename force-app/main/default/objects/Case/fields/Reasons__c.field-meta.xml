@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons__c</fullName>
+    <label>Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Need GR&amp;R</fullName>
+                <default>false</default>
+                <label>Need GR&amp;R</label>
+            </value>
+            <value>
+                <fullName>Demo with advanced system</fullName>
+                <default>false</default>
+                <label>Demo with advanced system</label>
+            </value>
+            <value>
+                <fullName>Demo with advanced knowledge</fullName>
+                <default>false</default>
+                <label>Demo with advanced knowledge</label>
+            </value>
+            <value>
+                <fullName>Demo with advanced software</fullName>
+                <default>false</default>
+                <label>Demo with advanced software</label>
+            </value>
+            <value>
+                <fullName>Limited rep. resources</fullName>
+                <default>false</default>
+                <label>Limited rep. resources</label>
+            </value>
+            <value>
+                <fullName>Non ha partecipato alla formazione</fullName>
+                <default>false</default>
+                <label>Non ha partecipato alla formazione</label>
+            </value>
+            <value>
+                <fullName>Funzionalità complessa</fullName>
+                <default>false</default>
+                <label>Funzionalità complessa</label>
+            </value>
+            <value>
+                <fullName>Istruzioni non chiare</fullName>
+                <default>false</default>
+                <label>Istruzioni non chiare</label>
+            </value>
+            <value>
+                <fullName>Nuovo problema</fullName>
+                <default>false</default>
+                <label>Nuovo problema</label>
+            </value>
+            <value>
+                <fullName>New application</fullName>
+                <default>false</default>
+                <label>New application</label>
+            </value>
+            <value>
+                <fullName>custom application</fullName>
+                <default>false</default>
+                <label>custom application</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Non ha partecipato alla formazione</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Funzionalità complessa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Istruzioni non chiare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Nuovo problema</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New function</controllingFieldValue>
+            <valueName>New application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New function</controllingFieldValue>
+            <valueName>custom application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International case</controllingFieldValue>
+            <controllingFieldValue>Domestic case</controllingFieldValue>
+            <controllingFieldValue>OGP internal case</controllingFieldValue>
+            <valueName>Need GR&amp;R</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International case</controllingFieldValue>
+            <controllingFieldValue>Domestic case</controllingFieldValue>
+            <controllingFieldValue>OGP internal case</controllingFieldValue>
+            <valueName>Demo with advanced system</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International case</controllingFieldValue>
+            <controllingFieldValue>Domestic case</controllingFieldValue>
+            <controllingFieldValue>OGP internal case</controllingFieldValue>
+            <valueName>Demo with advanced knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International case</controllingFieldValue>
+            <controllingFieldValue>Domestic case</controllingFieldValue>
+            <controllingFieldValue>OGP internal case</controllingFieldValue>
+            <valueName>Demo with advanced software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International case</controllingFieldValue>
+            <controllingFieldValue>Domestic case</controllingFieldValue>
+            <controllingFieldValue>OGP internal case</controllingFieldValue>
+            <valueName>Limited rep. resources</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

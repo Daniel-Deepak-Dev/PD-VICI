@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>machine_from_local_inventory__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox must be flagged by distributors and subsidiaries to indicate that this opportunity will use a machine already bought - Do not use this flag for machines on loan from Rimini</description>
+    <inlineHelpText>This checkbox must be flagged by distributors and subsidiaries to indicate that this opportunity will use a machine already bought - Do not use this flag for machines on loan from Rimini</inlineHelpText>
+    <label>Machine from local inventory</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

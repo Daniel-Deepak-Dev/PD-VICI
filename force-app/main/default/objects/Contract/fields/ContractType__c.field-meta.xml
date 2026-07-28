@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractType__c</fullName>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PacketEfficiency</fullName>
+                <default>false</default>
+                <label>Efficient Support Pack</label>
+            </value>
+            <value>
+                <fullName>PacketHours</fullName>
+                <default>false</default>
+                <label>Hours Pack (Just Measure)</label>
+            </value>
+            <value>
+                <fullName>PacketWarrantyExt_Base</fullName>
+                <default>false</default>
+                <label>Semi Kasko</label>
+            </value>
+            <value>
+                <fullName>PacketHours(For Dealers)</fullName>
+                <default>false</default>
+                <label>PacketHours (For Dealers)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Machine_user_MTL__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Fill this checkbox if this contact is the machine user. He will receive after sales emails</description>
+    <inlineHelpText>Fill this checkbox if this contact is the machine user. He will receive after sales emails</inlineHelpText>
+    <label>Machine user MTL</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

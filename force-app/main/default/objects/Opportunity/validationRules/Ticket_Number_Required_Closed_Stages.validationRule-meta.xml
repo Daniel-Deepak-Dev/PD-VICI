@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticket_Number_Required_Closed_Stages</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(StageName, &quot;Closed/won&quot;),
+        ISPICKVAL(StageName, &quot;Closed/lost&quot;)
+    ),
+    ISBLANK(Ticket_Number__c)
+)</errorConditionFormula>
+    <errorDisplayField>Ticket_Number__c</errorDisplayField>
+    <errorMessage>Please fill in the &quot;Ticket Number&quot; field when the Stage is &quot;Closed/won&quot; or &quot;Closed/lost&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_role__c</fullName>
+    <label>Company role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Titolare</fullName>
+                <default>false</default>
+                <label>Titolare</label>
+            </value>
+            <value>
+                <fullName>Resp. produzione</fullName>
+                <default>false</default>
+                <label>Resp. produzione</label>
+            </value>
+            <value>
+                <fullName>Resp. sala metrologica</fullName>
+                <default>false</default>
+                <label>Resp. sala metrologica</label>
+            </value>
+            <value>
+                <fullName>Resp. qualità</fullName>
+                <default>false</default>
+                <label>Resp. qualità</label>
+            </value>
+            <value>
+                <fullName>Uff.acquisti</fullName>
+                <default>false</default>
+                <label>Uff.acquisti</label>
+            </value>
+            <value>
+                <fullName>Tecnico sala metrologica</fullName>
+                <default>false</default>
+                <label>Tecnico sala metrologica</label>
+            </value>
+            <value>
+                <fullName>Operatore macchina</fullName>
+                <default>false</default>
+                <label>Operatore macchina</label>
+            </value>
+            <value>
+                <fullName>Resp.commerciale</fullName>
+                <default>false</default>
+                <label>Resp.commerciale</label>
+            </value>
+            <value>
+                <fullName>Venditore</fullName>
+                <default>false</default>
+                <label>Venditore</label>
+            </value>
+            <value>
+                <fullName>Application guy/Sales engineer</fullName>
+                <default>false</default>
+                <label>Application guy/Sales engineer</label>
+            </value>
+            <value>
+                <fullName>Logistica</fullName>
+                <default>false</default>
+                <label>Logistica</label>
+            </value>
+            <value>
+                <fullName>Accounting (amministrazione)</fullName>
+                <default>false</default>
+                <label>Accounting (amministrazione)</label>
+            </value>
+            <value>
+                <fullName>Responsabile di</fullName>
+                <default>false</default>
+                <label>Responsabile di</label>
+            </value>
+            <value>
+                <fullName>Group Leader</fullName>
+                <default>false</default>
+                <label>Group Leader</label>
+            </value>
+            <value>
+                <fullName>Membro</fullName>
+                <default>false</default>
+                <label>Membro</label>
+            </value>
+            <value>
+                <fullName>Adetto alla programmazione macchina</fullName>
+                <default>false</default>
+                <label>Adetto alla programmazione macchina</label>
+            </value>
+            <value>
+                <fullName>Utilizzatore macchina</fullName>
+                <default>false</default>
+                <label>Utilizzatore macchina</label>
+            </value>
+            <value>
+                <fullName>Planner</fullName>
+                <default>false</default>
+                <label>Planner</label>
+            </value>
+            <value>
+                <fullName>Master/foreman</fullName>
+                <default>false</default>
+                <label>Master/foreman</label>
+            </value>
+            <value>
+                <fullName>Studente</fullName>
+                <default>false</default>
+                <label>Studente</label>
+            </value>
+            <value>
+                <fullName>Stagista</fullName>
+                <default>false</default>
+                <label>Stagista</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

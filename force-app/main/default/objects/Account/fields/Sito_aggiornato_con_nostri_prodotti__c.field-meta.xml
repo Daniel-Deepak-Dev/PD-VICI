@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sito_aggiornato_con_nostri_prodotti__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Solo per rivenditori</description>
+    <inlineHelpText>Solo per rivenditori</inlineHelpText>
+    <label>Sito aggiornato con nostri prodotti</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

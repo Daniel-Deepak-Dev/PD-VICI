@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Email</fullName>
+    <availability>online</availability>
+    <description>Send Email with Work Order Hours</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Email Hours</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>location.replace(&#x27;/email/author/emailauthor.jsp?template_id=252F00X5I000000lFLH&#x26;p2_lkid={!WorkOrder.Contact}&#x26;p5=matteo.staccoli@vici.it&#x26;p24=matteo.staccoli@vici.it&#x26;p26=matteo.staccoli@vici.it&#x26;retURL=/{!WorkOrder.Id}&#x27;);</url>
+</WebLink>

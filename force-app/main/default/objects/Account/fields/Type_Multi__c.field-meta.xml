@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Multi__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Potential Customer</fullName>
+                <default>false</default>
+                <label>Potential Customer</label>
+            </value>
+            <value>
+                <fullName>End Customer</fullName>
+                <default>false</default>
+                <label>End Customer</label>
+            </value>
+            <value>
+                <fullName>OEM System Integrator</fullName>
+                <default>false</default>
+                <label>OEM System Integrator</label>
+            </value>
+            <value>
+                <fullName>Key Account customer</fullName>
+                <default>false</default>
+                <label>Key Account customer</label>
+            </value>
+            <value>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+                <label>Dealer</label>
+            </value>
+            <value>
+                <fullName>Prospective Dealer</fullName>
+                <default>false</default>
+                <label>Prospective Dealer</label>
+            </value>
+            <value>
+                <fullName>Sub-Dealer</fullName>
+                <default>false</default>
+                <label>Sub-Dealer</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Not Suitable for MTL</fullName>
+                <default>false</default>
+                <label>Not Suitable for MTL</label>
+            </value>
+            <value>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+                <label>Out of Business</label>
+            </value>
+            <value>
+                <fullName>Not Suitable for MTL/FOV</fullName>
+                <default>false</default>
+                <label>Not Suitable for MTL/FOV</label>
+            </value>
+            <value>
+                <fullName>Not Suitable for FOV</fullName>
+                <default>false</default>
+                <label>Not Suitable for FOV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

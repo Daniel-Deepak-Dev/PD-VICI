@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RS_Validity__c</fullName>
+    <description>After this date the RS must be evaluated again</description>
+    <inlineHelpText>After this date the RS must be evaluated again</inlineHelpText>
+    <label>RS expiration date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

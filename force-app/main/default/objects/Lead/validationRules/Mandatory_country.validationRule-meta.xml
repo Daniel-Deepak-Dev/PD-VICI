@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_country</fullName>
+    <active>true</active>
+    <description>Set Country as mandatory</description>
+    <errorConditionFormula>ISBLANK(Country) &amp;&amp; Company!=&apos;Salesforce&apos; /* a causa di un test  nella classe salesforce unsubscribe dei portali */</errorConditionFormula>
+    <errorDisplayField>Country</errorDisplayField>
+    <errorMessage>Country is a mandatory field</errorMessage>
+</ValidationRule>

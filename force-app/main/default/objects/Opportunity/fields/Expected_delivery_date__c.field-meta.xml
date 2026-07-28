@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_delivery_date__c</fullName>
+    <description>Please fill this field with the expected delivery date from RIMINI. This will be an indication for the production only. The real delivery date will be reported in the Order Confirmation (OC). In case of machines taken for your local stock, please use the date of the original shipping.</description>
+    <inlineHelpText>Please fill this field with the expected delivery date from RIMINI. This will be an indication for the production only. The real delivery date will be reported in the Order Confirmation (OC). In case of machines taken for your local stock, please use the date of the original shipping.</inlineHelpText>
+    <label>Expected delivery date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

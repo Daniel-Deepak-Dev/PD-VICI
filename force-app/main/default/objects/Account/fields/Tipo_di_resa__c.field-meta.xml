@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_di_resa__c</fullName>
+    <label>Tipo di resa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Geographic_Zone__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ex-Works - Vici&apos;s plant - Santarcangelo di R. (RN) - Italy</fullName>
+                <default>false</default>
+                <label>Ex-Works - Vici&apos;s plant - Santarcangelo di R. (RN) - Italy</label>
+            </value>
+            <value>
+                <fullName>FOB</fullName>
+                <default>false</default>
+                <label>FOB</label>
+            </value>
+            <value>
+                <fullName>CIF</fullName>
+                <default>false</default>
+                <label>CIF</label>
+            </value>
+            <value>
+                <fullName>DAP - Franco destino</fullName>
+                <default>false</default>
+                <label>DAP - Franco destino</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Ex-Works - Vici&apos;s plant - Santarcangelo di R. (RN) - Italy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <valueName>DAP - Franco destino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>FOB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>CIF</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

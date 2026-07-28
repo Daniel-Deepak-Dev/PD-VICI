@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Massima_esposizione__c</fullName>
+    <description>Massimo fido concesso. considera ordini da evadere, evasi ed eventuale scaduto</description>
+    <inlineHelpText>Massimo fido concesso. considera ordini da evadere, evasi ed eventuale scaduto</inlineHelpText>
+    <label>Massima esposizione</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

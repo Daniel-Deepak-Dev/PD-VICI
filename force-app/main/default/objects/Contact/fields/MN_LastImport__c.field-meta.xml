@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MN_LastImport__c</fullName>
+    <description>Timestamp for latest import attempt</description>
+    <inlineHelpText>Timestamp for latest import attempt</inlineHelpText>
+    <label>MN_LastImport</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

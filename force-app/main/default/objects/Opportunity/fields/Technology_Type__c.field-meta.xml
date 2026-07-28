@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Type__c</fullName>
+    <label>Technology Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Visual</fullName>
+                <default>false</default>
+                <label>Visual</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Laser 2D/3D</fullName>
+                <default>false</default>
+                <label>Laser 2D/3D</label>
+            </value>
+            <value>
+                <fullName>Robot</fullName>
+                <default>false</default>
+                <label>Robot</label>
+            </value>
+            <value>
+                <fullName>Visual + Contact</fullName>
+                <default>false</default>
+                <label>Visual + Contact</label>
+            </value>
+            <value>
+                <fullName>Visual + Contact + Functional test</fullName>
+                <default>false</default>
+                <label>Visual + Contact + Functional test</label>
+            </value>
+            <value>
+                <fullName>Visual + Functional test</fullName>
+                <default>false</default>
+                <label>Visual + Functional test</label>
+            </value>
+            <value>
+                <fullName>Contact + Functional test</fullName>
+                <default>false</default>
+                <label>Contact + Functional test</label>
+            </value>
+            <value>
+                <fullName>Functional test</fullName>
+                <default>false</default>
+                <label>Functional test</label>
+            </value>
+            <value>
+                <fullName>Visual + Robot</fullName>
+                <default>false</default>
+                <label>Visual + Robot</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

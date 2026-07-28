@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Totale_Righe_Ricambi_Ordine__c</fullName>
+    <label>Totale Righe Ricambi Ordine</label>
+    <summarizedField>Ricambi_Caso__c.Totale__c</summarizedField>
+    <summaryFilterItems>
+        <field>Ricambi_Caso__c.Tipo_Riga__c</field>
+        <operation>equals</operation>
+        <value>Ordine</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Ricambi_Caso__c.Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

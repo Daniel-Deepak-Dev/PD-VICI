@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignId</fullName>
+    <inlineHelpText>ENGLISH: Source of the opportunity (name of exhibition, catalogue download, word of mouth, dealer, Other..) 
+ITALIAN: Sorgente opportunità (nome di una fiera, download catalogo, passaparola, dealer, Other/altro..)</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

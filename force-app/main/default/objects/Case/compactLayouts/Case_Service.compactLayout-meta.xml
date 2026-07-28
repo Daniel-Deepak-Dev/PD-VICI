@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Service</fullName>
+    <fields>Subject</fields>
+    <fields>CaseNumber</fields>
+    <fields>Priority</fields>
+    <fields>Status</fields>
+    <fields>Owner__c</fields>
+    <fields>Asset_Final_Customer__c</fields>
+    <fields>Account_Final_Customer__c</fields>
+    <label>Case Service</label>
+</CompactLayout>

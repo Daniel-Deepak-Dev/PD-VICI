@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scadenza_contratto__c</fullName>
+    <description>Indicare la data di scadenza del contratto anche se con tacito rinnovo</description>
+    <inlineHelpText>Indicare la data di scadenza del contratto anche se con tacito rinnovo (nel caso verificheremo i target)</inlineHelpText>
+    <label>Scadenza contratto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

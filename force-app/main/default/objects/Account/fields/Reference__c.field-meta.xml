@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This customer is a worldwide reference</description>
+    <inlineHelpText>This customer is a worldwide reference</inlineHelpText>
+    <label>Reference</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

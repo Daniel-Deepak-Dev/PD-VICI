@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vici_Vision_Jacket__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>select this field to send a Vici Vision jacket</description>
+    <label>Vici Vision Jacket</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

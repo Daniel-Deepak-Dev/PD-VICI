@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor__c</fullName>
+    <label>Competitor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hommel</fullName>
+                <default>false</default>
+                <label>Hommel</label>
+            </value>
+            <value>
+                <fullName>Tesa</fullName>
+                <default>false</default>
+                <label>Tesa</label>
+            </value>
+            <value>
+                <fullName>Mahr</fullName>
+                <default>false</default>
+                <label>Mahr</label>
+            </value>
+            <value>
+                <fullName>Mar Poss</fullName>
+                <default>false</default>
+                <label>Mar Poss</label>
+            </value>
+            <value>
+                <fullName>Dr.Sch.</fullName>
+                <default>false</default>
+                <label>Dr.Sch.</label>
+            </value>
+            <value>
+                <fullName>Altro</fullName>
+                <default>false</default>
+                <label>Altro</label>
+            </value>
+            <value>
+                <fullName>Smart Vision</fullName>
+                <default>false</default>
+                <label>Smart Vision</label>
+            </value>
+            <value>
+                <fullName>Zeiss</fullName>
+                <default>false</default>
+                <label>Zeiss</label>
+            </value>
+            <value>
+                <fullName>Sinowon</fullName>
+                <default>false</default>
+                <label>Sinowon</label>
+            </value>
+            <value>
+                <fullName>Keyence</fullName>
+                <default>false</default>
+                <label>Keyence</label>
+            </value>
+            <value>
+                <fullName>LTF-Microtecnica</fullName>
+                <default>false</default>
+                <label>LTF-Microtecnica</label>
+            </value>
+            <value>
+                <fullName>QCM Series</fullName>
+                <default>false</default>
+                <label>QCM Series</label>
+            </value>
+            <value>
+                <fullName>OGP</fullName>
+                <default>false</default>
+                <label>OGP</label>
+            </value>
+            <value>
+                <fullName>Dr.Schneider</fullName>
+                <default>false</default>
+                <label>Dr.Schneider</label>
+            </value>
+            <value>
+                <fullName>Vision Eng.</fullName>
+                <default>false</default>
+                <label>Vision Eng.</label>
+            </value>
+            <value>
+                <fullName>Ayonis</fullName>
+                <default>false</default>
+                <label>Ayonis</label>
+            </value>
+            <value>
+                <fullName>Mitutoyo</fullName>
+                <default>false</default>
+                <label>Mitutoyo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

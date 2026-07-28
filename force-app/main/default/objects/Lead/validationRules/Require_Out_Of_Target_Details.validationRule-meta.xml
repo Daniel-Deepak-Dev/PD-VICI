@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Out_Of_Target_Details</fullName>
+    <active>true</active>
+    <description>Gestisce l’obbligatorietà dei dettagli Out of target solo quando il Lead è Unqualified con Reason Out of target.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Unqualified&quot;),
+    ISPICKVAL(Unqualified_Reason__c, &quot;Out of target&quot;),
+    OR(
+        ISPICKVAL(Out_of_target_detail__c, &quot;&quot;),
+        AND(
+            ISPICKVAL(Out_of_target_detail__c, &quot;Machine features&quot;),
+            ISBLANK(Machine_feature_detail__c)
+        ),
+        AND(
+            ISPICKVAL(Out_of_target_detail__c, &quot;Competitor/dealer&quot;),
+            ISPICKVAL(Competitor_dealer_detail__c, &quot;&quot;)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Compilare i campi di dettaglio richiesti quando il Lead ha Status &quot;Unqualified&quot; e Unqualified Reason &quot;Out of target&quot;.</errorMessage>
+</ValidationRule>

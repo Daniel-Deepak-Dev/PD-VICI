@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MC_Validation_Demo_by_VICI</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Chiuse/Conseguite&quot;),
+    ISPICKVAL(DEMO__c, &quot;Demo by VICI&quot;),
+    ISBLANK(Ticket_Number__c)
+)</errorConditionFormula>
+    <errorMessage>Please specify Ticket Number.</errorMessage>
+</ValidationRule>

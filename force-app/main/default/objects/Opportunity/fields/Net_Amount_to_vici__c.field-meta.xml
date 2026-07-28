@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Amount_to_vici__c</fullName>
+    <description>Please fill the field with the expected net amount to vici. a rough number is enough</description>
+    <inlineHelpText>Please fill the field with the expected net amount to vici. a rough number is enough</inlineHelpText>
+    <label>Net Amount to vici</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

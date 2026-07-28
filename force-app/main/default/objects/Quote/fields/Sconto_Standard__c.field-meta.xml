@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sconto_Standard__c</fullName>
+    <label>Sconto Standard</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>25+10</fullName>
+                <default>false</default>
+                <label>25+10</label>
+            </value>
+            <value>
+                <fullName>25+5</fullName>
+                <default>false</default>
+                <label>25+5</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>25</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

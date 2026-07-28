@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Geographic_Zone__c</fullName>
+    <label>Origin of the dealer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Italy</fullName>
+                <default>false</default>
+                <label>Italy</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>EU</label>
+            </value>
+            <value>
+                <fullName>Rest of Europe</fullName>
+                <default>false</default>
+                <label>Rest of Europe</label>
+            </value>
+            <value>
+                <fullName>Rest of the world</fullName>
+                <default>true</default>
+                <label>Rest of the world</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

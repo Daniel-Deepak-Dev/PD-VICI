@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banca_d_appoggio__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Se è presente nell&apos;account si compila in automatico, si può sempre modificare a mano</inlineHelpText>
+    <label>Banca d&apos;appoggio</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

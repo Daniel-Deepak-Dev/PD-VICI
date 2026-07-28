@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Causale_di_bollettazione__c</fullName>
+    <label>Causale di bollettazione</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sostituzione Garanzia CON reintegro</fullName>
+                <default>false</default>
+                <label>Sostituzione Garanzia CON reintegro</label>
+            </value>
+            <value>
+                <fullName>Sostituzione Garanzia SENZA reintegro</fullName>
+                <default>false</default>
+                <label>Sostituzione Garanzia SENZA reintegro</label>
+            </value>
+            <value>
+                <fullName>Conto Vendita</fullName>
+                <default>false</default>
+                <label>Conto Vendita</label>
+            </value>
+            <value>
+                <fullName>C/Visione</fullName>
+                <default>false</default>
+                <label>C/Visione</label>
+            </value>
+            <value>
+                <fullName>Omaggio</fullName>
+                <default>false</default>
+                <label>Omaggio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

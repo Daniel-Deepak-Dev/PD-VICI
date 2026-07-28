@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Engineer_Required_Closed_Won</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Closed/won&quot;),
+    ISBLANK(TEXT(Application_Engineer__c))
+)</errorConditionFormula>
+    <errorDisplayField>Application_Engineer__c</errorDisplayField>
+    <errorMessage>Please fill in the &quot;Application Engineer&quot; field when the Stage is &quot;Closed/won&quot;.</errorMessage>
+</ValidationRule>

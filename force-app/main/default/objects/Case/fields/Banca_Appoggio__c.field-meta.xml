@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banca_Appoggio__c</fullName>
+    <label>Banca Appoggio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BPE</fullName>
+                <default>false</default>
+                <label>BPE</label>
+            </value>
+            <value>
+                <fullName>UNICREDIT</fullName>
+                <default>false</default>
+                <label>UNICREDIT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

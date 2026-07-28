@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Green_Light_internal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for close won opps.
+No extra discount - No special requests
+For internal use only</description>
+    <inlineHelpText>Used for close won opps.
+No extra discount - No special requests
+For internal use only</inlineHelpText>
+    <label>Green Light (internal)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

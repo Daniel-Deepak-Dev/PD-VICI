@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency__c</fullName>
+    <label>Agency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rely Measure</fullName>
+                <default>false</default>
+                <label>Rely Measure</label>
+            </value>
+            <value>
+                <fullName>Ningbo Dahong</fullName>
+                <default>false</default>
+                <label>Ningbo Dahong</label>
+            </value>
+            <value>
+                <fullName>Zunliang</fullName>
+                <default>false</default>
+                <label>Zunliang</label>
+            </value>
+            <value>
+                <fullName>Ryoka</fullName>
+                <default>false</default>
+                <label>Ryoka</label>
+            </value>
+            <value>
+                <fullName>Beijing Brainy</fullName>
+                <default>false</default>
+                <label>Beijing Brainy</label>
+            </value>
+            <value>
+                <fullName>Vertex</fullName>
+                <default>false</default>
+                <label>Vertex</label>
+            </value>
+            <value>
+                <fullName>Vtech</fullName>
+                <default>false</default>
+                <label>Vtech</label>
+            </value>
+            <value>
+                <fullName>Kingho</fullName>
+                <default>false</default>
+                <label>Kingho</label>
+            </value>
+            <value>
+                <fullName>Suzhou Insize</fullName>
+                <default>false</default>
+                <label>Suzhou Insize</label>
+            </value>
+            <value>
+                <fullName>Leeport</fullName>
+                <default>false</default>
+                <label>Leeport</label>
+            </value>
+            <value>
+                <fullName>Direct VVC</fullName>
+                <default>false</default>
+                <label>Direct VVC</label>
+            </value>
+            <value>
+                <fullName>Brokers</fullName>
+                <default>false</default>
+                <label>Brokers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

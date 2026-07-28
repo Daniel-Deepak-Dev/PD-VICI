@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yearly_Expiration_Notice_formula__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <formula>CASE(Yearly_Expiration_Notice__c,
+  &quot;15 Days&quot;, 15,
+  &quot;30 Days&quot;, 30,
+  &quot;45 Days&quot;, 45,
+  &quot;60 Days&quot;, 60,
+  &quot;90 Days&quot;, 90,
+  &quot;120 Days&quot;, 120,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Yearly Expiration Notice (formula)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

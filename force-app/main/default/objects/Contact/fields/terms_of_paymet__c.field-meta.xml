@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>terms_of_paymet__c</fullName>
+    <label>terms of payment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>T.T. 30 days from invoice date</fullName>
+                <default>false</default>
+                <label>T.T. 30 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>R.B. 60 days invoice date, end of the month</fullName>
+                <default>false</default>
+                <label>R.B. 60 days invoice date, end of the month</label>
+            </value>
+            <value>
+                <fullName>R.B. 60/90 days invoice date, end of the month</fullName>
+                <default>false</default>
+                <label>R.B. 60/90 days invoice date, end of the month</label>
+            </value>
+            <value>
+                <fullName>R.B. 60/90/120 days invoice date, end of the month</fullName>
+                <default>false</default>
+                <label>R.B. 60/90/120 days invoice date, end of the month</label>
+            </value>
+            <value>
+                <fullName>leasing / operative rental</fullName>
+                <default>false</default>
+                <label>leasing / operative rental</label>
+            </value>
+            <value>
+                <fullName>Special</fullName>
+                <default>false</default>
+                <label>Special</label>
+            </value>
+            <value>
+                <fullName>100% Net at  30 days</fullName>
+                <default>false</default>
+                <label>100% Net at  30 days</label>
+            </value>
+            <value>
+                <fullName>100% Net at  60 days</fullName>
+                <default>false</default>
+                <label>100% Net at  60 days</label>
+            </value>
+            <value>
+                <fullName>100% Net at  90 days</fullName>
+                <default>false</default>
+                <label>100% Net at  90 days</label>
+            </value>
+            <value>
+                <fullName>100% downpayment before shipment</fullName>
+                <default>false</default>
+                <label>100% downpayment before shipment</label>
+            </value>
+            <value>
+                <fullName>30% upon order  - 30% before shipment + 40% 60 days</fullName>
+                <default>false</default>
+                <label>30% upon order  - 30% before shipment + 40% 60 days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

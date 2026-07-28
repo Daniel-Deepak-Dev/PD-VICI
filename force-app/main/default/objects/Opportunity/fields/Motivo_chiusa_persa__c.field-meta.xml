@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_chiusa_persa__c</fullName>
+    <label>Close lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bad connection of our distributing partner</fullName>
+                <default>false</default>
+                <label>Bad connection of our distributing partner</label>
+            </value>
+            <value>
+                <fullName>Bad previous experience with VICI</fullName>
+                <default>false</default>
+                <label>Bad previous experience with VICI</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Dead - no decision</fullName>
+                <default>false</default>
+                <label>Dead - no decision</label>
+            </value>
+            <value>
+                <fullName>Machine features</fullName>
+                <default>false</default>
+                <label>Machine features</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Postponed</fullName>
+                <default>false</default>
+                <label>Postponed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

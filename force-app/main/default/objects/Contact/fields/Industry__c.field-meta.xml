@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agency -Distributor - Reseller</fullName>
+                <default>false</default>
+                <label>Agency -Distributor - Reseller</label>
+            </value>
+            <value>
+                <fullName>Turning</fullName>
+                <default>false</default>
+                <label>Turning</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Mechanical workshops</fullName>
+                <default>false</default>
+                <label>Mechanical workshops</label>
+            </value>
+            <value>
+                <fullName>Dental Implantology</fullName>
+                <default>false</default>
+                <label>Dental Implantology</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Aeronautical</fullName>
+                <default>false</default>
+                <label>Aeronautical</label>
+            </value>
+            <value>
+                <fullName>Naval</fullName>
+                <default>false</default>
+                <label>Naval</label>
+            </value>
+            <value>
+                <fullName>Clock-making</fullName>
+                <default>false</default>
+                <label>Clock-making</label>
+            </value>
+            <value>
+                <fullName>Faucets</fullName>
+                <default>false</default>
+                <label>Faucets</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Screw Producer - Schrauben</fullName>
+                <default>false</default>
+                <label>Screw Producer - Schrauben</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

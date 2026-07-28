@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Date_Inside_Current_Year__c</fullName>
+    <description>Controlla se il work order è chiuso e se è all&apos;interno dell&apos;anno corrente di contratto</description>
+    <formula>IsClosed &amp;&amp; DATEVALUE(StartDate) &gt;= ADDMONTHS(Contract__r.Contract_Yearly_End_Date__c,-12) &amp;&amp; DATEVALUE(StartDate) &lt;= Contract__r.Contract_Yearly_End_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Date Inside Current Year</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

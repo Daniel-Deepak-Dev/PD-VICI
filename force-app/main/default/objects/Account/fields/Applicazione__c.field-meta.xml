@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicazione__c</fullName>
+    <label>Applicazione</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Viti e perni imp. Dentali</fullName>
+                <default>false</default>
+                <label>Viti e perni imp. Dentali</label>
+            </value>
+            <value>
+                <fullName>Viti e perni imp. Medicali</fullName>
+                <default>false</default>
+                <label>Viti e perni imp. Medicali</label>
+            </value>
+            <value>
+                <fullName>Viti e bulloni (torniti, rullati, stampati)</fullName>
+                <default>false</default>
+                <label>Viti e bulloni (torniti, rullati, stampati)</label>
+            </value>
+            <value>
+                <fullName>Valvole motore</fullName>
+                <default>false</default>
+                <label>Valvole motore</label>
+            </value>
+            <value>
+                <fullName>Alberi a camme</fullName>
+                <default>false</default>
+                <label>Alberi a camme</label>
+            </value>
+            <value>
+                <fullName>Alberi a gomito</fullName>
+                <default>false</default>
+                <label>Alberi a gomito</label>
+            </value>
+            <value>
+                <fullName>Alberi di trasmissione</fullName>
+                <default>false</default>
+                <label>Alberi di trasmissione</label>
+            </value>
+            <value>
+                <fullName>Alberi motori elettrici</fullName>
+                <default>false</default>
+                <label>Alberi motori elettrici</label>
+            </value>
+            <value>
+                <fullName>Iniettori</fullName>
+                <default>false</default>
+                <label>Iniettori</label>
+            </value>
+            <value>
+                <fullName>Giunti e giunti omocinetici</fullName>
+                <default>false</default>
+                <label>Giunti e giunti omocinetici</label>
+            </value>
+            <value>
+                <fullName>Candele di accensione</fullName>
+                <default>false</default>
+                <label>Candele di accensione</label>
+            </value>
+            <value>
+                <fullName>Ammortizzatori</fullName>
+                <default>false</default>
+                <label>Ammortizzatori</label>
+            </value>
+            <value>
+                <fullName>Telefoni cellulari e IPad (incl. componenti e vetro)</fullName>
+                <default>false</default>
+                <label>Telefoni cellulari e IPad (incl. componenti e vetro)</label>
+            </value>
+            <value>
+                <fullName>Bottiglie di plastica</fullName>
+                <default>false</default>
+                <label>Bottiglie di plastica</label>
+            </value>
+            <value>
+                <fullName>Valvole pneumatiche/ oleodinamiche</fullName>
+                <default>false</default>
+                <label>Valvole pneumatiche/ oleodinamiche</label>
+            </value>
+            <value>
+                <fullName>Elementi per fissaggio</fullName>
+                <default>false</default>
+                <label>Elementi per fissaggio</label>
+            </value>
+            <value>
+                <fullName>Pistoni</fullName>
+                <default>false</default>
+                <label>Pistoni</label>
+            </value>
+            <value>
+                <fullName>Cuscinetti</fullName>
+                <default>false</default>
+                <label>Cuscinetti</label>
+            </value>
+            <value>
+                <fullName>Molle e Clip</fullName>
+                <default>false</default>
+                <label>Molle e Clip</label>
+            </value>
+            <value>
+                <fullName>Condensatori</fullName>
+                <default>false</default>
+                <label>Condensatori</label>
+            </value>
+            <value>
+                <fullName>Utensili da taglio</fullName>
+                <default>false</default>
+                <label>Utensili da taglio</label>
+            </value>
+            <value>
+                <fullName>Parti cambio a variazione continua (CVT)</fullName>
+                <default>false</default>
+                <label>Parti cambio a variazione continua (CVT)</label>
+            </value>
+            <value>
+                <fullName>Prodotti da imbutitura</fullName>
+                <default>false</default>
+                <label>Prodotti da imbutitura</label>
+            </value>
+            <value>
+                <fullName>Prodotti di design (bottoni, occhiali, ecc...)</fullName>
+                <default>false</default>
+                <label>Prodotti di design (bottoni, occhiali, ecc...)</label>
+            </value>
+            <value>
+                <fullName>Raccordi elastici</fullName>
+                <default>false</default>
+                <label>Raccordi elastici</label>
+            </value>
+            <value>
+                <fullName>Schede elettriche e circuiti stampati</fullName>
+                <default>false</default>
+                <label>Schede elettriche e circuiti stampati</label>
+            </value>
+            <value>
+                <fullName>Motori elettrici</fullName>
+                <default>false</default>
+                <label>Motori elettrici</label>
+            </value>
+            <value>
+                <fullName>Statori</fullName>
+                <default>false</default>
+                <label>Statori</label>
+            </value>
+            <value>
+                <fullName>Rubinetti</fullName>
+                <default>false</default>
+                <label>Rubinetti</label>
+            </value>
+            <value>
+                <fullName>Flange</fullName>
+                <default>false</default>
+                <label>Flange</label>
+            </value>
+            <value>
+                <fullName>Tubi per carburante</fullName>
+                <default>false</default>
+                <label>Tubi per carburante</label>
+            </value>
+            <value>
+                <fullName>Motoriduttori</fullName>
+                <default>false</default>
+                <label>Motoriduttori</label>
+            </value>
+            <value>
+                <fullName>Connettori</fullName>
+                <default>false</default>
+                <label>Connettori</label>
+            </value>
+            <value>
+                <fullName>Raccordi/ Raccordi Idraulici</fullName>
+                <default>false</default>
+                <label>Raccordi/ Raccordi Idraulici</label>
+            </value>
+            <value>
+                <fullName>Tagliati al laser</fullName>
+                <default>false</default>
+                <label>Tagliati al laser</label>
+            </value>
+            <value>
+                <fullName>Attuatori lineari (guide-soffietti-viti)</fullName>
+                <default>false</default>
+                <label>Attuatori lineari (guide-soffietti-viti)</label>
+            </value>
+            <value>
+                <fullName>Rotori</fullName>
+                <default>false</default>
+                <label>Rotori</label>
+            </value>
+            <value>
+                <fullName>Metrologia (costruttori)</fullName>
+                <default>false</default>
+                <label>Metrologia (costruttori)</label>
+            </value>
+            <value>
+                <fullName>Metrologia (rivenditori)</fullName>
+                <default>false</default>
+                <label>Metrologia (rivenditori)</label>
+            </value>
+            <value>
+                <fullName>Alberi ad ingranaggi</fullName>
+                <default>false</default>
+                <label>Alberi ad ingranaggi</label>
+            </value>
+            <value>
+                <fullName>Inserti filettati (no medicale)</fullName>
+                <default>false</default>
+                <label>Inserti filettati (no medicale)</label>
+            </value>
+            <value>
+                <fullName>Parti stampate</fullName>
+                <default>false</default>
+                <label>Parti stampate</label>
+            </value>
+            <value>
+                <fullName>Guarnizioni</fullName>
+                <default>false</default>
+                <label>Guarnizioni</label>
+            </value>
+            <value>
+                <fullName>Perni/ Mozzi</fullName>
+                <default>false</default>
+                <label>Perni/ Mozzi</label>
+            </value>
+            <value>
+                <fullName>Raccorderia</fullName>
+                <default>false</default>
+                <label>Raccorderia</label>
+            </value>
+            <value>
+                <fullName>Pressati</fullName>
+                <default>false</default>
+                <label>Pressati</label>
+            </value>
+            <value>
+                <fullName>Punzonati</fullName>
+                <default>false</default>
+                <label>Punzonati</label>
+            </value>
+            <value>
+                <fullName>Guarnizioni sagomate</fullName>
+                <default>false</default>
+                <label>Guarnizioni sagomate</label>
+            </value>
+            <value>
+                <fullName>Mandrini/ elettromandrini</fullName>
+                <default>false</default>
+                <label>Mandrini/ elettromandrini</label>
+            </value>
+            <value>
+                <fullName>Turbine idrauliche</fullName>
+                <default>false</default>
+                <label>Turbine idrauliche</label>
+            </value>
+            <value>
+                <fullName>Armi/ canne di fucile</fullName>
+                <default>false</default>
+                <label>Armi/ canne di fucile</label>
+            </value>
+            <value>
+                <fullName>Altro</fullName>
+                <default>false</default>
+                <label>Altro</label>
+            </value>
+            <value>
+                <fullName>Componenti orologeria</fullName>
+                <default>false</default>
+                <label>Componenti orologeria</label>
+            </value>
+            <value>
+                <fullName>Disco rigido (HDD)</fullName>
+                <default>false</default>
+                <label>Disco rigido (HDD)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

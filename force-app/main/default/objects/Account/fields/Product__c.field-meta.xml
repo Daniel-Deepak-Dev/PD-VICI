@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MTL</fullName>
+                <default>false</default>
+                <label>MTL</label>
+            </value>
+            <value>
+                <fullName>FOV</fullName>
+                <default>false</default>
+                <label>FOV</label>
+            </value>
+            <value>
+                <fullName>AUTOMATION</fullName>
+                <default>false</default>
+                <label>AUTOMATION</label>
+            </value>
+            <value>
+                <fullName>CABINET</fullName>
+                <default>false</default>
+                <label>CABINET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

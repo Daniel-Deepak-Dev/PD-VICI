@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Mail_Yearly_Reminder__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <formula>Contract_Yearly_End_Date__c -  Yearly_Expiration_Notice_formula__c &lt;= TODAY()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send Mail Yearly Reminder</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

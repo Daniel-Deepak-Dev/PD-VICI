@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_di_macchina__c</fullName>
+    <label>Modello</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MTL X5</fullName>
+                <default>false</default>
+                <label>MTL X5</label>
+            </value>
+            <value>
+                <fullName>MTL 250</fullName>
+                <default>false</default>
+                <label>MTL 250</label>
+            </value>
+            <value>
+                <fullName>MTL 300 Evo</fullName>
+                <default>false</default>
+                <label>MTL 300 Evo</label>
+            </value>
+            <value>
+                <fullName>MTL 500x60 Evo</fullName>
+                <default>false</default>
+                <label>MTL 500x60 Evo</label>
+            </value>
+            <value>
+                <fullName>MTL 500x120 Evo</fullName>
+                <default>false</default>
+                <label>MTL 500x120 Evo</label>
+            </value>
+            <value>
+                <fullName>MTL 500x60 Ergon</fullName>
+                <default>false</default>
+                <label>MTL 500x60 Ergon</label>
+            </value>
+            <value>
+                <fullName>MTL 500x120 Ergon</fullName>
+                <default>false</default>
+                <label>MTL 500x120 Ergon</label>
+            </value>
+            <value>
+                <fullName>MTL 850x60 Ergon</fullName>
+                <default>false</default>
+                <label>MTL 850x60 Ergon</label>
+            </value>
+            <value>
+                <fullName>MTL 850x120 Ergon</fullName>
+                <default>false</default>
+                <label>MTL 850x120 Ergon</label>
+            </value>
+            <value>
+                <fullName>MTL 1250x120 Ergon</fullName>
+                <default>false</default>
+                <label>MTL 1250x120 Ergon</label>
+            </value>
+            <value>
+                <fullName>MTL 500x120 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 500x120 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 850x120 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 850x120 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 1250x120 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 1250x120 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 500x170 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 500x170 X-Stream</label>
+            </value>
+            <value>
+                <fullName>MTL 850x170 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 850x170 X-Stream</label>
+            </value>
+            <value>
+                <fullName>MTL 1250x170 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 1250x170 X-Stream</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

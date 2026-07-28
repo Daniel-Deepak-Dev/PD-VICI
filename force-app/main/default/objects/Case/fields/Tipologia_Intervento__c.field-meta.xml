@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipologia_Intervento__c</fullName>
+    <label>Tipologia Intervento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assistenza</fullName>
+                <default>false</default>
+                <label>Assistenza/Riparazione</label>
+            </value>
+            <value>
+                <fullName>Modifica</fullName>
+                <default>false</default>
+                <label>Modifica/Aggiornamento</label>
+            </value>
+            <value>
+                <fullName>Consulenza Tecnica</fullName>
+                <default>false</default>
+                <label>Consulenza Tecnica/Corso</label>
+            </value>
+            <value>
+                <fullName>Installazione</fullName>
+                <default>false</default>
+                <label>Installazione</label>
+            </value>
+            <value>
+                <fullName>Fiera</fullName>
+                <default>false</default>
+                <label>Fiera</label>
+            </value>
+            <value>
+                <fullName>Taratura/Manutenzione</fullName>
+                <default>false</default>
+                <label>Taratura/Manutenzione</label>
+            </value>
+            <value>
+                <fullName>Seminari/Formazione interna</fullName>
+                <default>false</default>
+                <label>Seminari/Formazione interna</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

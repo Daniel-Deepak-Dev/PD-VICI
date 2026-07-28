@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competition_Reason_Detail_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Chiuse/Perse&quot;),
+  ISPICKVAL(Motivo_chiusa_persa__c, &quot;Competition&quot;),
+  NOT(ISBLANK(TEXT(Competition_Closed_Lost_Reason_Detail__c))),
+  ISBLANK(TEXT(Competition_Closed_Lost_Reason__c))
+)</errorConditionFormula>
+    <errorDisplayField>Competition_Closed_Lost_Reason__c</errorDisplayField>
+    <errorMessage>Please select the competition loss reason detail.</errorMessage>
+</ValidationRule>

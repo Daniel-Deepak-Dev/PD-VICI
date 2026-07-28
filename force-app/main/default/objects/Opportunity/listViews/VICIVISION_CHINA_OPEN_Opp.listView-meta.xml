@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VICIVISION_CHINA_OPEN_Opp</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Competitor__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Application_for_this_opportunity__c</columns>
+    <columns>Application_for_this_opportunity_text__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Account_Final_Customer_Country__c</field>
+        <operation>equals</operation>
+        <value>china</value>
+    </filters>
+    <label>VICIVISION CHINA OPEN Opp</label>
+</ListView>

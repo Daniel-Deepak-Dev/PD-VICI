@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historical_competition_customer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if this customer use to buy from competition and never bought VICIVISION or Metrios</description>
+    <label>Historical competition customer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

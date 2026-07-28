@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potentially_intrested_in__c</fullName>
+    <inlineHelpText>Use this field to take note of potential machines suitable for the customer, even he is actually not intrested in purchasing
+Usa il campo per annotare quale macchina potenzialmente farebbe al caso loro, anche se al momento non interessato</inlineHelpText>
+    <label>Potentially intrested in</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M1</fullName>
+                <default>false</default>
+                <label>M1</label>
+            </value>
+            <value>
+                <fullName>M2</fullName>
+                <default>false</default>
+                <label>M2</label>
+            </value>
+            <value>
+                <fullName>M3</fullName>
+                <default>false</default>
+                <label>M3</label>
+            </value>
+            <value>
+                <fullName>M304</fullName>
+                <default>false</default>
+                <label>M304</label>
+            </value>
+            <value>
+                <fullName>M306</fullName>
+                <default>false</default>
+                <label>M306</label>
+            </value>
+            <value>
+                <fullName>M309</fullName>
+                <default>false</default>
+                <label>M309</label>
+            </value>
+            <value>
+                <fullName>M314</fullName>
+                <default>false</default>
+                <label>M314</label>
+            </value>
+            <value>
+                <fullName>M318</fullName>
+                <default>false</default>
+                <label>M318</label>
+            </value>
+            <value>
+                <fullName>M604</fullName>
+                <default>false</default>
+                <label>M604</label>
+            </value>
+            <value>
+                <fullName>M606</fullName>
+                <default>false</default>
+                <label>M606</label>
+            </value>
+            <value>
+                <fullName>M609</fullName>
+                <default>false</default>
+                <label>M609</label>
+            </value>
+            <value>
+                <fullName>M614</fullName>
+                <default>false</default>
+                <label>M614</label>
+            </value>
+            <value>
+                <fullName>M618</fullName>
+                <default>false</default>
+                <label>M618</label>
+            </value>
+            <value>
+                <fullName>M906</fullName>
+                <default>false</default>
+                <label>M906</label>
+            </value>
+            <value>
+                <fullName>M909</fullName>
+                <default>false</default>
+                <label>M909</label>
+            </value>
+            <value>
+                <fullName>M914</fullName>
+                <default>false</default>
+                <label>M914</label>
+            </value>
+            <value>
+                <fullName>M918</fullName>
+                <default>false</default>
+                <label>M918</label>
+            </value>
+            <value>
+                <fullName>M1209</fullName>
+                <default>false</default>
+                <label>M1209</label>
+            </value>
+            <value>
+                <fullName>M1214</fullName>
+                <default>false</default>
+                <label>M1214</label>
+            </value>
+            <value>
+                <fullName>M1218</fullName>
+                <default>false</default>
+                <label>M1218</label>
+            </value>
+            <value>
+                <fullName>MTL 1</fullName>
+                <default>false</default>
+                <label>MTL 1</label>
+            </value>
+            <value>
+                <fullName>MTL X5</fullName>
+                <default>false</default>
+                <label>MTL X5</label>
+            </value>
+            <value>
+                <fullName>MTL X10</fullName>
+                <default>false</default>
+                <label>MTL X10</label>
+            </value>
+            <value>
+                <fullName>X360</fullName>
+                <default>false</default>
+                <label>MTL X360</label>
+            </value>
+            <value>
+                <fullName>MTL 300 Evo</fullName>
+                <default>false</default>
+                <label>MTL 300 Evo</label>
+            </value>
+            <value>
+                <fullName>MTL 500 Evo (60)</fullName>
+                <default>false</default>
+                <label>MTL 500 Evo (60)</label>
+            </value>
+            <value>
+                <fullName>MTL 500 Ergon (60)</fullName>
+                <default>false</default>
+                <label>MTL 500 Ergon (60)</label>
+            </value>
+            <value>
+                <fullName>MTL 850 Ergon (60)</fullName>
+                <default>false</default>
+                <label>MTL 850 Ergon (60)</label>
+            </value>
+            <value>
+                <fullName>MTL 1250 Ergon (60)</fullName>
+                <default>false</default>
+                <label>MTL 1250 Ergon (60)</label>
+            </value>
+            <value>
+                <fullName>MTL 500 Evo (120)</fullName>
+                <default>false</default>
+                <label>MTL 500 Evo (120)</label>
+            </value>
+            <value>
+                <fullName>MTL 500 Ergon (120)</fullName>
+                <default>false</default>
+                <label>MTL 500 Ergon (120)</label>
+            </value>
+            <value>
+                <fullName>MTL 850 Ergon (120)</fullName>
+                <default>false</default>
+                <label>MTL 850 Ergon (120)</label>
+            </value>
+            <value>
+                <fullName>MTL 1250 Ergon (120)</fullName>
+                <default>false</default>
+                <label>MTL 1250 Ergon (120)</label>
+            </value>
+            <value>
+                <fullName>MTL 500 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 500 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 850 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 850 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 1250 Ergon S</fullName>
+                <default>false</default>
+                <label>MTL 1250 Ergon S</label>
+            </value>
+            <value>
+                <fullName>MTL 500 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 500 X-Stream</label>
+            </value>
+            <value>
+                <fullName>MTL 850 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 850 X-Stream</label>
+            </value>
+            <value>
+                <fullName>MTL 1250 X-Stream</fullName>
+                <default>false</default>
+                <label>MTL 1250 X-Stream</label>
+            </value>
+            <value>
+                <fullName>MTP 170</fullName>
+                <default>false</default>
+                <label>MTP 170</label>
+            </value>
+            <value>
+                <fullName>MTP 15</fullName>
+                <default>false</default>
+                <label>MTP 15</label>
+            </value>
+            <value>
+                <fullName>MTP 120</fullName>
+                <default>false</default>
+                <label>MTP 120</label>
+            </value>
+            <value>
+                <fullName>Other / Altro</fullName>
+                <default>false</default>
+                <label>Other / Altro</label>
+            </value>
+            <value>
+                <fullName>Metrios MT7560</fullName>
+                <default>false</default>
+                <label>Metrios MT7560</label>
+            </value>
+            <value>
+                <fullName>Metrios MT7575</fullName>
+                <default>false</default>
+                <label>Metrios MT7575</label>
+            </value>
+            <value>
+                <fullName>Metrios MT11080</fullName>
+                <default>false</default>
+                <label>Metrios MT11080</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

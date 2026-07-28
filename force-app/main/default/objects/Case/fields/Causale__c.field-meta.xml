@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Causale__c</fullName>
+    <label>Causale</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Materiale difettoso</fullName>
+                <default>false</default>
+                <label>Materiale difettoso</label>
+            </value>
+            <value>
+                <fullName>Materiale danneggiato</fullName>
+                <default>false</default>
+                <label>Materiale danneggiato</label>
+            </value>
+            <value>
+                <fullName>Materiale non conforme</fullName>
+                <default>false</default>
+                <label>Materiale non conforme</label>
+            </value>
+            <value>
+                <fullName>Errore produzione</fullName>
+                <default>false</default>
+                <label>Errore produzione</label>
+            </value>
+            <value>
+                <fullName>Errore Progettazione</fullName>
+                <default>false</default>
+                <label>Errore progettazione</label>
+            </value>
+            <value>
+                <fullName>manomissione</fullName>
+                <default>false</default>
+                <label>Manomissione</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

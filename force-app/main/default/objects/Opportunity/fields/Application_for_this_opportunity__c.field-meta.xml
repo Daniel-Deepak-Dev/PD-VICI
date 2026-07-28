@@ -1,0 +1,3699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_for_this_opportunity__c</fullName>
+    <label>Opportunity application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Generic Shafts</fullName>
+                <default>false</default>
+                <label>Generic Shafts</label>
+            </value>
+            <value>
+                <fullName>Turned parts</fullName>
+                <default>false</default>
+                <label>Turned parts</label>
+            </value>
+            <value>
+                <fullName>Micro-components</fullName>
+                <default>false</default>
+                <label>Micro-components</label>
+            </value>
+            <value>
+                <fullName>Sintered parts</fullName>
+                <default>false</default>
+                <label>Sintered parts</label>
+            </value>
+            <value>
+                <fullName>Extruded parts</fullName>
+                <default>false</default>
+                <label>Extruded parts</label>
+            </value>
+            <value>
+                <fullName>Camshafts</fullName>
+                <default>false</default>
+                <label>Camshafts</label>
+            </value>
+            <value>
+                <fullName>Crankshafts</fullName>
+                <default>false</default>
+                <label>Crankshafts</label>
+            </value>
+            <value>
+                <fullName>Electric engines</fullName>
+                <default>false</default>
+                <label>Electric engines</label>
+            </value>
+            <value>
+                <fullName>Fuel pipes</fullName>
+                <default>false</default>
+                <label>Fuel pipes</label>
+            </value>
+            <value>
+                <fullName>Splined and geared shafts</fullName>
+                <default>false</default>
+                <label>Splined and geared shafts</label>
+            </value>
+            <value>
+                <fullName>Injectors</fullName>
+                <default>false</default>
+                <label>Injectors</label>
+            </value>
+            <value>
+                <fullName>CV joints and axles</fullName>
+                <default>false</default>
+                <label>CV joints and axles</label>
+            </value>
+            <value>
+                <fullName>Pistons</fullName>
+                <default>false</default>
+                <label>Pistons</label>
+            </value>
+            <value>
+                <fullName>Shock absorbers</fullName>
+                <default>false</default>
+                <label>Shock absorbers</label>
+            </value>
+            <value>
+                <fullName>Transmission shafts</fullName>
+                <default>false</default>
+                <label>Transmission shafts</label>
+            </value>
+            <value>
+                <fullName>Turbine wheels</fullName>
+                <default>false</default>
+                <label>Turbine wheels</label>
+            </value>
+            <value>
+                <fullName>Engine valves</fullName>
+                <default>false</default>
+                <label>Engine valves</label>
+            </value>
+            <value>
+                <fullName>Bearings</fullName>
+                <default>false</default>
+                <label>Bearings</label>
+            </value>
+            <value>
+                <fullName>Bone prosthesis</fullName>
+                <default>false</default>
+                <label>Bone prosthesis</label>
+            </value>
+            <value>
+                <fullName>Bottles</fullName>
+                <default>false</default>
+                <label>Bottles</label>
+            </value>
+            <value>
+                <fullName>Bullets</fullName>
+                <default>false</default>
+                <label>Bullets</label>
+            </value>
+            <value>
+                <fullName>Cables</fullName>
+                <default>false</default>
+                <label>Cables</label>
+            </value>
+            <value>
+                <fullName>Ceramic component</fullName>
+                <default>false</default>
+                <label>Ceramic component</label>
+            </value>
+            <value>
+                <fullName>Clamping systems</fullName>
+                <default>false</default>
+                <label>Clamping systems</label>
+            </value>
+            <value>
+                <fullName>Components for linear motion (bellows, guides, etc.)</fullName>
+                <default>false</default>
+                <label>Components for linear motion (bellows, guides, etc.)</label>
+            </value>
+            <value>
+                <fullName>Connectors</fullName>
+                <default>false</default>
+                <label>Connectors</label>
+            </value>
+            <value>
+                <fullName>Cutting tools</fullName>
+                <default>false</default>
+                <label>Cutting tools</label>
+            </value>
+            <value>
+                <fullName>Dental plants</fullName>
+                <default>false</default>
+                <label>Dental plants</label>
+            </value>
+            <value>
+                <fullName>Eccentric shafts</fullName>
+                <default>false</default>
+                <label>Eccentric shafts</label>
+            </value>
+            <value>
+                <fullName>Elastic couplings</fullName>
+                <default>false</default>
+                <label>Elastic couplings</label>
+            </value>
+            <value>
+                <fullName>Electrical panel</fullName>
+                <default>false</default>
+                <label>Electrical panel</label>
+            </value>
+            <value>
+                <fullName>Extruded</fullName>
+                <default>false</default>
+                <label>Extruded</label>
+            </value>
+            <value>
+                <fullName>Eyewear</fullName>
+                <default>false</default>
+                <label>Eyewear</label>
+            </value>
+            <value>
+                <fullName>Fasteners</fullName>
+                <default>false</default>
+                <label>Fasteners</label>
+            </value>
+            <value>
+                <fullName>Faucets</fullName>
+                <default>false</default>
+                <label>Faucets</label>
+            </value>
+            <value>
+                <fullName>Fittings</fullName>
+                <default>false</default>
+                <label>Fittings</label>
+            </value>
+            <value>
+                <fullName>Flanges</fullName>
+                <default>false</default>
+                <label>Flanges</label>
+            </value>
+            <value>
+                <fullName>Gears</fullName>
+                <default>false</default>
+                <label>Gears</label>
+            </value>
+            <value>
+                <fullName>Glass bottles</fullName>
+                <default>false</default>
+                <label>Glass bottles</label>
+            </value>
+            <value>
+                <fullName>Glasses</fullName>
+                <default>false</default>
+                <label>Glasses</label>
+            </value>
+            <value>
+                <fullName>Gun barrels</fullName>
+                <default>false</default>
+                <label>Gun barrels</label>
+            </value>
+            <value>
+                <fullName>High Power Connectors</fullName>
+                <default>false</default>
+                <label>High Power Connectors</label>
+            </value>
+            <value>
+                <fullName>Hydraulic components</fullName>
+                <default>false</default>
+                <label>Hydraulic components</label>
+            </value>
+            <value>
+                <fullName>Jewelry</fullName>
+                <default>false</default>
+                <label>Jewelry</label>
+            </value>
+            <value>
+                <fullName>Laser cut parts</fullName>
+                <default>false</default>
+                <label>Laser cut parts</label>
+            </value>
+            <value>
+                <fullName>Lenses</fullName>
+                <default>false</default>
+                <label>Lenses</label>
+            </value>
+            <value>
+                <fullName>Medical containers</fullName>
+                <default>false</default>
+                <label>Medical containers</label>
+            </value>
+            <value>
+                <fullName>Medical screws and bolts</fullName>
+                <default>false</default>
+                <label>Medical screws and bolts</label>
+            </value>
+            <value>
+                <fullName>Medical tools</fullName>
+                <default>false</default>
+                <label>Medical tools</label>
+            </value>
+            <value>
+                <fullName>Milled parts</fullName>
+                <default>false</default>
+                <label>Milled parts</label>
+            </value>
+            <value>
+                <fullName>Molded parts</fullName>
+                <default>false</default>
+                <label>Molded parts</label>
+            </value>
+            <value>
+                <fullName>Needles</fullName>
+                <default>false</default>
+                <label>Needles</label>
+            </value>
+            <value>
+                <fullName>Oil valves</fullName>
+                <default>false</default>
+                <label>Oil valves</label>
+            </value>
+            <value>
+                <fullName>Oleodynamic fittings</fullName>
+                <default>false</default>
+                <label>Oleodynamic fittings</label>
+            </value>
+            <value>
+                <fullName>Pins</fullName>
+                <default>false</default>
+                <label>Pins</label>
+            </value>
+            <value>
+                <fullName>Pneumatic fittings</fullName>
+                <default>false</default>
+                <label>Pneumatic fittings</label>
+            </value>
+            <value>
+                <fullName>Printed Circuit Boards (PCB)</fullName>
+                <default>false</default>
+                <label>Printed Circuit Boards (PCB)</label>
+            </value>
+            <value>
+                <fullName>Pumps</fullName>
+                <default>false</default>
+                <label>Pumps</label>
+            </value>
+            <value>
+                <fullName>Punched parts</fullName>
+                <default>false</default>
+                <label>Punched parts</label>
+            </value>
+            <value>
+                <fullName>Rings</fullName>
+                <default>false</default>
+                <label>Rings</label>
+            </value>
+            <value>
+                <fullName>Rubber rollers</fullName>
+                <default>false</default>
+                <label>Rubber rollers</label>
+            </value>
+            <value>
+                <fullName>Screws and nuts</fullName>
+                <default>false</default>
+                <label>Screws and nuts</label>
+            </value>
+            <value>
+                <fullName>Seals</fullName>
+                <default>false</default>
+                <label>Seals</label>
+            </value>
+            <value>
+                <fullName>Seeds sorting</fullName>
+                <default>false</default>
+                <label>Seeds sorting</label>
+            </value>
+            <value>
+                <fullName>Spindles</fullName>
+                <default>false</default>
+                <label>Spindles</label>
+            </value>
+            <value>
+                <fullName>Springs and clips</fullName>
+                <default>false</default>
+                <label>Springs and clips</label>
+            </value>
+            <value>
+                <fullName>Watch components</fullName>
+                <default>false</default>
+                <label>Watch components</label>
+            </value>
+            <value>
+                <fullName>Water fittings</fullName>
+                <default>false</default>
+                <label>Water fittings</label>
+            </value>
+            <value>
+                <fullName>Worm/ball screws</fullName>
+                <default>false</default>
+                <label>Worm/ball screws</label>
+            </value>
+            <value>
+                <fullName>X-Ray inspections</fullName>
+                <default>false</default>
+                <label>X-Ray inspections</label>
+            </value>
+            <value>
+                <fullName>3D printed micro metal parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3D printed micro metal parts</label>
+            </value>
+            <value>
+                <fullName>3D-printed ceramic braces</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3D-printed ceramic braces</label>
+            </value>
+            <value>
+                <fullName>ARMI COMPONENTI PISTOLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ARMI COMPONENTI PISTOLA</label>
+            </value>
+            <value>
+                <fullName>Accessories and regulators for diving</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accessories and regulators for diving</label>
+            </value>
+            <value>
+                <fullName>Accessories for furnishing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accessories for furnishing</label>
+            </value>
+            <value>
+                <fullName>Aeronautico e aerospaziale.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aeronautico e aerospaziale.</label>
+            </value>
+            <value>
+                <fullName>Aerosol cans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aerosol cans</label>
+            </value>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Aerospace and Sensors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aerospace and Sensors</label>
+            </value>
+            <value>
+                <fullName>Aerospace fasteners</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aerospace fasteners</label>
+            </value>
+            <value>
+                <fullName>Aghi per siringhe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aghi per siringhe</label>
+            </value>
+            <value>
+                <fullName>Air Brake Systems</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Air Brake Systems</label>
+            </value>
+            <value>
+                <fullName>Air and fluid filters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Air and fluid filters</label>
+            </value>
+            <value>
+                <fullName>Alberi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi</label>
+            </value>
+            <value>
+                <fullName>Alberi a camme</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi a camme</label>
+            </value>
+            <value>
+                <fullName>Alberi a gomito</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi a gomito</label>
+            </value>
+            <value>
+                <fullName>Alberi ad ingranaggi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi ad ingranaggi</label>
+            </value>
+            <value>
+                <fullName>Alberi cambio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi cambio</label>
+            </value>
+            <value>
+                <fullName>Alberi e basta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi e basta</label>
+            </value>
+            <value>
+                <fullName>Alberi motori elettrici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alberi motori elettrici</label>
+            </value>
+            <value>
+                <fullName>Aluminium Billets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminium Billets</label>
+            </value>
+            <value>
+                <fullName>Aluminium cans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminium cans</label>
+            </value>
+            <value>
+                <fullName>Aluminium extruded parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminium extruded parts</label>
+            </value>
+            <value>
+                <fullName>Aluminium window frames</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminium window frames</label>
+            </value>
+            <value>
+                <fullName>Ammortizzatori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ammortizzatori</label>
+            </value>
+            <value>
+                <fullName>Ammunition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ammunition</label>
+            </value>
+            <value>
+                <fullName>Ammunitions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ammunitions</label>
+            </value>
+            <value>
+                <fullName>Antirumore per pinze freno</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Antirumore per pinze freno</label>
+            </value>
+            <value>
+                <fullName>Anwendung bekannt.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anwendung bekannt.</label>
+            </value>
+            <value>
+                <fullName>Application to be verified by Boris</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application to be verified by Boris</label>
+            </value>
+            <value>
+                <fullName>Application: FPCV manufacture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application: FPCV manufacture</label>
+            </value>
+            <value>
+                <fullName>Application: all kinds of knife manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application: all kinds of knife manufacturer</label>
+            </value>
+            <value>
+                <fullName>Application: standard shafts for automotive / construction machinery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application: standard shafts for automotive / construction machinery</label>
+            </value>
+            <value>
+                <fullName>Armi / Canne da fucile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Armi / Canne da fucile</label>
+            </value>
+            <value>
+                <fullName>Armi Pistole</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Armi Pistole</label>
+            </value>
+            <value>
+                <fullName>Assembly driveshaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assembly driveshaft</label>
+            </value>
+            <value>
+                <fullName>Attrezzature per riparazione automobili</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Attrezzature per riparazione automobili</label>
+            </value>
+            <value>
+                <fullName>Attuatore lineare (Soffietti, Viti, Guide)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Attuatore lineare (Soffietti, Viti, Guide)</label>
+            </value>
+            <value>
+                <fullName>Auto T/M control parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto T/M control parts</label>
+            </value>
+            <value>
+                <fullName>Auto mobile parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto mobile parts</label>
+            </value>
+            <value>
+                <fullName>Automobile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automobile</label>
+            </value>
+            <value>
+                <fullName>Automobile parts.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automobile parts.</label>
+            </value>
+            <value>
+                <fullName>Automobile press parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automobile press parts</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Axle shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Axle shaft</label>
+            </value>
+            <value>
+                <fullName>Axles for train</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Axles for train</label>
+            </value>
+            <value>
+                <fullName>BRAKE SYSTEMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BRAKE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>BYD manufature the part for Apple</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BYD manufature the part for Apple</label>
+            </value>
+            <value>
+                <fullName>Ball-stud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ball-stud</label>
+            </value>
+            <value>
+                <fullName>Ballscrew</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ballscrew</label>
+            </value>
+            <value>
+                <fullName>Bearing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bearing</label>
+            </value>
+            <value>
+                <fullName>Bisturi strumenti chirurgici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bisturi strumenti chirurgici</label>
+            </value>
+            <value>
+                <fullName>Blade / palette per turbine</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blade / palette per turbine</label>
+            </value>
+            <value>
+                <fullName>Blades for razors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blades for razors</label>
+            </value>
+            <value>
+                <fullName>Blades of turbine wheels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blades of turbine wheels</label>
+            </value>
+            <value>
+                <fullName>Blanking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blanking</label>
+            </value>
+            <value>
+                <fullName>Bolts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bolts</label>
+            </value>
+            <value>
+                <fullName>Bone screws</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bone screws</label>
+            </value>
+            <value>
+                <fullName>Bottiglie plastica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bottiglie plastica</label>
+            </value>
+            <value>
+                <fullName>Bottiglie vetro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bottiglie vetro</label>
+            </value>
+            <value>
+                <fullName>Bottle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bottle</label>
+            </value>
+            <value>
+                <fullName>Bracelets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bracelets</label>
+            </value>
+            <value>
+                <fullName>Breake system for Boeing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Breake system for Boeing</label>
+            </value>
+            <value>
+                <fullName>Brushes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brushes</label>
+            </value>
+            <value>
+                <fullName>Bulkhead connector keyed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulkhead connector keyed</label>
+            </value>
+            <value>
+                <fullName>Bulloneria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulloneria</label>
+            </value>
+            <value>
+                <fullName>Bulloni speciali settore aeronautico</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulloni speciali settore aeronautico</label>
+            </value>
+            <value>
+                <fullName>Camshaft motorbike BMW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Camshaft motorbike BMW</label>
+            </value>
+            <value>
+                <fullName>Candele di accensione</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Candele di accensione</label>
+            </value>
+            <value>
+                <fullName>Cans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cans</label>
+            </value>
+            <value>
+                <fullName>Cappucci candele e componenti in silicone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cappucci candele e componenti in silicone</label>
+            </value>
+            <value>
+                <fullName>Capsule caffè</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capsule caffè</label>
+            </value>
+            <value>
+                <fullName>Car parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car parts</label>
+            </value>
+            <value>
+                <fullName>Car parts (Audi)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car parts (Audi)</label>
+            </value>
+            <value>
+                <fullName>Car parts (Hyundai&apos;s sub manufacturer)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car parts (Hyundai&apos;s sub manufacturer)</label>
+            </value>
+            <value>
+                <fullName>Car wash</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car wash</label>
+            </value>
+            <value>
+                <fullName>Carpet Cutters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Carpet Cutters</label>
+            </value>
+            <value>
+                <fullName>Cavi elettrici sezionati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cavi elettrici sezionati</label>
+            </value>
+            <value>
+                <fullName>Ceramic insulators for industrial spark plugs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ceramic insulators for industrial spark plugs</label>
+            </value>
+            <value>
+                <fullName>Chiocciole</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chiocciole</label>
+            </value>
+            <value>
+                <fullName>Cialde caffè</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cialde caffè</label>
+            </value>
+            <value>
+                <fullName>Cliente Finale Serinex di Oggiono</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cliente Finale Serinex di Oggiono</label>
+            </value>
+            <value>
+                <fullName>Cobra</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cobra</label>
+            </value>
+            <value>
+                <fullName>Coclee
+Alberi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coclee
+Alberi</label>
+            </value>
+            <value>
+                <fullName>Coffee grinder</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coffee grinder</label>
+            </value>
+            <value>
+                <fullName>Collimators &amp; Anti-Scatter Grids</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collimators &amp; Anti-Scatter Grids</label>
+            </value>
+            <value>
+                <fullName>Componenti Orologeria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Componenti Orologeria</label>
+            </value>
+            <value>
+                <fullName>Componenti occhiali</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Componenti occhiali</label>
+            </value>
+            <value>
+                <fullName>Componenti per orologi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Componenti per orologi</label>
+            </value>
+            <value>
+                <fullName>Componenti plastici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Componenti plastici</label>
+            </value>
+            <value>
+                <fullName>Components for fan and vacuum systems</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Components for fan and vacuum systems</label>
+            </value>
+            <value>
+                <fullName>Compressori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compressori</label>
+            </value>
+            <value>
+                <fullName>Condensatori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Condensatori</label>
+            </value>
+            <value>
+                <fullName>Connettori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Connettori</label>
+            </value>
+            <value>
+                <fullName>Cosmetic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cosmetic</label>
+            </value>
+            <value>
+                <fullName>Cuscinetti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cuscinetti</label>
+            </value>
+            <value>
+                <fullName>Custom projects</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Custom projects</label>
+            </value>
+            <value>
+                <fullName>Cutting Tools for Carpets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cutting Tools for Carpets</label>
+            </value>
+            <value>
+                <fullName>Cutting edge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cutting edge</label>
+            </value>
+            <value>
+                <fullName>Cylinder</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cylinder</label>
+            </value>
+            <value>
+                <fullName>Cylinders for printers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cylinders for printers</label>
+            </value>
+            <value>
+                <fullName>Cylinders for truck</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cylinders for truck</label>
+            </value>
+            <value>
+                <fullName>DIN- und Normteile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DIN- und Normteile</label>
+            </value>
+            <value>
+                <fullName>Defence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Defence</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Demo Unit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Demo Unit</label>
+            </value>
+            <value>
+                <fullName>Dental Drills</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dental Drills</label>
+            </value>
+            <value>
+                <fullName>Diamond dental burs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diamond dental burs</label>
+            </value>
+            <value>
+                <fullName>Diamond tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diamond tools</label>
+            </value>
+            <value>
+                <fullName>Dico Rigido HDD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dico Rigido HDD</label>
+            </value>
+            <value>
+                <fullName>Diesel components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diesel components</label>
+            </value>
+            <value>
+                <fullName>Dischi encoder</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dischi encoder</label>
+            </value>
+            <value>
+                <fullName>Distribution rubber belt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Distribution rubber belt</label>
+            </value>
+            <value>
+                <fullName>Door locks.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Door locks.</label>
+            </value>
+            <value>
+                <fullName>Dreh- und Frästeile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dreh- und Frästeile</label>
+            </value>
+            <value>
+                <fullName>Dreh- und Schleifteile unterschiedlichter Art.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dreh- und Schleifteile unterschiedlichter Art.</label>
+            </value>
+            <value>
+                <fullName>Drill bit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Drill bit</label>
+            </value>
+            <value>
+                <fullName>Drilling tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Drilling tools</label>
+            </value>
+            <value>
+                <fullName>Drive shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Drive shaft</label>
+            </value>
+            <value>
+                <fullName>Drive shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Drive shafts</label>
+            </value>
+            <value>
+                <fullName>Driving shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Driving shafts</label>
+            </value>
+            <value>
+                <fullName>Düsenkörper-Außenkontur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Düsenkörper-Außenkontur</label>
+            </value>
+            <value>
+                <fullName>EV SHAFT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EV SHAFT</label>
+            </value>
+            <value>
+                <fullName>Electric Fan Shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electric Fan Shafts</label>
+            </value>
+            <value>
+                <fullName>Electric Parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electric Parts</label>
+            </value>
+            <value>
+                <fullName>Electric boards</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electric boards</label>
+            </value>
+            <value>
+                <fullName>Electric motor shaft with permanent magnets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electric motor shaft with permanent magnets</label>
+            </value>
+            <value>
+                <fullName>Electrical parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electrical parts</label>
+            </value>
+            <value>
+                <fullName>Electronic contacts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electronic contacts</label>
+            </value>
+            <value>
+                <fullName>Electronic part</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electronic part</label>
+            </value>
+            <value>
+                <fullName>Electronic parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electronic parts</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Elektromotoren, Antriebswellen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Elektromotoren, Antriebswellen</label>
+            </value>
+            <value>
+                <fullName>Elementi per fissaggio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Elementi per fissaggio</label>
+            </value>
+            <value>
+                <fullName>Elevators</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Elevators</label>
+            </value>
+            <value>
+                <fullName>Eliche turbine</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Eliche turbine</label>
+            </value>
+            <value>
+                <fullName>Engine components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engine components</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Extruded bars, easy applications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extruded bars, easy applications</label>
+            </value>
+            <value>
+                <fullName>FINE BLANKING SHAFT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FINE BLANKING SHAFT</label>
+            </value>
+            <value>
+                <fullName>Fiale settore farmaceutico</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fiale settore farmaceutico</label>
+            </value>
+            <value>
+                <fullName>Fiber Kinfe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fiber Kinfe</label>
+            </value>
+            <value>
+                <fullName>Filter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Filter</label>
+            </value>
+            <value>
+                <fullName>Filtering groups</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Filtering groups</label>
+            </value>
+            <value>
+                <fullName>Filters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Filters</label>
+            </value>
+            <value>
+                <fullName>Fixtures</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fixtures</label>
+            </value>
+            <value>
+                <fullName>Flange</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Flange</label>
+            </value>
+            <value>
+                <fullName>Flange per ompressori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Flange per ompressori</label>
+            </value>
+            <value>
+                <fullName>Floor tiles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Floor tiles</label>
+            </value>
+            <value>
+                <fullName>Fluids</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fluids</label>
+            </value>
+            <value>
+                <fullName>Fonderia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fonderia</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Fresati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fresati</label>
+            </value>
+            <value>
+                <fullName>Fresature su torniti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fresature su torniti</label>
+            </value>
+            <value>
+                <fullName>Friction disk for transmission</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Friction disk for transmission</label>
+            </value>
+            <value>
+                <fullName>Fuel Pipe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuel Pipe</label>
+            </value>
+            <value>
+                <fullName>Fuse Pin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuse Pin</label>
+            </value>
+            <value>
+                <fullName>Fuselli di sterzo automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuselli di sterzo automotive</label>
+            </value>
+            <value>
+                <fullName>GHV! Ventilschieber</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GHV! Ventilschieber</label>
+            </value>
+            <value>
+                <fullName>Gas fittings for Aerospace</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gas fittings for Aerospace</label>
+            </value>
+            <value>
+                <fullName>Gasket</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gasket</label>
+            </value>
+            <value>
+                <fullName>Gaskets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gaskets</label>
+            </value>
+            <value>
+                <fullName>Gear and Spline shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gear and Spline shafts</label>
+            </value>
+            <value>
+                <fullName>Gears for bicycles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gears for bicycles</label>
+            </value>
+            <value>
+                <fullName>Generator Shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generator Shaft</label>
+            </value>
+            <value>
+                <fullName>Generator shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generator shafts</label>
+            </value>
+            <value>
+                <fullName>Giunti e giunti omocinetici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Giunti e giunti omocinetici</label>
+            </value>
+            <value>
+                <fullName>Giunti sferici automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Giunti sferici automotive</label>
+            </value>
+            <value>
+                <fullName>Glass screens</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Glass screens</label>
+            </value>
+            <value>
+                <fullName>Gloves thickness</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gloves thickness</label>
+            </value>
+            <value>
+                <fullName>Guarnizioni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Guarnizioni</label>
+            </value>
+            <value>
+                <fullName>Guarnizioni Sagomate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Guarnizioni Sagomate</label>
+            </value>
+            <value>
+                <fullName>Guarnizioni di silicone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Guarnizioni di silicone</label>
+            </value>
+            <value>
+                <fullName>Guide stampi e Molle stampi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Guide stampi e Molle stampi</label>
+            </value>
+            <value>
+                <fullName>Gun barrel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gun barrel</label>
+            </value>
+            <value>
+                <fullName>HDD components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HDD components</label>
+            </value>
+            <value>
+                <fullName>HECKLER AND KOCH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HECKLER AND KOCH</label>
+            </value>
+            <value>
+                <fullName>Hard disk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hard disk</label>
+            </value>
+            <value>
+                <fullName>High Voltage Switchgear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>High Voltage Switchgear</label>
+            </value>
+            <value>
+                <fullName>High-Rel Electronic Connectors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>High-Rel Electronic Connectors</label>
+            </value>
+            <value>
+                <fullName>House keys</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>House keys</label>
+            </value>
+            <value>
+                <fullName>Hybrid fuel pipe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hybrid fuel pipe</label>
+            </value>
+            <value>
+                <fullName>Hydranic valve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hydranic valve</label>
+            </value>
+            <value>
+                <fullName>Hydraulic pumps and motors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hydraulic pumps and motors</label>
+            </value>
+            <value>
+                <fullName>Hydraulics Motors and Pumps</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hydraulics Motors and Pumps</label>
+            </value>
+            <value>
+                <fullName>Hydraulics fittings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hydraulics fittings</label>
+            </value>
+            <value>
+                <fullName>INDUSTRIAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>INDUSTRIAL</label>
+            </value>
+            <value>
+                <fullName>Imbutitura</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Imbutitura</label>
+            </value>
+            <value>
+                <fullName>Impellers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Impellers</label>
+            </value>
+            <value>
+                <fullName>Industrial Supply</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Supply</label>
+            </value>
+            <value>
+                <fullName>Industrial components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial components</label>
+            </value>
+            <value>
+                <fullName>Ingranaggi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ingranaggi</label>
+            </value>
+            <value>
+                <fullName>Ingranaggi e parti di orologi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ingranaggi e parti di orologi</label>
+            </value>
+            <value>
+                <fullName>Ingranaggi per pompe idrauliche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ingranaggi per pompe idrauliche</label>
+            </value>
+            <value>
+                <fullName>Iniettori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Iniettori</label>
+            </value>
+            <value>
+                <fullName>Injection molding</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Injection molding</label>
+            </value>
+            <value>
+                <fullName>Inlet Valve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inlet Valve</label>
+            </value>
+            <value>
+                <fullName>Inline parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inline parts</label>
+            </value>
+            <value>
+                <fullName>Inserti filettati (no medicale)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inserti filettati (no medicale)</label>
+            </value>
+            <value>
+                <fullName>Instrumentation Controls</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Instrumentation Controls</label>
+            </value>
+            <value>
+                <fullName>Job shop.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Job shop.</label>
+            </value>
+            <value>
+                <fullName>Keys</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Keys</label>
+            </value>
+            <value>
+                <fullName>LENS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LENS</label>
+            </value>
+            <value>
+                <fullName>Laboratorio Misurazioni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Laboratorio Misurazioni</label>
+            </value>
+            <value>
+                <fullName>Lame contatti rame alta tensione</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lame contatti rame alta tensione</label>
+            </value>
+            <value>
+                <fullName>Large size pinions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Large size pinions</label>
+            </value>
+            <value>
+                <fullName>Large size pinions forging</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Large size pinions forging</label>
+            </value>
+            <value>
+                <fullName>Lavorazioni meccaniche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lavorazioni meccaniche</label>
+            </value>
+            <value>
+                <fullName>Lenses for ICL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lenses for ICL</label>
+            </value>
+            <value>
+                <fullName>Lockers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lockers</label>
+            </value>
+            <value>
+                <fullName>Locking parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Locking parts</label>
+            </value>
+            <value>
+                <fullName>Locks for car doors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Locks for car doors</label>
+            </value>
+            <value>
+                <fullName>MSI Viking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MSI Viking</label>
+            </value>
+            <value>
+                <fullName>Macchina demo di proprietà</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Macchina demo di proprietà</label>
+            </value>
+            <value>
+                <fullName>Macchine per industrie farmaceutiche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Macchine per industrie farmaceutiche</label>
+            </value>
+            <value>
+                <fullName>Macchine stampi bottiglie PET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Macchine stampi bottiglie PET</label>
+            </value>
+            <value>
+                <fullName>Machine tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Machine tools</label>
+            </value>
+            <value>
+                <fullName>Machines</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Machines</label>
+            </value>
+            <value>
+                <fullName>Magna</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Magna</label>
+            </value>
+            <value>
+                <fullName>Magnets for elecric motors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Magnets for elecric motors</label>
+            </value>
+            <value>
+                <fullName>Mandrini / Elettromandrini</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mandrini / Elettromandrini</label>
+            </value>
+            <value>
+                <fullName>Maniglie e cerniere porte e finestre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Maniglie e cerniere porte e finestre</label>
+            </value>
+            <value>
+                <fullName>Maschi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Maschi</label>
+            </value>
+            <value>
+                <fullName>Mechanical Engineering.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mechanical Engineering.</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical Reamers and trocars</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical Reamers and trocars</label>
+            </value>
+            <value>
+                <fullName>Medical body implants</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical body implants</label>
+            </value>
+            <value>
+                <fullName>Medical company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical company</label>
+            </value>
+            <value>
+                <fullName>Medical device manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical device manufacturer</label>
+            </value>
+            <value>
+                <fullName>Medical devices</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical devices</label>
+            </value>
+            <value>
+                <fullName>Medical hand-tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical hand-tools</label>
+            </value>
+            <value>
+                <fullName>Medical machinery and Industrial Machinery parts manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical machinery and Industrial Machinery parts manufacturer</label>
+            </value>
+            <value>
+                <fullName>Medical stent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical stent</label>
+            </value>
+            <value>
+                <fullName>Medical stents</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical stents</label>
+            </value>
+            <value>
+                <fullName>Medtronic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medtronic</label>
+            </value>
+            <value>
+                <fullName>Metal cans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metal cans</label>
+            </value>
+            <value>
+                <fullName>Metal forming and pipe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metal forming and pipe</label>
+            </value>
+            <value>
+                <fullName>Metered-dose inhaler canisters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metered-dose inhaler canisters</label>
+            </value>
+            <value>
+                <fullName>Metrologia (Costruttori)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metrologia (Costruttori)</label>
+            </value>
+            <value>
+                <fullName>Metrologia (Rivenditori)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metrologia (Rivenditori)</label>
+            </value>
+            <value>
+                <fullName>Metrology Center</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metrology Center</label>
+            </value>
+            <value>
+                <fullName>Micro parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Micro parts</label>
+            </value>
+            <value>
+                <fullName>Micro-parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Micro-parts</label>
+            </value>
+            <value>
+                <fullName>Milled/grinded parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Milled/grinded parts</label>
+            </value>
+            <value>
+                <fullName>Mints for coins</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mints for coins</label>
+            </value>
+            <value>
+                <fullName>Minuteria lamiera stampata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Minuteria lamiera stampata</label>
+            </value>
+            <value>
+                <fullName>Minuterie occhiali e chiusure bcinturini orologi metallo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Minuterie occhiali e chiusure bcinturini orologi metallo</label>
+            </value>
+            <value>
+                <fullName>Misura faston e puntali</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misura faston e puntali</label>
+            </value>
+            <value>
+                <fullName>Misura placchette freno per ascensori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misura placchette freno per ascensori</label>
+            </value>
+            <value>
+                <fullName>Misurazione Tubetti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misurazione Tubetti</label>
+            </value>
+            <value>
+                <fullName>Misurazione applicatori rimmel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misurazione applicatori rimmel</label>
+            </value>
+            <value>
+                <fullName>Mobile parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mobile parts</label>
+            </value>
+            <value>
+                <fullName>Mobile phone parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mobile phone parts</label>
+            </value>
+            <value>
+                <fullName>Model TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Model TBD</label>
+            </value>
+            <value>
+                <fullName>Mold for glass bottle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mold for glass bottle</label>
+            </value>
+            <value>
+                <fullName>Molded plastic parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Molded plastic parts</label>
+            </value>
+            <value>
+                <fullName>Molle e Clips</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Molle e Clips</label>
+            </value>
+            <value>
+                <fullName>Motori elettrici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Motori elettrici</label>
+            </value>
+            <value>
+                <fullName>Motoriduttori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Motoriduttori</label>
+            </value>
+            <value>
+                <fullName>Naval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Naval</label>
+            </value>
+            <value>
+                <fullName>Nozzle for 3D printer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nozzle for 3D printer</label>
+            </value>
+            <value>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nuclear</label>
+            </value>
+            <value>
+                <fullName>Nuts for automotive industry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nuts for automotive industry</label>
+            </value>
+            <value>
+                <fullName>Occhilai</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Occhilai</label>
+            </value>
+            <value>
+                <fullName>Oil less bearing manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oil less bearing manufacturer</label>
+            </value>
+            <value>
+                <fullName>Optical fibre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Optical fibre</label>
+            </value>
+            <value>
+                <fullName>Outer Race</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outer Race</label>
+            </value>
+            <value>
+                <fullName>PARKER HANAFFIN-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PARKER HANAFFIN-</label>
+            </value>
+            <value>
+                <fullName>PCD connectors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PCD connectors</label>
+            </value>
+            <value>
+                <fullName>PVC estrusion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PVC estrusion</label>
+            </value>
+            <value>
+                <fullName>Paletta turbina</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paletta turbina</label>
+            </value>
+            <value>
+                <fullName>Parti stampate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Parti stampate</label>
+            </value>
+            <value>
+                <fullName>Particolari F1 Automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Particolari F1 Automotive</label>
+            </value>
+            <value>
+                <fullName>Particolari torniti e fresati prevalentemente settore aeronautico</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Particolari torniti e fresati prevalentemente settore aeronautico</label>
+            </value>
+            <value>
+                <fullName>Pellet for nuclear fuel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pellet for nuclear fuel</label>
+            </value>
+            <value>
+                <fullName>Perni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perni</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pharmaceutical products</label>
+            </value>
+            <value>
+                <fullName>Piastre e pezzi torniti tagliati in 2 per vedere interni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Piastre e pezzi torniti tagliati in 2 per vedere interni</label>
+            </value>
+            <value>
+                <fullName>Pin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pin</label>
+            </value>
+            <value>
+                <fullName>Pin for camshaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pin for camshaft</label>
+            </value>
+            <value>
+                <fullName>Pin-Höhe und Ebenheit.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pin-Höhe und Ebenheit.</label>
+            </value>
+            <value>
+                <fullName>Pinion Gear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pinion Gear</label>
+            </value>
+            <value>
+                <fullName>Pinion for bicycle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pinion for bicycle</label>
+            </value>
+            <value>
+                <fullName>Pipe tube, medical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pipe tube, medical</label>
+            </value>
+            <value>
+                <fullName>Planet wheel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Planet wheel</label>
+            </value>
+            <value>
+                <fullName>Plastic Bottles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic Bottles</label>
+            </value>
+            <value>
+                <fullName>Plastic bottle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic bottle</label>
+            </value>
+            <value>
+                <fullName>Plastic injection parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic injection parts</label>
+            </value>
+            <value>
+                <fullName>Plastic parts for automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic parts for automotive</label>
+            </value>
+            <value>
+                <fullName>Plastic spheres composing their polimers and stents</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic spheres composing their polimers and stents</label>
+            </value>
+            <value>
+                <fullName>Plastic test tube</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic test tube</label>
+            </value>
+            <value>
+                <fullName>Plastic vials - Medical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic vials - Medical</label>
+            </value>
+            <value>
+                <fullName>Plastic wheels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastic wheels</label>
+            </value>
+            <value>
+                <fullName>Plastics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastics</label>
+            </value>
+            <value>
+                <fullName>Pneumatic pressure sensors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pneumatic pressure sensors</label>
+            </value>
+            <value>
+                <fullName>Polished glass</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Polished glass</label>
+            </value>
+            <value>
+                <fullName>Polishing Tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Polishing Tools</label>
+            </value>
+            <value>
+                <fullName>Pomp housing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pomp housing</label>
+            </value>
+            <value>
+                <fullName>Pompe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pompe</label>
+            </value>
+            <value>
+                <fullName>Portagomma e Nippli</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Portagomma e Nippli</label>
+            </value>
+            <value>
+                <fullName>Power steering</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Power steering</label>
+            </value>
+            <value>
+                <fullName>Precision Ground</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precision Ground</label>
+            </value>
+            <value>
+                <fullName>Precision Machining Parts and Products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precision Machining Parts and Products</label>
+            </value>
+            <value>
+                <fullName>Pressati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pressati</label>
+            </value>
+            <value>
+                <fullName>Pressure connectors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pressure connectors</label>
+            </value>
+            <value>
+                <fullName>Pressure sensors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pressure sensors</label>
+            </value>
+            <value>
+                <fullName>Prodotti di Design (Bottoni, Occhiali, Ecc.)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prodotti di Design (Bottoni, Occhiali, Ecc.)</label>
+            </value>
+            <value>
+                <fullName>Produzione Occhiali</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Produzione Occhiali</label>
+            </value>
+            <value>
+                <fullName>Profiles for Rollingshutters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Profiles for Rollingshutters</label>
+            </value>
+            <value>
+                <fullName>Profili alluminio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Profili alluminio</label>
+            </value>
+            <value>
+                <fullName>Präzisionsdrehteile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Präzisionsdrehteile</label>
+            </value>
+            <value>
+                <fullName>Pulegge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pulegge</label>
+            </value>
+            <value>
+                <fullName>Pulegge automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pulegge automotive</label>
+            </value>
+            <value>
+                <fullName>Pulley</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pulley</label>
+            </value>
+            <value>
+                <fullName>Punzonati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Punzonati</label>
+            </value>
+            <value>
+                <fullName>Quality equipment for the energy industry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quality equipment for the energy industry</label>
+            </value>
+            <value>
+                <fullName>Raccorderia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raccorderia</label>
+            </value>
+            <value>
+                <fullName>Raccordi / Giunti elastici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raccordi / Giunti elastici</label>
+            </value>
+            <value>
+                <fullName>Raccordi / raccordi Idraulici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raccordi / raccordi Idraulici</label>
+            </value>
+            <value>
+                <fullName>Raccordi automatici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raccordi automatici</label>
+            </value>
+            <value>
+                <fullName>Raccordi semplici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raccordi semplici</label>
+            </value>
+            <value>
+                <fullName>Rear Axle tube for truck and bus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rear Axle tube for truck and bus</label>
+            </value>
+            <value>
+                <fullName>Refrigerator parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refrigerator parts</label>
+            </value>
+            <value>
+                <fullName>Rettifica Alberi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rettifica Alberi</label>
+            </value>
+            <value>
+                <fullName>Rings for weddings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rings for weddings</label>
+            </value>
+            <value>
+                <fullName>Rivets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rivets</label>
+            </value>
+            <value>
+                <fullName>Rock driller tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rock driller tools</label>
+            </value>
+            <value>
+                <fullName>Rod end and Spherical bearings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rod end and Spherical bearings</label>
+            </value>
+            <value>
+                <fullName>Roller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Roller</label>
+            </value>
+            <value>
+                <fullName>Rolling walls bar press profiles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rolling walls bar press profiles</label>
+            </value>
+            <value>
+                <fullName>Rope and wire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rope and wire</label>
+            </value>
+            <value>
+                <fullName>Rotori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rotori</label>
+            </value>
+            <value>
+                <fullName>Rubber</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rubber</label>
+            </value>
+            <value>
+                <fullName>Rulli in teflon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rulli in teflon</label>
+            </value>
+            <value>
+                <fullName>Rulli per piegatubi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rulli per piegatubi</label>
+            </value>
+            <value>
+                <fullName>Ruota dentata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ruota dentata</label>
+            </value>
+            <value>
+                <fullName>SPRINGS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SPRINGS</label>
+            </value>
+            <value>
+                <fullName>Schede elettriche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Schede elettriche</label>
+            </value>
+            <value>
+                <fullName>Schede elettroniche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Schede elettroniche</label>
+            </value>
+            <value>
+                <fullName>Screw</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Screw</label>
+            </value>
+            <value>
+                <fullName>Sealant coating measurement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sealant coating measurement</label>
+            </value>
+            <value>
+                <fullName>Seeling parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Seeling parts</label>
+            </value>
+            <value>
+                <fullName>Semi-conductor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semi-conductor</label>
+            </value>
+            <value>
+                <fullName>Semi-conductors and other small parts.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semi-conductors and other small parts.</label>
+            </value>
+            <value>
+                <fullName>Semialberi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semialberi</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>Shafts for electric motor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shafts for electric motor</label>
+            </value>
+            <value>
+                <fullName>Shafts for turbine wheels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shafts for turbine wheels</label>
+            </value>
+            <value>
+                <fullName>Shells</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shells</label>
+            </value>
+            <value>
+                <fullName>Shock absorber</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shock absorber</label>
+            </value>
+            <value>
+                <fullName>Shock adsorber</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shock adsorber</label>
+            </value>
+            <value>
+                <fullName>Shock adsorbers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shock adsorbers</label>
+            </value>
+            <value>
+                <fullName>Shoulder prothesis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shoulder prothesis</label>
+            </value>
+            <value>
+                <fullName>Sinterizzati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sinterizzati</label>
+            </value>
+            <value>
+                <fullName>Sinterizzati - Torniti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sinterizzati - Torniti</label>
+            </value>
+            <value>
+                <fullName>Slides-Tranciato</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Slides-Tranciato</label>
+            </value>
+            <value>
+                <fullName>Small gear</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Small gear</label>
+            </value>
+            <value>
+                <fullName>Sodium batteries</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sodium batteries</label>
+            </value>
+            <value>
+                <fullName>Spark plugs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spark plugs</label>
+            </value>
+            <value>
+                <fullName>Special shafts &amp; board covers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Special shafts &amp; board covers</label>
+            </value>
+            <value>
+                <fullName>Spindeln</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spindeln</label>
+            </value>
+            <value>
+                <fullName>Spindle for textile industry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spindle for textile industry</label>
+            </value>
+            <value>
+                <fullName>Stampaggio materie plastiche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampaggio materie plastiche</label>
+            </value>
+            <value>
+                <fullName>Stampaggio plastica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampaggio plastica</label>
+            </value>
+            <value>
+                <fullName>Stampati plastici</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampati plastici</label>
+            </value>
+            <value>
+                <fullName>Stampi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampi</label>
+            </value>
+            <value>
+                <fullName>Stampi e stampati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampi e stampati</label>
+            </value>
+            <value>
+                <fullName>Stampi per iniezioni plastiche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampi per iniezioni plastiche</label>
+            </value>
+            <value>
+                <fullName>Stampi vetro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampi vetro</label>
+            </value>
+            <value>
+                <fullName>Stampoi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stampoi</label>
+            </value>
+            <value>
+                <fullName>Standard shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Standard shafts</label>
+            </value>
+            <value>
+                <fullName>Stanzteile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stanzteile</label>
+            </value>
+            <value>
+                <fullName>Statori per motori</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Statori per motori</label>
+            </value>
+            <value>
+                <fullName>Stecker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stecker</label>
+            </value>
+            <value>
+                <fullName>Steel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Steel</label>
+            </value>
+            <value>
+                <fullName>Steel special profiles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Steel special profiles</label>
+            </value>
+            <value>
+                <fullName>Stylus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stylus</label>
+            </value>
+            <value>
+                <fullName>Surgery tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Surgery tools</label>
+            </value>
+            <value>
+                <fullName>Surgical motors and illuminators</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Surgical motors and illuminators</label>
+            </value>
+            <value>
+                <fullName>Suspansion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suspansion</label>
+            </value>
+            <value>
+                <fullName>Swiss Instruments</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Swiss Instruments</label>
+            </value>
+            <value>
+                <fullName>TREMEC Supplier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TREMEC Supplier</label>
+            </value>
+            <value>
+                <fullName>TUBI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TUBI</label>
+            </value>
+            <value>
+                <fullName>Tagliati al Laser</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tagliati al Laser</label>
+            </value>
+            <value>
+                <fullName>Teflon white parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teflon white parts</label>
+            </value>
+            <value>
+                <fullName>Teile für den Werkzeugbau</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teile für den Werkzeugbau</label>
+            </value>
+            <value>
+                <fullName>Telefoci cellulari e IPad (incl. componenti e vetro)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telefoci cellulari e IPad (incl. componenti e vetro)</label>
+            </value>
+            <value>
+                <fullName>Tensile testing probe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tensile testing probe</label>
+            </value>
+            <value>
+                <fullName>Teststreifen für die Diabetiker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teststreifen für die Diabetiker</label>
+            </value>
+            <value>
+                <fullName>Tool holders</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tool holders</label>
+            </value>
+            <value>
+                <fullName>Tool makers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tool makers</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Torneria conto terzi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Torneria conto terzi</label>
+            </value>
+            <value>
+                <fullName>Tragfedern, Schraubenfedern, Kolbenstangen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tragfedern, Schraubenfedern, Kolbenstangen</label>
+            </value>
+            <value>
+                <fullName>Tranciati di lamiera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tranciati di lamiera</label>
+            </value>
+            <value>
+                <fullName>Transmission Parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transmission Parts</label>
+            </value>
+            <value>
+                <fullName>Transmission shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transmission shaft</label>
+            </value>
+            <value>
+                <fullName>Tube</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tube</label>
+            </value>
+            <value>
+                <fullName>Tubes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tubes</label>
+            </value>
+            <value>
+                <fullName>Tubi per carburante</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tubi per carburante</label>
+            </value>
+            <value>
+                <fullName>Turbine for vacuum cleaner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Turbine for vacuum cleaner</label>
+            </value>
+            <value>
+                <fullName>Turbine parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Turbine parts</label>
+            </value>
+            <value>
+                <fullName>Turbo chargers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Turbo chargers</label>
+            </value>
+            <value>
+                <fullName>Turbocharger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Turbocharger</label>
+            </value>
+            <value>
+                <fullName>Turned &amp; punched parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Turned &amp; punched parts</label>
+            </value>
+            <value>
+                <fullName>Tutti pezzi rettificati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tutti pezzi rettificati</label>
+            </value>
+            <value>
+                <fullName>Universal cross joint</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Universal cross joint</label>
+            </value>
+            <value>
+                <fullName>Utensili da taglio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Utensili da taglio</label>
+            </value>
+            <value>
+                <fullName>Vacuum pump shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vacuum pump shaft</label>
+            </value>
+            <value>
+                <fullName>Valve guide</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Valve guide</label>
+            </value>
+            <value>
+                <fullName>Valvole a sfera rubinetti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Valvole a sfera rubinetti</label>
+            </value>
+            <value>
+                <fullName>Valvole di distribuzione / oleodinamiche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Valvole di distribuzione / oleodinamiche</label>
+            </value>
+            <value>
+                <fullName>Valvole motore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Valvole motore</label>
+            </value>
+            <value>
+                <fullName>Varie</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Varie</label>
+            </value>
+            <value>
+                <fullName>Various Components for aerospace and automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Various Components for aerospace and automotive</label>
+            </value>
+            <value>
+                <fullName>Vene sintetiche</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vene sintetiche</label>
+            </value>
+            <value>
+                <fullName>Ventole plastica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ventole plastica</label>
+            </value>
+            <value>
+                <fullName>Vermutlich Werkzeugrohlinge.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vermutlich Werkzeugrohlinge.</label>
+            </value>
+            <value>
+                <fullName>Verschiedene Steckerkomponenten</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Verschiedene Steckerkomponenten</label>
+            </value>
+            <value>
+                <fullName>Vetro, provette e siringhe medicale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vetro, provette e siringhe medicale</label>
+            </value>
+            <value>
+                <fullName>Viti e bulloni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Viti e bulloni</label>
+            </value>
+            <value>
+                <fullName>Viti e perni imp. Dentali</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Viti e perni imp. Dentali</label>
+            </value>
+            <value>
+                <fullName>Viti e perni medicali</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Viti e perni medicali</label>
+            </value>
+            <value>
+                <fullName>Watch maker company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Watch maker company</label>
+            </value>
+            <value>
+                <fullName>Watching</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Watching</label>
+            </value>
+            <value>
+                <fullName>Waterworks valves</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waterworks valves</label>
+            </value>
+            <value>
+                <fullName>Welding machine parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Welding machine parts</label>
+            </value>
+            <value>
+                <fullName>Wendeschneidplatten</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wendeschneidplatten</label>
+            </value>
+            <value>
+                <fullName>Wheels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wheels</label>
+            </value>
+            <value>
+                <fullName>White goods.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>White goods.</label>
+            </value>
+            <value>
+                <fullName>Willis CNC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Willis CNC</label>
+            </value>
+            <value>
+                <fullName>Worm screw</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Worm screw</label>
+            </value>
+            <value>
+                <fullName>Zips</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zips</label>
+            </value>
+            <value>
+                <fullName>aerospace parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>aerospace parts</label>
+            </value>
+            <value>
+                <fullName>aghi siringhe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>aghi siringhe</label>
+            </value>
+            <value>
+                <fullName>all kinds of ceramic parts and products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>all kinds of ceramic parts and products</label>
+            </value>
+            <value>
+                <fullName>automobile part</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>automobile part</label>
+            </value>
+            <value>
+                <fullName>automobile parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>automobile parts</label>
+            </value>
+            <value>
+                <fullName>automobile parts manufactures</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>automobile parts manufactures</label>
+            </value>
+            <value>
+                <fullName>automobile parts(rubber ring parts)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>automobile parts(rubber ring parts)</label>
+            </value>
+            <value>
+                <fullName>automotive safety systems.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>automotive safety systems.</label>
+            </value>
+            <value>
+                <fullName>balance shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>balance shaft</label>
+            </value>
+            <value>
+                <fullName>bekannt.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>bekannt.</label>
+            </value>
+            <value>
+                <fullName>cable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>cable</label>
+            </value>
+            <value>
+                <fullName>car headrest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>car headrest</label>
+            </value>
+            <value>
+                <fullName>car part</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>car part</label>
+            </value>
+            <value>
+                <fullName>chain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>chain</label>
+            </value>
+            <value>
+                <fullName>crank for Drone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>crank for Drone</label>
+            </value>
+            <value>
+                <fullName>crankshaft for motorcycle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>crankshaft for motorcycle</label>
+            </value>
+            <value>
+                <fullName>cutting inserts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>cutting inserts</label>
+            </value>
+            <value>
+                <fullName>due to the price lost to Keyence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>due to the price lost to Keyence</label>
+            </value>
+            <value>
+                <fullName>electric engine shafts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>electric engine shafts</label>
+            </value>
+            <value>
+                <fullName>electrical components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>electrical components</label>
+            </value>
+            <value>
+                <fullName>extrusion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>extrusion</label>
+            </value>
+            <value>
+                <fullName>forming tool</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>forming tool</label>
+            </value>
+            <value>
+                <fullName>gear parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>gear parts</label>
+            </value>
+            <value>
+                <fullName>geschliffene Drehteile für den Formenbau</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>geschliffene Drehteile für den Formenbau</label>
+            </value>
+            <value>
+                <fullName>heating and ventilation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>heating and ventilation</label>
+            </value>
+            <value>
+                <fullName>ingegneria di prodotto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ingegneria di prodotto</label>
+            </value>
+            <value>
+                <fullName>inner and outer rings for bearings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>inner and outer rings for bearings</label>
+            </value>
+            <value>
+                <fullName>jewelleries</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>jewelleries</label>
+            </value>
+            <value>
+                <fullName>jewelry and gems</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>jewelry and gems</label>
+            </value>
+            <value>
+                <fullName>job shop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>job shop</label>
+            </value>
+            <value>
+                <fullName>knitting needles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>knitting needles</label>
+            </value>
+            <value>
+                <fullName>light bulbs - lightning systems</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>light bulbs - lightning systems</label>
+            </value>
+            <value>
+                <fullName>machining</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>machining</label>
+            </value>
+            <value>
+                <fullName>measuring couplings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>measuring couplings</label>
+            </value>
+            <value>
+                <fullName>measuring gun barrels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>measuring gun barrels</label>
+            </value>
+            <value>
+                <fullName>microprocessing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>microprocessing</label>
+            </value>
+            <value>
+                <fullName>milled and grinded parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>milled and grinded parts</label>
+            </value>
+            <value>
+                <fullName>mini tools 0,01mm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>mini tools 0,01mm</label>
+            </value>
+            <value>
+                <fullName>mold</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>mold</label>
+            </value>
+            <value>
+                <fullName>molding dies for tin cans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>molding dies for tin cans</label>
+            </value>
+            <value>
+                <fullName>needles and sharps</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>needles and sharps</label>
+            </value>
+            <value>
+                <fullName>no budget</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>no budget</label>
+            </value>
+            <value>
+                <fullName>orbis bearing manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>orbis bearing manufacturer</label>
+            </value>
+            <value>
+                <fullName>part of Eurofighter militar plane</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>part of Eurofighter militar plane</label>
+            </value>
+            <value>
+                <fullName>plastic molding</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>plastic molding</label>
+            </value>
+            <value>
+                <fullName>pressure vessel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>pressure vessel</label>
+            </value>
+            <value>
+                <fullName>profilati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>profilati</label>
+            </value>
+            <value>
+                <fullName>radiate parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>radiate parts</label>
+            </value>
+            <value>
+                <fullName>razors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>razors</label>
+            </value>
+            <value>
+                <fullName>rock drilling tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>rock drilling tools</label>
+            </value>
+            <value>
+                <fullName>rotor for air compressor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>rotor for air compressor</label>
+            </value>
+            <value>
+                <fullName>sanitary components</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>sanitary components</label>
+            </value>
+            <value>
+                <fullName>schools and institutes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>schools and institutes</label>
+            </value>
+            <value>
+                <fullName>sealing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>sealing</label>
+            </value>
+            <value>
+                <fullName>shaft and gears</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>shaft and gears</label>
+            </value>
+            <value>
+                <fullName>shaft and small tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>shaft and small tools</label>
+            </value>
+            <value>
+                <fullName>small manufacturing parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>small manufacturing parts</label>
+            </value>
+            <value>
+                <fullName>small parts for weapon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>small parts for weapon</label>
+            </value>
+            <value>
+                <fullName>soft magnetic materials</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>soft magnetic materials</label>
+            </value>
+            <value>
+                <fullName>spare parts for automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>spare parts for automotive</label>
+            </value>
+            <value>
+                <fullName>spark plugs aerospace</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>spark plugs aerospace</label>
+            </value>
+            <value>
+                <fullName>spline shaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>spline shaft</label>
+            </value>
+            <value>
+                <fullName>spring part</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>spring part</label>
+            </value>
+            <value>
+                <fullName>spring parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>spring parts</label>
+            </value>
+            <value>
+                <fullName>technical ceramics and silicas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>technical ceramics and silicas</label>
+            </value>
+            <value>
+                <fullName>to ask</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>to ask</label>
+            </value>
+            <value>
+                <fullName>transmission hub</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>transmission hub</label>
+            </value>
+            <value>
+                <fullName>tubi in plastica settore medicale ed affini</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>tubi in plastica settore medicale ed affini</label>
+            </value>
+            <value>
+                <fullName>utensili per dentale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>utensili per dentale</label>
+            </value>
+            <value>
+                <fullName>valve-guide</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>valve-guide</label>
+            </value>
+            <value>
+                <fullName>valves for tires</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>valves for tires</label>
+            </value>
+            <value>
+                <fullName>window and gate accessories</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>window and gate accessories</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Watchmaking</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>Micro-components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Bone prosthesis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Dental plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <valueName>Glass bottles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Medical containers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Medical screws and bolts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Medical tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical – Dental Manufacturing</controllingFieldValue>
+            <valueName>Needles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Aerospace</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Turned parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Sintered parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Bearings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Robots and system integrators</controllingFieldValue>
+            <valueName>Clamping systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Components for linear motion (bellows, guides, etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Cutting tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Electrics and Derivatives</controllingFieldValue>
+            <valueName>Electrical panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Fasteners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Faucets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Flanges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Gears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Laser cut parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Aerospace</controllingFieldValue>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Milled parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Punched parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Screws and nuts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Spindles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <valueName>Springs and clips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metalworking &amp; Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Robots and system integrators</controllingFieldValue>
+            <controllingFieldValue>Aerospace</controllingFieldValue>
+            <valueName>Worm/ball screws</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <controllingFieldValue>Glass Manufacturing</controllingFieldValue>
+            <valueName>Bottles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <controllingFieldValue>Electrics and Derivatives</controllingFieldValue>
+            <valueName>Connectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <valueName>Elastic couplings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <valueName>Extruded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <controllingFieldValue>Aerospace</controllingFieldValue>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Molded parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <valueName>Rubber rollers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber &amp; Plastics</controllingFieldValue>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Seals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Watchmaking</controllingFieldValue>
+            <valueName>Watch components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <valueName>Seeds sorting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Generic Shafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Extruded parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Camshafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Crankshafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Electric engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Fuel pipes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Splined and geared shafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Injectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>CV joints and axles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Pistons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Shock absorbers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Transmission shafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Turbine wheels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Engine valves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ceramic Manufacturing</controllingFieldValue>
+            <valueName>Ceramic component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Bullets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defense</controllingFieldValue>
+            <valueName>Gun barrels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrics and Derivatives</controllingFieldValue>
+            <valueName>Cables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrics and Derivatives</controllingFieldValue>
+            <valueName>Pins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>High Power Connectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>Printed Circuit Boards (PCB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <valueName>X-Ray inspections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Glass Manufacturing</controllingFieldValue>
+            <valueName>Lenses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Eccentric shafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Hydraulic components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Oil valves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Oleodynamic fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Pneumatic fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Pumps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulics, Pneumatics, Oleodynamic</controllingFieldValue>
+            <valueName>Water fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jewelry &amp; Fashion</controllingFieldValue>
+            <valueName>Eyewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jewelry &amp; Fashion</controllingFieldValue>
+            <valueName>Jewelry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jewelry &amp; Fashion</controllingFieldValue>
+            <valueName>Rings</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

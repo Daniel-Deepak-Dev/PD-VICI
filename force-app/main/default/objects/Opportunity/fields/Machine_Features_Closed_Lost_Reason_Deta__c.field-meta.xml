@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Machine_Features_Closed_Lost_Reason_Deta__c</fullName>
+    <label>Machine Features Closed/Lost Reason Deta</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PRO__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Need bigger diameter</fullName>
+                <default>false</default>
+                <label>Need bigger diameter</label>
+            </value>
+            <value>
+                <fullName>Need bigger length</fullName>
+                <default>false</default>
+                <label>Need bigger length</label>
+            </value>
+            <value>
+                <fullName>Need higher weight</fullName>
+                <default>false</default>
+                <label>Need higher weight</label>
+            </value>
+            <value>
+                <fullName>Need more resolution</fullName>
+                <default>false</default>
+                <label>Need more resolution</label>
+            </value>
+            <value>
+                <fullName>Need touch probe mechanical improvements</fullName>
+                <default>false</default>
+                <label>Need touch probe mechanical improvements</label>
+            </value>
+            <value>
+                <fullName>Need keyway slot symmetry</fullName>
+                <default>false</default>
+                <label>Need keyway slot symmetry</label>
+            </value>
+            <value>
+                <fullName>Need more spline measurements</fullName>
+                <default>false</default>
+                <label>Need more spline measurements</label>
+            </value>
+            <value>
+                <fullName>Need camera tilting</fullName>
+                <default>false</default>
+                <label>Need camera tilting</label>
+            </value>
+            <value>
+                <fullName>Need other Z analysis</fullName>
+                <default>false</default>
+                <label>Need other Z analysis</label>
+            </value>
+            <value>
+                <fullName>Need 3D features</fullName>
+                <default>false</default>
+                <label>Need 3D features</label>
+            </value>
+            <value>
+                <fullName>Need rotary axis features improvements</fullName>
+                <default>false</default>
+                <label>Need rotary axis features improvements</label>
+            </value>
+            <value>
+                <fullName>Need better accuracy/repeatability</fullName>
+                <default>false</default>
+                <label>Need better accuracy/repeatability</label>
+            </value>
+            <value>
+                <fullName>Need bigger field</fullName>
+                <default>false</default>
+                <label>Need bigger field</label>
+            </value>
+            <value>
+                <fullName>Need touch probe</fullName>
+                <default>false</default>
+                <label>Need touch probe</label>
+            </value>
+            <value>
+                <fullName>Need Z depth &gt; 50 mm</fullName>
+                <default>false</default>
+                <label>Need Z depth &gt; 50 mm</label>
+            </value>
+            <value>
+                <fullName>Part weight &gt; 20kg</fullName>
+                <default>false</default>
+                <label>Part weight &gt; 20kg</label>
+            </value>
+            <value>
+                <fullName>Auto-programming</fullName>
+                <default>false</default>
+                <label>Auto-programming</label>
+            </value>
+            <value>
+                <fullName>Auto-programming (from 3D &amp; PDF)</fullName>
+                <default>false</default>
+                <label>Auto-programming (from 3D &amp; PDF)</label>
+            </value>
+            <value>
+                <fullName>No machine modularity (for additional accessories)</fullName>
+                <default>false</default>
+                <label>No machine modularity (for additional accessories)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need bigger diameter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need bigger length</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need higher weight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need more resolution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need touch probe mechanical improvements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need keyway slot symmetry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need more spline measurements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <valueName>Need camera tilting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need better accuracy/repeatability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need other Z analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need 3D features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need rotary axis features improvements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need bigger field</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need touch probe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Need Z depth &gt; 50 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Part weight &gt; 20kg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Auto-programming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>Auto-programming (from 3D &amp; PDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <valueName>No machine modularity (for additional accessories)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

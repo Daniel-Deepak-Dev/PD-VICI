@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_notifica__c</fullName>
+    <label>Status notifica</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bozza</fullName>
+                <default>false</default>
+                <label>Bozza</label>
+            </value>
+            <value>
+                <fullName>Invia notifica</fullName>
+                <default>false</default>
+                <label>Invia notifica</label>
+            </value>
+            <value>
+                <fullName>Notifica inviata</fullName>
+                <default>false</default>
+                <label>Notifica inviata</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

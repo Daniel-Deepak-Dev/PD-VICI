@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO__c</fullName>
+    <description>Used to sort opportunity by product range</description>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MTL</fullName>
+                <default>false</default>
+                <label>MTL</label>
+            </value>
+            <value>
+                <fullName>FOV</fullName>
+                <default>false</default>
+                <label>FOV</label>
+            </value>
+            <value>
+                <fullName>AUTOMATION</fullName>
+                <default>false</default>
+                <label>AUTOMATION</label>
+            </value>
+            <value>
+                <fullName>CABINET</fullName>
+                <default>false</default>
+                <label>CABINET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

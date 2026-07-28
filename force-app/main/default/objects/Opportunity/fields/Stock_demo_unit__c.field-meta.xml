@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stock_demo_unit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if the machine is not sold to the end user</description>
+    <inlineHelpText>Check this box if the machine is not sold to the end user</inlineHelpText>
+    <label>Stock / Demo Unit</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

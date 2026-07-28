@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Detail_Required</fullName>
+    <active>false</active>
+    <description>Requires Competitor/dealer Detail when Out of Target Detail is Competitor/dealer.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Unqualified&quot;),
+  ISPICKVAL(Unqualified_Reason__c, &quot;Out of target&quot;),
+  ISPICKVAL(Out_of_target_detail__c, &quot;Competitor/dealer&quot;),
+  ISBLANK(TEXT(Competitor_dealer_detail__c))
+)</errorConditionFormula>
+    <errorDisplayField>Competitor_dealer_detail__c</errorDisplayField>
+    <errorMessage>Please specify the Competitor/dealer detail.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Machine_Features_Detail_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Chiuse/Perse&quot;),
+  ISPICKVAL(Motivo_chiusa_persa__c, &quot;Machine features&quot;),
+  TEXT(Machine_Features_Closed_Lost_Reason_Deta__c) = &quot;&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Machine_Features_Closed_Lost_Reason_Deta__c</errorDisplayField>
+    <errorMessage>Please specify the machine feature detail.</errorMessage>
+</ValidationRule>

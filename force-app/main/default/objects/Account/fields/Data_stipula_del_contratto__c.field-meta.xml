@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_stipula_del_contratto__c</fullName>
+    <description>Data di stipula del contratto dall&apos;ultimo rinnovo</description>
+    <inlineHelpText>Data di stipula del contratto dall&apos;ultimo rinnovo</inlineHelpText>
+    <label>Data stipula del contratto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

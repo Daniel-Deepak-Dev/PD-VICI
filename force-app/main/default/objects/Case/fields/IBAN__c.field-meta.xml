@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IBAN__c</fullName>
+    <label>IBAN</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IT 61 S 05387 68020 000000574455 (BPE)</fullName>
+                <default>false</default>
+                <label>IT 61 S 05387 68020 000000574455 (BPE)</label>
+            </value>
+            <value>
+                <fullName>IT 75 O 02008 24220 000004754135 (UNICREDIT)</fullName>
+                <default>false</default>
+                <label>IT 75 O 02008 24220 000004754135 (UNICREDIT)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SolutionName</fullName>
+    <inlineHelpText>Descrizione del problema: se il titolo è troppo generico meglio recuperare una frase dal corpo della email
+Problem Description: if the title is too much generic, please retrive a good sentence from the email body</inlineHelpText>
+    <trackHistory>true</trackHistory>
+</CustomField>

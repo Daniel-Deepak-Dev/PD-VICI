@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Payment_Method__c</fullName>
+    <label>Standard Payment Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Geographic_Zone__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Net 100% - Upon order</fullName>
+                <default>false</default>
+                <label>Net 100% - Upon order</label>
+            </value>
+            <value>
+                <fullName>Net 100% - Before shipment</fullName>
+                <default>false</default>
+                <label>Net 100% - Before shipment</label>
+            </value>
+            <value>
+                <fullName>Net 30% - Upon order - Net 70% before shipment</fullName>
+                <default>false</default>
+                <label>Net 30% - Upon order - Net 70% before shipment</label>
+            </value>
+            <value>
+                <fullName>Net 70% Before shipment - Net 30% at 60 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 70% Before shipment - Net 30% at 60 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 20% upon order,Net 30% before shipment, Net 50% 60 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 20% upon order,Net 30% before shipment, Net 50% 60 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 50% Before shipment - Net 50% at 60 days</fullName>
+                <default>false</default>
+                <label>Net 50% Before shipment - Net 50% at 60 days</label>
+            </value>
+            <value>
+                <fullName>Net 30% Before shipment - Net 70% at 45 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 30% Before shipment - Net 70% at 45 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 30% Before shipment - Net 70% at 90 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 30% Before shipment - Net 70% at 90 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 30% Before shipment - Net 70% at 120 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 30% Before shipment - Net 70% at 120 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 100% - 30 Days</fullName>
+                <default>false</default>
+                <label>Net 100% - 30 Days</label>
+            </value>
+            <value>
+                <fullName>Net 100% - 45 Days</fullName>
+                <default>false</default>
+                <label>Net 100% - 45 Days</label>
+            </value>
+            <value>
+                <fullName>Net 100% - 60 Days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 100% - 60 Days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 100% - 90 Days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 100% - 90 Days from invoice date</label>
+            </value>
+            <value>
+                <fullName>Net 50% 60 days - Net 50% 120 days</fullName>
+                <default>false</default>
+                <label>Net 50% 60 days - Net 50% 120 days</label>
+            </value>
+            <value>
+                <fullName>Net 30% at 30 days - Net 30% at 60 days Net 40% at 90 days from invoice date</fullName>
+                <default>false</default>
+                <label>Net 30% at 30 days - Net 30% at 60 days Net 40% at 90 days from invoice date</label>
+            </value>
+            <value>
+                <fullName>50% BB a 90 gg dffm + 50% BB a 120gg dffm</fullName>
+                <default>false</default>
+                <label>50% BB a 90 gg dffm + 50% BB a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>50% Riba a 90 gg dffm + 50% Riba a 120gg dffm</fullName>
+                <default>false</default>
+                <label>50% Riba a 90 gg dffm + 50% Riba a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>30% BB a 30 gg dffm + 40% BB a 60gg dffm + 30% BB a 90gg dffm</fullName>
+                <default>false</default>
+                <label>30% BB a 30 gg dffm + 40% BB a 60gg dffm + 30% BB a 90gg dffm</label>
+            </value>
+            <value>
+                <fullName>30% Riba a 30 gg dffm + 40% Riba a 60gg dffm + 30% Riba a 90gg dffm</fullName>
+                <default>false</default>
+                <label>30% Riba a 30 gg dffm + 40% Riba a 60gg dffm + 30% Riba a 90gg dffm</label>
+            </value>
+            <value>
+                <fullName>30% BB a 60 gg dffm + 40% BB a 90gg dffm + 30% BB a 120gg dffm</fullName>
+                <default>false</default>
+                <label>30% BB a 60 gg dffm + 40% BB a 90gg dffm + 30% BB a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>30% Riba a 60 gg dffm + 40% Riba a 90gg dffm + 30% Riba a 120gg dffm</fullName>
+                <default>false</default>
+                <label>30% Riba a 60 gg dffm + 40% Riba a 90gg dffm + 30% Riba a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>20% BB prima della spedizione + 40% BB a 90gg dffm + 40% BB a 120gg dffm</fullName>
+                <default>false</default>
+                <label>20% BB prima della spedizione + 40% BB a 90gg dffm + 40% BB a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>20% BB prima della spedizione + 80% BB a 90gg dffm</fullName>
+                <default>false</default>
+                <label>20% BB prima della spedizione + 80% BB a 90gg dffm</label>
+            </value>
+            <value>
+                <fullName>20% BB prima della spedizione + 80% BB a 120gg dffm</fullName>
+                <default>false</default>
+                <label>20% BB prima della spedizione + 80% BB a 120gg dffm</label>
+            </value>
+            <value>
+                <fullName>100% BB a 180 gg dffm</fullName>
+                <default>false</default>
+                <label>100% BB a 180 gg dffm</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 100% - Before shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 100% - 60 Days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <valueName>Net 100% - 90 Days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>Net 30% at 30 days - Net 30% at 60 days Net 40% at 90 days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>50% BB a 90 gg dffm + 50% BB a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>50% Riba a 90 gg dffm + 50% Riba a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>30% BB a 30 gg dffm + 40% BB a 60gg dffm + 30% BB a 90gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>30% Riba a 30 gg dffm + 40% Riba a 60gg dffm + 30% Riba a 90gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>30% BB a 60 gg dffm + 40% BB a 90gg dffm + 30% BB a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>30% Riba a 60 gg dffm + 40% Riba a 90gg dffm + 30% Riba a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>20% BB prima della spedizione + 40% BB a 90gg dffm + 40% BB a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>20% BB prima della spedizione + 80% BB a 90gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <valueName>20% BB prima della spedizione + 80% BB a 120gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Italy</controllingFieldValue>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>100% BB a 180 gg dffm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 100% - 30 Days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 100% - 45 Days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 30% - Upon order - Net 70% before shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 70% Before shipment - Net 30% at 60 days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 20% upon order,Net 30% before shipment, Net 50% 60 days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 50% Before shipment - Net 50% at 60 days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of Europe</controllingFieldValue>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 30% Before shipment - Net 70% at 45 days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 100% - Upon order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 30% Before shipment - Net 70% at 90 days from invoice date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rest of the world</controllingFieldValue>
+            <valueName>Net 30% Before shipment - Net 70% at 120 days from invoice date</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

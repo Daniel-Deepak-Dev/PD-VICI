@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_dealer_detail__c</fullName>
+    <label>Competitor/dealer detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competition Hommel</fullName>
+                <default>false</default>
+                <label>Competition Hommel</label>
+            </value>
+            <value>
+                <fullName>Competition Sylvac</fullName>
+                <default>false</default>
+                <label>Competition Sylvac</label>
+            </value>
+            <value>
+                <fullName>Competition Marposs</fullName>
+                <default>false</default>
+                <label>Competition Marposs</label>
+            </value>
+            <value>
+                <fullName>Competition Dr. Schneider</fullName>
+                <default>false</default>
+                <label>Competition Dr. Schneider</label>
+            </value>
+            <value>
+                <fullName>Competition Mahr</fullName>
+                <default>false</default>
+                <label>Competition Mahr</label>
+            </value>
+            <value>
+                <fullName>Competition Keyence</fullName>
+                <default>false</default>
+                <label>Competition Keyence</label>
+            </value>
+            <value>
+                <fullName>Competition Mitutoyo</fullName>
+                <default>false</default>
+                <label>Competition Mitutoyo</label>
+            </value>
+            <value>
+                <fullName>Competition FOX</fullName>
+                <default>false</default>
+                <label>Competition FOX</label>
+            </value>
+            <value>
+                <fullName>Competition Chotest</fullName>
+                <default>false</default>
+                <label>Competition Chotest</label>
+            </value>
+            <value>
+                <fullName>Competition Micro-vu</fullName>
+                <default>false</default>
+                <label>Competition Micro-vu</label>
+            </value>
+            <value>
+                <fullName>Competition OGP</fullName>
+                <default>false</default>
+                <label>Competition OGP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>CABINET</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Hommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Sylvac</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Marposs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Dr. Schneider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTL</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Mahr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Keyence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Mitutoyo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition FOX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Chotest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition Micro-vu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/FOV</controllingFieldValue>
+            <controllingFieldValue>MTL/AUTOMATION</controllingFieldValue>
+            <controllingFieldValue>FOV/AUTOMATION</controllingFieldValue>
+            <valueName>Competition OGP</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

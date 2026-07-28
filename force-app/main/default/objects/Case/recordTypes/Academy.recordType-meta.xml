@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Academy</fullName>
+    <active>true</active>
+    <businessProcess>Academy</businessProcess>
+    <label>Academy</label>
+    <picklistValues>
+        <picklist>Banca_Appoggio__c</picklist>
+        <values>
+            <fullName>BPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNICREDIT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Causale__c</picklist>
+        <values>
+            <fullName>Errore Progettazione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Errore produzione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiale danneggiato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiale difettoso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiale non conforme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>manomissione</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Causale_di_bollettazione__c</picklist>
+        <values>
+            <fullName>C%2FVisione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conto Vendita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omaggio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sostituzione Garanzia CON reintegro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sostituzione Garanzia SENZA reintegro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Check_pezzo_rientrato__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Type__c</picklist>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Corriere__c</picklist>
+        <values>
+            <fullName>TNT Express consegna 1gg Estero %28CEE%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra-Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Garanzia__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Garanzia_macchina__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gravita_NC__c</picklist>
+        <values>
+            <fullName>Alta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bassa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IBAN__c</picklist>
+        <values>
+            <fullName>IT 61 S 05387 68020 000000574455 %28BPE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT 75 O 02008 24220 000004754135 %28UNICREDIT%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>In_Warranty__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installazione__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Machine_Type__c</picklist>
+        <values>
+            <fullName>METRIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modalita_di_consegna__c</picklist>
+        <values>
+            <fullName>30 gg</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modalita_di_pagamento__c</picklist>
+        <values>
+            <fullName>B%2EB%2E 30 gg D%2EF%2EF%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%2EB%2E 60 gg D%2EF%2EF%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RIBA 30 gg D%2EF%2EF%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RIBA 60 gg D%2EF%2EF%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chat Telefono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Posta elettronica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Alta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bassa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgente e FERMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgente ma in funzione</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Course to customer%2Fdealer in Vici</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course to customer%2Fdealer online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentazione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra-Service Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra-Service Activities%3A Sales Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free Hours Promotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HW Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HW Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Hasp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW PC - WINDOWS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW PLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales support - Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons__c</picklist>
+        <values>
+            <fullName>Demo with advanced knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo with advanced software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo with advanced system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funzionalità complessa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Istruzioni non chiare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited rep%2E resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need GR%26R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non ha partecipato alla formazione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuovo problema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>custom application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risoluzione_NC__c</picklist>
+        <values>
+            <fullName>Differita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stato_NC__c</picklist>
+        <values>
+            <fullName>Aperto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chiuso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Lavorazione</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_notifica__c</picklist>
+        <values>
+            <fullName>Bozza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invia notifica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notifica inviata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_NC__c</picklist>
+        <values>
+            <fullName>Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fornitore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terzista</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo__c</picklist>
+        <values>
+            <fullName>Offerta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipologia_Intervento__c</picklist>
+        <values>
+            <fullName>Assistenza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulenza Tecnica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installazione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modifica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminari%2FFormazione interna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taratura%2FManutenzione</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Domestic case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGP internal case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Productioin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>assigned_to__c</picklist>
+        <values>
+            <fullName>ALESSIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IGNAZIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MATTEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>altro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

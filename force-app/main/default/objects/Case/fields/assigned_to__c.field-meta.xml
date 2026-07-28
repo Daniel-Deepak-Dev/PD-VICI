@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>assigned_to__c</fullName>
+    <label>Academy owner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IGNAZIO</fullName>
+                <default>false</default>
+                <label>IGNAZIO</label>
+            </value>
+            <value>
+                <fullName>GLIB</fullName>
+                <default>false</default>
+                <label>GLIB</label>
+            </value>
+            <value>
+                <fullName>ALESSIO</fullName>
+                <default>false</default>
+                <label>ALESSIO</label>
+            </value>
+            <value>
+                <fullName>MATTEO</fullName>
+                <default>false</default>
+                <label>MATTEO</label>
+            </value>
+            <value>
+                <fullName>altro</fullName>
+                <default>false</default>
+                <label>altro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

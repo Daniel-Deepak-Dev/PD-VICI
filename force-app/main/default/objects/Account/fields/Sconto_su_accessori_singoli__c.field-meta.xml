@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sconto_su_accessori_singoli__c</fullName>
+    <defaultValue>25</defaultValue>
+    <description>Per componenti acquistati separatamente dalla macchina</description>
+    <inlineHelpText>Per componenti acquistati separatamente dalla macchina</inlineHelpText>
+    <label>Sconto su accessori singoli</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Percent</type>
+</CustomField>

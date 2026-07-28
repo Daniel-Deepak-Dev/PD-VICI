@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_Asset__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((ISBLANK(Asset_Vici__c)),0,1)+
+IF((ISBLANK( Asset_Vici_2__c)),0,1)+
+IF((ISBLANK( Asset_Vici_3__c)),0,1)+
+IF((ISBLANK( Asset_Vici_4__c)),0,1)+
+IF((ISBLANK( Asset_Vici_5__c)),0,1)+
+IF((ISBLANK( Asset_Vici_6__c)),0,1)+
+IF((ISBLANK( Asset_Vici_7__c)),0,1)+
+IF((ISBLANK( Asset_Vici_8__c)),0,1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Asset Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

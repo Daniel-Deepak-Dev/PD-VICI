@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rinvio_Informativa_GDPR</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Rinvio Informativa GDPR</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)}
+
+try{
+
+    var ContactToUpdate = new sforce.SObject(&quot;Contact&quot;);
+
+    ContactToUpdate.Id = &quot;{!Contact.Id}&quot;;
+    ContactToUpdate.isSendEmailGDPR__c = true;
+    ContactToUpdate.Data_invio_GDPR__c = null;
+                ContactToUpdate.Data_risposta_GDPR__c = null;
+                ContactToUpdate.privacy__c = null;
+                ContactToUpdate.HasOptedOutOfEmail = false;
+
+    var result = sforce.connection.update([ContactToUpdate]);
+
+    if(result[0].success === &quot;true&quot;){
+        location.reload();
+    }
+    else{
+        alert(&quot;An Error has Occurred. Error: &quot; + result[0].errors.message);
+    }
+}
+catch(e){
+    alert(&quot;An unexpected Error has Occurred. Error: &quot; + e);
+}</url>
+</WebLink>
