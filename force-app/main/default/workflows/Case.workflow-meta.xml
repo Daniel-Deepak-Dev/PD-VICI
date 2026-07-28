@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Nuovo_caso_aperto_per_il_Service</fullName>
+        <ccEmails>andrea.lucchi@vici.it</ccEmails>
+        <ccEmails>roberto.barbieri@vici.it</ccEmails>
+        <ccEmails>Service@vici.it</ccEmails>
+        <ccEmails>ignazio.vizzini@vici.it</ccEmails>
+        <ccEmails>filippo.paccassoni@vici.it</ccEmails>
+        <description>Nuovo caso aperto per il Service</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>template_service/Notifica_nuovo_caso_aperto_ita</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Aggiorna_Case_Machine_Type_METRIOS</fullName>
+        <field>Machine_Type__c</field>
+        <literalValue>METRIOS</literalValue>
+        <name>Aggiorna Case Machine Type METRIOS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_Case_Machine_Type_MTP</fullName>
+        <field>Machine_Type__c</field>
+        <literalValue>MTP</literalValue>
+        <name>Aggiorna Case Machine Type MTP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_campo_Garanzia</fullName>
+        <description>Da campo Warranty Status (checkbox) se è TRUE</description>
+        <field>Garanzia__c</field>
+        <literalValue>Si</literalValue>
+        <name>Aggiorna campo Garanzia a SI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_campo_Garanzia_a_NO</fullName>
+        <description>Da campo Warranty Status (checkbox) se è FALSE</description>
+        <field>Garanzia__c</field>
+        <literalValue>No</literalValue>
+        <name>Aggiorna campo Garanzia a NO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_campo_InWarranty_a_NO</fullName>
+        <description>Da campo Warranty Status (checkbox) se è FALSE</description>
+        <field>In_Warranty__c</field>
+        <literalValue>No</literalValue>
+        <name>Aggiorna campo Garanzia a NO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_campo_InWarranty_a_SI</fullName>
+        <description>Da campo Warranty Status (checkbox) se è TRUE</description>
+        <field>In_Warranty__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Aggiorna campo InWarranty a SI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_tipo_macchina_da_Asset_MTL</fullName>
+        <description>Nei casi service aggiorna campo tipo macchina da valore della matricola nel campo Asset formula al valore  MTL</description>
+        <field>Machine_Type__c</field>
+        <literalValue>MTL</literalValue>
+        <name>Aggiorna Case Machine Type MTL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TestAgg</fullName>
+        <field>Machine_Type__c</field>
+        <literalValue>MTP</literalValue>
+        <name>TestAgg</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TestAggWarranty</fullName>
+        <field>In_Warranty__c</field>
+        <literalValue>No</literalValue>
+        <name>TestAggWarranty</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>caso_assegnato</fullName>
+        <field>Status</field>
+        <literalValue>Assigned</literalValue>
+        <name>caso assegnato</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Cambio stato se titolare non è %22coda%22</fullName>
+        <actions>
+            <name>caso_assegnato</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>notEqual</operation>
+            <value>Coda Casi,Coda Casi secondo_livello</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Nuovo</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Machine Type METRIOS %28da Asset formula%29</fullName>
+        <actions>
+            <name>Aggiorna_Case_Machine_Type_METRIOS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Asset_Final_Customer_Formula__c</field>
+            <operation>equals</operation>
+            <value>METRIOS</value>
+        </criteriaItems>
+        <description>Nei casi service aggiorna il campo tipo macchina dalla matricola del campo Asset formula al valore METRIOS</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Machine Type MTL %28da Asset formula%29</fullName>
+        <actions>
+            <name>Aggiorna_tipo_macchina_da_Asset_MTL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Asset_Final_Customer_Formula__c</field>
+            <operation>equals</operation>
+            <value>MTL</value>
+        </criteriaItems>
+        <description>Nei casi service aggiorna il campo tipo macchina dalla matricola del campo Asset formula al valore MTL</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Machine Type MTP %28da Asset formula%29</fullName>
+        <actions>
+            <name>Aggiorna_Case_Machine_Type_MTP</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Asset_Final_Customer_Formula__c</field>
+            <operation>equals</operation>
+            <value>MTP</value>
+        </criteriaItems>
+        <description>Nei casi service aggiorna il campo tipo macchina dalla matricola del campo Asset formula al valore MTP</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Machine Warranty %28da Warranty Status checkbox formula%29 FALSE</fullName>
+        <actions>
+            <name>Aggiorna_campo_InWarranty_a_NO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Asset_Final_Customer_Formula__c</field>
+            <operation>equals</operation>
+            <value>MTL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Warranty_Status_checkbox__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.In_Warranty__c</field>
+            <operation>notEqual</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.In_Warranty__c</field>
+            <operation>notEqual</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Warranty_formula__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Nei casi service aggiorna il campo In Warranty a NO quando si inserisce Asset se:
+- Asset Final Customer Formula è MTL (inserito altrimenti non funziona)
+- Warranty Status checkbox è false
+- In Warranty è vuoto
+- Expiration Warranty è non vuoto</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Machine Warranty %28da Warranty Status checkbox formula%29 TRUE</fullName>
+        <actions>
+            <name>Aggiorna_campo_InWarranty_a_SI</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Asset_Final_Customer_Formula__c</field>
+            <operation>equals</operation>
+            <value>MTL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Warranty_Status_checkbox__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.In_Warranty__c</field>
+            <operation>notEqual</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.In_Warranty__c</field>
+            <operation>notEqual</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Warranty_formula__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Nei casi service aggiorna il campo In Warranty a SI quando si inserisce Asset se:
+- Asset Final Customer Formula è MTL (inserito altrimenti non funziona)
+- Warranty Status checkbox è true
+- In Warranty è vuoto
+- Expiration Warranty è non vuoto</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Dealer Case</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.AccountName</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Dealer Portal - Account__c</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notifica apertura caso a Service</fullName>
+        <actions>
+            <name>Nuovo_caso_aperto_per_il_Service</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status_notifica__c</field>
+            <operation>equals</operation>
+            <value>Invia notifica</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

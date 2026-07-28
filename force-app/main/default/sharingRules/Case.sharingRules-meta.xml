@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sharing_Rules_case</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Rules case int rul</label>
+        <sharedTo>
+            <group>Utenti_Gruppo_Community</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_Rulescase_part</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Rulescase part</label>
+        <sharedTo>
+            <group>Utenti_Gruppo_Community</group>
+        </sharedTo>
+        <sharedFrom>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

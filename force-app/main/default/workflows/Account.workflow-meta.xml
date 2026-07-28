@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Standard_Payment_for_Italy</fullName>
+        <field>Standard_Payment_Method__c</field>
+        <literalValue>60-</literalValue>
+        <name>Standard Payment for Italy</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Test_SFDC</fullName>
+        <field>Test_SFDC__c</field>
+        <formula>&quot;Payment is within 30 days&quot;</formula>
+        <name>Test SFDC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiorna_type_account_Finder_or_Rep</fullName>
+        <field>Type</field>
+        <literalValue>Segnalatore</literalValue>
+        <name>aggiorna type account Finder or Rep.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiorna_type_account_Not_suitable_for_M</fullName>
+        <field>Type</field>
+        <literalValue>Non adatto per MTL</literalValue>
+        <name>aggiorna type account Not suitable for M</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiorna_type_account_competitor</fullName>
+        <field>Type</field>
+        <literalValue>Competitor</literalValue>
+        <name>aggiorna type account competitor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiorna_type_account_potential_custome</fullName>
+        <field>Type</field>
+        <literalValue>Potenziale Cliente</literalValue>
+        <name>aggiorna type account potential custome</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiorna_type_account_potential_dealer</fullName>
+        <field>Type</field>
+        <literalValue>Potenziale Dealer</literalValue>
+        <name>aggiorna type account potential dealer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account Type Competitor</fullName>
+        <actions>
+            <name>aggiorna_type_account_competitor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type_lead__c</field>
+            <operation>equals</operation>
+            <value>Competitor</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Type Finder or Rep%2E</fullName>
+        <actions>
+            <name>aggiorna_type_account_Finder_or_Rep</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type_lead__c</field>
+            <operation>equals</operation>
+            <value>Finder or Rep.</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Type Not suitable for MTL</fullName>
+        <actions>
+            <name>aggiorna_type_account_Not_suitable_for_M</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type_lead__c</field>
+            <operation>equals</operation>
+            <value>Not suitable for MTL</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Type Potential customer</fullName>
+        <actions>
+            <name>aggiorna_type_account_potential_custome</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type_lead__c</field>
+            <operation>equals</operation>
+            <value>Potential customer</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Type Potential dealer</fullName>
+        <actions>
+            <name>aggiorna_type_account_potential_dealer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type_lead__c</field>
+            <operation>equals</operation>
+            <value>Potential dealer</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pagamento x ITA</fullName>
+        <actions>
+            <name>Standard_Payment_for_Italy</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Standard_Payment_Method__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Test SFDC</fullName>
+        <actions>
+            <name>Test_SFDC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

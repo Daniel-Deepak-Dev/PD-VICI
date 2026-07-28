@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contract_Send_Mail</fullName>
+        <description>Contract - Send Mail Yearly Expiration Notice to Contract Ower and Contract Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>ilenia.troni@vici.it1</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>service@vici.it</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>template_service/TestTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Send_Mail_Yearly_Expiration_Notice_to_Contract_Ower_and_Contract_Custom</fullName>
+        <description>Contract - Send Mail Yearly Expiration Notice to Contract Ower and Contract Customer (Time Trigger 30gg)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CustomerSignedId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>service@vici.it</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>template_service/Notifica_scadenza_contratto_annuale_ita</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Aggiorna_Contatore_Mail_mandate</fullName>
+        <description>Solo per tenerne traccia</description>
+        <field>Sent_Yearly_Mails_Counter__c</field>
+        <formula>IF(  ISNULL( Sent_Yearly_Mails_Counter__c), 1 , Sent_Yearly_Mails_Counter__c + 1)</formula>
+        <name>Aggiorna Contatore Mail mandate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_Contract_Term_months</fullName>
+        <description>Aggiorna il campo Standard &quot;Contract Term (months)&quot;</description>
+        <field>ContractTerm</field>
+        <formula>Contract_Term_months_Formula__c</formula>
+        <name>Aggiorna Contract Term (months)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aggiorna_Reminder_Counter</fullName>
+        <description>Solo per tenerne traccia</description>
+        <field>Set_Yearly_Reminder_Counter__c</field>
+        <formula>IF( ISNULL(Set_Yearly_Reminder_Counter__c), 1, Set_Yearly_Reminder_Counter__c + 1)</formula>
+        <name>Aggiorna Reminder Counter</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ResetReminder</fullName>
+        <field>Set_Reminder__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Reminder</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contract Send mail with Yearly Expiration Notice</fullName>
+        <actions>
+            <name>Aggiorna_Reminder_Counter</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.Set_Reminder__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Nei contratti Service manda una mail all&apos;ower del contratto e al cliente che ha firmato che segnala prossima scadenza annuale del contratto 60gg prima, comadato dalla checkbox  Send Mail Yearly Reminder trovato da una formula</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Contract_Send_Mail_Yearly_Expiration_Notice_to_Contract_Ower_and_Contract_Custom</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Aggiorna_Contatore_Mail_mandate</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>ResetReminder</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Notifica_scadenza_annuale</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Contract.Contract_Yearly_End_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>NotificaScadenzaAnnuale_rimettere_eventualmente_spuntaReminder</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Quando manda la mail di notifica scadenza annuale a 30gg imposta un task il giorno dopo la scadenza dove ricorda di  rimettere la spunta sul Reminder per la prossima scadenza annuale.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Contract.Contract_Yearly_End_Date__c</offsetFromField>
+        <priority>Bassa</priority>
+        <protected>false</protected>
+        <status>Non iniziata</status>
+        <subject>Notifica scadenza annuale, rimettere eventualmente la spunta di Reminder prossima scadenza</subject>
+    </tasks>
+    <tasks>
+        <fullName>Notifica_scadenza_annuale</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Quando manda la mail di notifica scadenza annuale a 30gg imposta un task il giorno dopo la scadenza dove ricorda di rimettere la spunta sul Reminder per la prossima scadenza annuale.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Contract.Contract_Yearly_End_Date__c</offsetFromField>
+        <priority>Bassa</priority>
+        <protected>false</protected>
+        <status>Non iniziata</status>
+        <subject>Notifica scadenza annuale: rimettere eventualmente la spunta di Reminder per la prossima scadenza</subject>
+    </tasks>
+</Workflow>

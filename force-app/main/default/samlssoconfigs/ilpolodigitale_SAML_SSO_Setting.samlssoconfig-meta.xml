@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>https://vici.my.salesforce.com?login=1</errorUrl>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>UserId</identityMapping>
+    <issuer>https://ilpolodigitale.my.salesforce.com</issuer>
+    <loginUrl>https://ilpolodigitale.my.salesforce.com/idp/endpoint/HttpPost</loginUrl>
+    <name>ilpolodigitale SAML SSO Setting</name>
+    <oauthTokenEndpoint>https://vici.my.salesforce.com/services/oauth2/token?so=00D20000000Ci8r</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSigningCertId>0P1Mf0000000AH7</requestSigningCertId>
+    <salesforceLoginUrl>https://vici.my.salesforce.com?so=00D20000000Ci8r</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com/00D20000000Ci8rEAC</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>false</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIErDCCA5SgAwIBAgIOAWXHZddsAAAAAGygo7UwDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzExU2VwMjAxOF8wNjUxMDQxGDAWBgNVBAsMDzAwRDFyMDAwMDAyZVF0dDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMTgwOTExMDY1MTA0WhcNMTkwOTExMDAwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMTFTZXAyMDE4XzA2NTEwNDEYMBYGA1UECwwPMDBEMXIwMDAwMDJlUXR0MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJP7YnjiI1MWs5s+xDoU0+h+5avlR2iYb7lXQgKOptSSK2EZGZsT4bTnINtSsuSUUe9qflTwUPKkJ0w3tuJW9wJ8pBHsP+S0FasZA4bPwMVJNtJtYBOT/ynga40kXTZ9va1FlmSLhSrDPi65IGLn4B2DHiPm7lNXKmWPECg0V4GYbDNp0GsNAF3vEBtwR44FotUl93TSCR44cDYfXChDDFxDMwUJ8T31OSbdN8wA3iBnLWpVLVLZH2z1UkYrHwK3ev3IcT70dy4OqNK4n/qj3C8ujulfOomlliLLmclsfQ8FoCUMkaIPHr5xxhlj13dfl1nmYiDqnq/BBi6xMnImEhsCAwEAAaOCAQAwgf0wHQYDVR0OBBYEFNEPat2DI5IgRP28BG7HOdDg+qiPMA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AU0Q9q3YMjkiBE/bwEbsc50OD6qI+hgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzExU2VwMjAxOF8wNjUxMDQxGDAWBgNVBAsMDzAwRDFyMDAwMDAyZVF0dDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFlx2XXbAAAAABsoKO1MA0GCSqGSIb3DQEBCwUAA4IBAQBu+rEnGW1AYdNjz+nvucvX8VEhLHDoHuimfT0zQPaKv7qcDzdjTZm2umhUTkwNw2UK7EPnIROoJo7MkCIxUaPX/A/McWNrtXkjI3aiIk+xghg3HuE7IZoE+nfNe4Hu87xyYoUZrzbcWH8KITpExcXs0kebirdYKQVy9gYLbkEkjcXA+Qy4VFKXe2q1qAMi+sl8V6APG+7m6FmcA10l9W1+Jo4JP7XLWf2hHN01NJ++PEicSy+KIwYKBc35RhlzI/W2JPaY1mtyuCrvo3ye/zJMi98aL1JMtteXIif6A2rZTAGbTzEO1pWmNVL5VdahMI92C3g397keErr7N4kmTdq3</validationCert>
+</SamlSsoConfig>

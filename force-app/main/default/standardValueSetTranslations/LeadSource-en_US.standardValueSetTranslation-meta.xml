@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Altro</masterLabel>
+        <translation>Other</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dealer</masterLabel>
+        <translation><!-- Dealer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dealer fair</masterLabel>
+        <translation><!-- Dealer fair --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fiera commerciale</masterLabel>
+        <translation>Fair</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Geocom Italia</masterLabel>
+        <translation><!-- Geocom Italia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Google Ad</masterLabel>
+        <translation><!-- Google Ad --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LinkedIn</masterLabel>
+        <translation><!-- LinkedIn --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Passaparola</masterLabel>
+        <translation>Word of mouth</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Repurchase</masterLabel>
+        <translation><!-- Repurchase --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Stock</masterLabel>
+        <translation><!-- Stock --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telefono</masterLabel>
+        <translation>Phone</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telemarketing</masterLabel>
+        <translation><!-- Telemarketing --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UCIMU</masterLabel>
+        <translation><!-- UCIMU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Web</masterLabel>
+        <translation>Web</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Web CN</masterLabel>
+        <translation><!-- Web CN --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

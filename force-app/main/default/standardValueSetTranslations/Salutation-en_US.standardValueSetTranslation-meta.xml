@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Dott.</masterLabel>
+        <translation><!-- Dott. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Frau</masterLabel>
+        <translation><!-- Frau --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Frau Dr.</masterLabel>
+        <translation><!-- Frau Dr. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Herr</masterLabel>
+        <translation><!-- Herr --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Herr Dr.</masterLabel>
+        <translation><!-- Herr Dr. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ing.</masterLabel>
+        <translation><!-- Ing. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Per. Ind.</masterLabel>
+        <translation><!-- Per. Ind. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prof.</masterLabel>
+        <translation><!-- Prof. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sig.</masterLabel>
+        <translation>Mr.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sig.na</masterLabel>
+        <translation>Miss.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sig.ra</masterLabel>
+        <translation>Mrs.</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

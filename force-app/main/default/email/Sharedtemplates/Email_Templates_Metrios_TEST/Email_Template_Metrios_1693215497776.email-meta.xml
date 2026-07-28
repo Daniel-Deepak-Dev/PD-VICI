@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email_Template_Example</name>
+    <pageDevName>Email_Template_Metrios</pageDevName>
+    <style>none</style>
+    <textOnly>Non vedi bene questa email?
+
+Versione Web &lt; # &gt; 
+
+{{{View_Online}}} [Image alt text: logo_metrios]  [Image alt text: banner] Ogni fornitura deve essere conforma, non importa se hanno chiesto uno sconto, se l&apos;ordine arriva oggi e la consegna è per domani, se devo produrre di notte e l&apos;operatore del terzo turno non è formato. I clienti vogliono i pezzi buoni, serve uno strumento di misura veloce ed economicodirettamente in produzione
+
+**I produttori conoscono bene le richieste del mercato.
+----------------------------------------------------
+
+Per questo progettiamo macchine di misura ottica per l&apos;officina.
+
+Per ridurre drasticamente i costi di controllo qualità della produzione, aiutandoti a produrre rispettando criteri di qualità, al giusto prezzo e nel miglior tempo
+
+VISITA IL NOSTRO CATALOGO &lt; https:// &gt; 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus lobortis eros, ut cursus ex laoreet at.
+
+Il sistema di misura ottica digitale metrios
+
+ - Riduce il tempo di misura a 2-5 secondi(comparazione di profilo, distanze, angoli, raggi, ecc...)
+ - Ottiene risultati oggettivinon influenzati dagli operatori
+ - Effettua test di qualità direttamente in produzione, in fase di accettazioneo prima della spedizione
+ - Misura più pezzicontemporaneamente
+ - Evita gli staffaggi
+
+SCOPRI I SISTEMI DI MISURA METRIOS &lt; https:// &gt; 
+
+Sei interessato e vuoi saperne di più?
+
+GUARDA IL VIDEO &lt; https:// &gt; 
+
+oppure
+
+Lasciaci un commento &lt; https:// &gt;  &lt; https:// &gt; 
+
+Grazie,
+
+il team Metrios
+
+VICI &amp; C S.p.A.
+
+Via Gutenberg 5, 47822 Santarcangelo di Romagna (RN), Italy
+
+Tel +39 0541623897
+
+unsubscribe from all emails
+
+{{{Unsubscribe}}} &lt; # &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Assigned</masterLabel>
+        <translation><!-- Assigned --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Close NOT Solved</masterLabel>
+        <translation><!-- Close NOT Solved --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Duplicated</masterLabel>
+        <translation><!-- Closed Duplicated --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed internal case</masterLabel>
+        <translation><!-- Closed internal case --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed pending offer</masterLabel>
+        <translation><!-- Closed pending offer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Connecting to customer</masterLabel>
+        <translation><!-- Connecting to customer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Delivering components</masterLabel>
+        <translation><!-- Delivering components --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Delivering solution</masterLabel>
+        <translation><!-- Delivering solution --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sent higher level</masterLabel>
+        <translation><!-- Sent higher level --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Under Test/Analysis</masterLabel>
+        <translation>under test</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for &quot;RS&quot; return</masterLabel>
+        <translation><!-- Waiting for &quot;RS&quot; return --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for Customer</masterLabel>
+        <translation><!-- Waiting for Customer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for Dealer</masterLabel>
+        <translation><!-- Waiting for Dealer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for RETURN components</masterLabel>
+        <translation><!-- Waiting for RETURN components --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for components</masterLabel>
+        <translation><!-- Waiting for components --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for machine ready</masterLabel>
+        <translation><!-- Waiting for machine ready --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for progress request</masterLabel>
+        <translation><!-- Waiting for progress request --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

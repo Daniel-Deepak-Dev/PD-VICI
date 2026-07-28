@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cliente finale</masterLabel>
+        <translation>Customer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Competitor</masterLabel>
+        <translation>Competitor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dealer</masterLabel>
+        <translation>Dealer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Key Account customer</masterLabel>
+        <translation><!-- Key Account customer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non adatto per FOV</masterLabel>
+        <translation><!-- Non adatto per FOV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non adatto per MTL</masterLabel>
+        <translation>Not suitable for MTL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non adatto per MTL/FOV</masterLabel>
+        <translation><!-- Non adatto per MTL/FOV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OEM System Integrator</masterLabel>
+        <translation><!-- OEM System Integrator --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Out of Business</masterLabel>
+        <translation><!-- Out of Business --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Potenziale Cliente</masterLabel>
+        <translation>Potential customer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Potenziale Dealer</masterLabel>
+        <translation>Potential dealer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sub-Dealer</masterLabel>
+        <translation><!-- Sub-Dealer --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

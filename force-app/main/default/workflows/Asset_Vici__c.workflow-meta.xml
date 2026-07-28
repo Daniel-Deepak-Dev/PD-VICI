@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Aggiornamento_scadenza</fullName>
+        <field>Data_scadenza_garanzia__c</field>
+        <formula>Data_di_consegna__c +365</formula>
+        <name>Aggiornamento scadenza</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>aggiornamento_garanzia_24</fullName>
+        <field>Data_scadenza_garanzia__c</field>
+        <formula>Data_di_consegna__c + 730</formula>
+        <name>aggiornamento garanzia 24</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Scadenza garanzia</fullName>
+        <actions>
+            <name>Aggiornamento_scadenza</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Asset_Vici__c.Tipo_di_garanzia__c</field>
+            <operation>equals</operation>
+            <value>Standard</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Scadenza garanzia 24</fullName>
+        <actions>
+            <name>aggiornamento_garanzia_24</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Asset_Vici__c.Tipo_di_garanzia__c</field>
+            <operation>equals</operation>
+            <value>Standard,24 mesi</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

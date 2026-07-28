@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Application Analysis / Demo</masterLabel>
+        <translation><!-- Application Analysis / Demo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chiuse/Conseguite</masterLabel>
+        <translation>Closed/won</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chiuse/Perse</masterLabel>
+        <translation>Closed/lost</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Order waiting</masterLabel>
+        <translation><!-- Order waiting --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualification</masterLabel>
+        <translation><!-- Qualification --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quote / Negotiation</masterLabel>
+        <translation><!-- Quote / Negotiation --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Altro</masterLabel>
+        <translation>Other</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chiama</masterLabel>
+        <translation>Phone call</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Invio lettera/Quotazione</masterLabel>
+        <translation>Sending quote</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Posta elettronica</masterLabel>
+        <translation>Email</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Riunione</masterLabel>
+        <translation>Meeting</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

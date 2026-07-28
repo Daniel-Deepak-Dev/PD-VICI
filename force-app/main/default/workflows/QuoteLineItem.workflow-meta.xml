@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>cambia_descrizione_articolo</fullName>
+        <field>Description</field>
+        <formula>Descrizione_richiesta_speciale__c</formula>
+        <name>cambia descrizione articolo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>copia_netto_dealer</fullName>
+        <field>Netto_Dealer__c</field>
+        <formula>Netto_Riga__c</formula>
+        <name>copia netto dealer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>copia_prezzo_finale</fullName>
+        <field>Prezzo_finale_c_o__c</field>
+        <formula>IF ( ISBLANK(Discount),
+UnitPrice *  Quantity  ,
+
+Quantity *(UnitPrice - ( UnitPrice * Discount)))</formula>
+        <name>copia prezzo finale</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copia prezzo finale</fullName>
+        <actions>
+            <name>copia_prezzo_finale</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>QuoteLineItem.UnitPrice</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Richiesta speciale</fullName>
+        <actions>
+            <name>cambia_descrizione_articolo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QuoteLineItem.Descrizione_richiesta_speciale__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>copia netto dealer</fullName>
+        <actions>
+            <name>copia_netto_dealer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>QuoteLineItem.Netto_Riga__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

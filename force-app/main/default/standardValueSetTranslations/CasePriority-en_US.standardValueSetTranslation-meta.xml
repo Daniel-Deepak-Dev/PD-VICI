@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Alta</masterLabel>
+        <translation>High</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bassa</masterLabel>
+        <translation>Low</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Media</masterLabel>
+        <translation>Medium</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Urgente e FERMA</masterLabel>
+        <translation>High - On hold</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Urgente ma in funzione</masterLabel>
+        <translation>High - In progress</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

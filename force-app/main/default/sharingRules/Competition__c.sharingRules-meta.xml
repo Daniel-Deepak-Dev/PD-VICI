@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sharing_Rules_Competition1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Rules Competition1</label>
+        <sharedTo>
+            <group>Utenti_Gruppo_Community</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_Rules_Competition2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Rules Competition2</label>
+        <sharedTo>
+            <group>Utenti_Gruppo_Community</group>
+        </sharedTo>
+        <sharedFrom>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
