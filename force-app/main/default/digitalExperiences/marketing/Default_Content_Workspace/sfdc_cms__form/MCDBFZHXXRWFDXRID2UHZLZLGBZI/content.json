@@ -1,0 +1,1080 @@
+{
+  "type" : "sfdc_cms__form",
+  "title" : "test form contattaci",
+  "contentBody" : {
+    "formsubmission" : {
+      "actions" : [ {
+        "attributes" : {
+          "formData" : "{!$form.fields}",
+          "formId" : "{!$form.id}",
+          "formVersion" : "{!$form.version}",
+          "pageReferenceId" : "{!$page.id}"
+        },
+        "definition" : "sfdc_cms/umaFormSubmissionAction"
+      }, {
+        "attributes" : {
+          "message" : "Thank you for your submission."
+        },
+        "definition" : "sfdc_cms/showThankYouAction"
+      } ]
+    },
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "objectApiName" : "Prospect"
+      },
+      "definition" : "sfdc_cms__recordDataProvider",
+      "sfdcExpressionKey" : "propsect"
+    } ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "006af2c2-896d-4004-a47e-c005930078df",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "12bdef5d-d687-47eb-b4d2-defb52483e1c",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "82d0895f-2667-413d-b872-88c9caac3b4e",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 40.0,
+              "sfdc_cms:fieldReference" : "{!propsect.FirstName}",
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "defaultValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "First Name",
+              "sfdc_cms:formInputNameProperty" : "FirstName",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "78c9569c-09ae-4912-9ae8-d433b9d5aed0",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 80.0,
+              "sfdc_cms:fieldReference" : "{!propsect.LastName}",
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Last Name",
+              "sfdc_cms:formInputNameProperty" : "LastName",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "a7a99c25-457a-4aef-9345-5da1ca90ec2e",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 80.0,
+              "sfdc_cms:fieldReference" : "{!propsect.Email}",
+              "sfdc_cms:formInputLabelProperty" : "Email",
+              "sfdc_cms:formInputNameProperty" : "Email",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputEmail",
+            "id" : "7d391342-1cca-4164-8034-3afa4522f106",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 255.0,
+              "sfdc_cms:fieldReference" : "{!propsect.Account_Name__c}",
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Account Name",
+              "sfdc_cms:formInputNameProperty" : "Account_Name__c",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "76513bff-4e72-420e-907b-e1b3601ae83b",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "includeCountryCode" : true,
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 40.0,
+              "sfdc_cms:fieldReference" : "{!propsect.Phone__c}",
+              "sfdc_cms:formInputLabelProperty" : "Phone",
+              "sfdc_cms:formInputNameProperty" : "Phone__c",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputTelephone",
+            "id" : "eb89ecde-e28c-4026-b349-46a03ed34d36",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 32000.0,
+              "sfdc_cms:fieldReference" : "{!propsect.Description}",
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Description",
+              "sfdc_cms:formInputNameProperty" : "Description",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputTextArea",
+            "id" : "b64354b2-1cee-42ef-88fc-b169187cb5ff",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "options" : [ {
+                "label" : "USA - Label: United States",
+                "value" : "USA - Label: United States"
+              }, {
+                "label" : "Canada",
+                "value" : "Canada"
+              }, {
+                "label" : "Afghanistan",
+                "value" : "Afghanistan"
+              }, {
+                "label" : "Albania",
+                "value" : "Albania"
+              }, {
+                "label" : "Algeria",
+                "value" : "Algeria"
+              }, {
+                "label" : "American Samoa",
+                "value" : "American Samoa"
+              }, {
+                "label" : "Andorra",
+                "value" : "Andorra"
+              }, {
+                "label" : "Angola",
+                "value" : "Angola"
+              }, {
+                "label" : "Anguilla",
+                "value" : "Anguilla"
+              }, {
+                "label" : "Antarctica",
+                "value" : "Antarctica"
+              }, {
+                "label" : "Antigua and Barbuda",
+                "value" : "Antigua and Barbuda"
+              }, {
+                "label" : "Argentina",
+                "value" : "Argentina"
+              }, {
+                "label" : "Armenia",
+                "value" : "Armenia"
+              }, {
+                "label" : "Aruba",
+                "value" : "Aruba"
+              }, {
+                "label" : "Australia",
+                "value" : "Australia"
+              }, {
+                "label" : "Austria",
+                "value" : "Austria"
+              }, {
+                "label" : "Azerbaijan",
+                "value" : "Azerbaijan"
+              }, {
+                "label" : "Bahamas",
+                "value" : "Bahamas"
+              }, {
+                "label" : "Bahrain",
+                "value" : "Bahrain"
+              }, {
+                "label" : "Bangladesh",
+                "value" : "Bangladesh"
+              }, {
+                "label" : "Barbados",
+                "value" : "Barbados"
+              }, {
+                "label" : "Belarus",
+                "value" : "Belarus"
+              }, {
+                "label" : "Belgium",
+                "value" : "Belgium"
+              }, {
+                "label" : "Belize",
+                "value" : "Belize"
+              }, {
+                "label" : "Benin",
+                "value" : "Benin"
+              }, {
+                "label" : "Bermuda",
+                "value" : "Bermuda"
+              }, {
+                "label" : "Bhutan",
+                "value" : "Bhutan"
+              }, {
+                "label" : "Bolivia",
+                "value" : "Bolivia"
+              }, {
+                "label" : "Bosnia and Herzegovina",
+                "value" : "Bosnia and Herzegovina"
+              }, {
+                "label" : "Botswana",
+                "value" : "Botswana"
+              }, {
+                "label" : "Brazil",
+                "value" : "Brazil"
+              }, {
+                "label" : "British Indian Ocean Territory",
+                "value" : "British Indian Ocean Territory"
+              }, {
+                "label" : "British Virgin Islands",
+                "value" : "British Virgin Islands"
+              }, {
+                "label" : "Brunei",
+                "value" : "Brunei"
+              }, {
+                "label" : "Bulgaria",
+                "value" : "Bulgaria"
+              }, {
+                "label" : "Burkina Faso",
+                "value" : "Burkina Faso"
+              }, {
+                "label" : "Burundi",
+                "value" : "Burundi"
+              }, {
+                "label" : "Cambodia",
+                "value" : "Cambodia"
+              }, {
+                "label" : "Cameroon",
+                "value" : "Cameroon"
+              }, {
+                "label" : "Cape Verde",
+                "value" : "Cape Verde"
+              }, {
+                "label" : "Cayman Islands",
+                "value" : "Cayman Islands"
+              }, {
+                "label" : "Central African Republic",
+                "value" : "Central African Republic"
+              }, {
+                "label" : "Chad",
+                "value" : "Chad"
+              }, {
+                "label" : "Chile",
+                "value" : "Chile"
+              }, {
+                "label" : "China",
+                "value" : "China"
+              }, {
+                "label" : "Christmas Island",
+                "value" : "Christmas Island"
+              }, {
+                "label" : "Cocos (Keeling) Islands",
+                "value" : "Cocos (Keeling) Islands"
+              }, {
+                "label" : "Colombia",
+                "value" : "Colombia"
+              }, {
+                "label" : "Comoros",
+                "value" : "Comoros"
+              }, {
+                "label" : "Congo",
+                "value" : "Congo"
+              }, {
+                "label" : "Cook Islands",
+                "value" : "Cook Islands"
+              }, {
+                "label" : "Costa Rica",
+                "value" : "Costa Rica"
+              }, {
+                "label" : "Croatia",
+                "value" : "Croatia"
+              }, {
+                "label" : "Cuba",
+                "value" : "Cuba"
+              }, {
+                "label" : "Curaçao",
+                "value" : "Curaçao"
+              }, {
+                "label" : "Cyprus",
+                "value" : "Cyprus"
+              }, {
+                "label" : "Czech Republic",
+                "value" : "Czech Republic"
+              }, {
+                "label" : "Côte d’Ivoire",
+                "value" : "Côte d’Ivoire"
+              }, {
+                "label" : "Democratic Republic of the Congo",
+                "value" : "Democratic Republic of the Congo"
+              }, {
+                "label" : "Denmark",
+                "value" : "Denmark"
+              }, {
+                "label" : "Djibouti",
+                "value" : "Djibouti"
+              }, {
+                "label" : "Dominica",
+                "value" : "Dominica"
+              }, {
+                "label" : "Dominican Republic",
+                "value" : "Dominican Republic"
+              }, {
+                "label" : "Ecuador",
+                "value" : "Ecuador"
+              }, {
+                "label" : "Egypt",
+                "value" : "Egypt"
+              }, {
+                "label" : "El Salvador",
+                "value" : "El Salvador"
+              }, {
+                "label" : "Equatorial Guinea",
+                "value" : "Equatorial Guinea"
+              }, {
+                "label" : "Eritrea",
+                "value" : "Eritrea"
+              }, {
+                "label" : "Estonia",
+                "value" : "Estonia"
+              }, {
+                "label" : "Ethiopia",
+                "value" : "Ethiopia"
+              }, {
+                "label" : "Falkland Islands",
+                "value" : "Falkland Islands"
+              }, {
+                "label" : "Faroe Islands",
+                "value" : "Faroe Islands"
+              }, {
+                "label" : "Fiji",
+                "value" : "Fiji"
+              }, {
+                "label" : "Finland",
+                "value" : "Finland"
+              }, {
+                "label" : "France",
+                "value" : "France"
+              }, {
+                "label" : "French Guiana",
+                "value" : "French Guiana"
+              }, {
+                "label" : "French Polynesia",
+                "value" : "French Polynesia"
+              }, {
+                "label" : "French Southern Territories",
+                "value" : "French Southern Territories"
+              }, {
+                "label" : "Gabon",
+                "value" : "Gabon"
+              }, {
+                "label" : "Gambia",
+                "value" : "Gambia"
+              }, {
+                "label" : "Georgia",
+                "value" : "Georgia"
+              }, {
+                "label" : "Germany",
+                "value" : "Germany"
+              }, {
+                "label" : "Ghana",
+                "value" : "Ghana"
+              }, {
+                "label" : "Gibraltar",
+                "value" : "Gibraltar"
+              }, {
+                "label" : "Greece",
+                "value" : "Greece"
+              }, {
+                "label" : "Greenland",
+                "value" : "Greenland"
+              }, {
+                "label" : "Grenada",
+                "value" : "Grenada"
+              }, {
+                "label" : "Guadeloupe",
+                "value" : "Guadeloupe"
+              }, {
+                "label" : "Guam",
+                "value" : "Guam"
+              }, {
+                "label" : "Guatemala",
+                "value" : "Guatemala"
+              }, {
+                "label" : "Guernsey",
+                "value" : "Guernsey"
+              }, {
+                "label" : "Guinea",
+                "value" : "Guinea"
+              }, {
+                "label" : "Guinea-Bissau",
+                "value" : "Guinea-Bissau"
+              }, {
+                "label" : "Guyana",
+                "value" : "Guyana"
+              }, {
+                "label" : "Haiti",
+                "value" : "Haiti"
+              }, {
+                "label" : "Honduras",
+                "value" : "Honduras"
+              }, {
+                "label" : "Hong Kong S.A.R., China",
+                "value" : "Hong Kong S.A.R., China"
+              }, {
+                "label" : "Hungary",
+                "value" : "Hungary"
+              }, {
+                "label" : "Iceland",
+                "value" : "Iceland"
+              }, {
+                "label" : "India",
+                "value" : "India"
+              }, {
+                "label" : "Indonesia",
+                "value" : "Indonesia"
+              }, {
+                "label" : "Iran",
+                "value" : "Iran"
+              }, {
+                "label" : "Iraq",
+                "value" : "Iraq"
+              }, {
+                "label" : "Ireland",
+                "value" : "Ireland"
+              }, {
+                "label" : "Isle of Man",
+                "value" : "Isle of Man"
+              }, {
+                "label" : "Israel",
+                "value" : "Israel"
+              }, {
+                "label" : "Italy - Label: Italia",
+                "value" : "Italy - Label: Italia"
+              }, {
+                "label" : "Jamaica",
+                "value" : "Jamaica"
+              }, {
+                "label" : "Japan",
+                "value" : "Japan"
+              }, {
+                "label" : "Jersey",
+                "value" : "Jersey"
+              }, {
+                "label" : "Jordan",
+                "value" : "Jordan"
+              }, {
+                "label" : "Kazakhstan",
+                "value" : "Kazakhstan"
+              }, {
+                "label" : "Kenya",
+                "value" : "Kenya"
+              }, {
+                "label" : "Kiribati",
+                "value" : "Kiribati"
+              }, {
+                "label" : "Kuwait",
+                "value" : "Kuwait"
+              }, {
+                "label" : "Kyrgyzstan",
+                "value" : "Kyrgyzstan"
+              }, {
+                "label" : "Laos",
+                "value" : "Laos"
+              }, {
+                "label" : "Latvia",
+                "value" : "Latvia"
+              }, {
+                "label" : "Lebanon",
+                "value" : "Lebanon"
+              }, {
+                "label" : "Lesotho",
+                "value" : "Lesotho"
+              }, {
+                "label" : "Liberia",
+                "value" : "Liberia"
+              }, {
+                "label" : "Libya",
+                "value" : "Libya"
+              }, {
+                "label" : "Liechtenstein",
+                "value" : "Liechtenstein"
+              }, {
+                "label" : "Lituania - Label: Lithuania",
+                "value" : "Lituania - Label: Lithuania"
+              }, {
+                "label" : "Luxembourg",
+                "value" : "Luxembourg"
+              }, {
+                "label" : "Macao S.A.R., China",
+                "value" : "Macao S.A.R., China"
+              }, {
+                "label" : "Macedonia",
+                "value" : "Macedonia"
+              }, {
+                "label" : "Madagascar",
+                "value" : "Madagascar"
+              }, {
+                "label" : "Malawi",
+                "value" : "Malawi"
+              }, {
+                "label" : "Malaysia",
+                "value" : "Malaysia"
+              }, {
+                "label" : "Maldives",
+                "value" : "Maldives"
+              }, {
+                "label" : "Mali",
+                "value" : "Mali"
+              }, {
+                "label" : "Malta",
+                "value" : "Malta"
+              }, {
+                "label" : "Marshall Islands",
+                "value" : "Marshall Islands"
+              }, {
+                "label" : "Martinique",
+                "value" : "Martinique"
+              }, {
+                "label" : "Mauritania",
+                "value" : "Mauritania"
+              }, {
+                "label" : "Mauritius",
+                "value" : "Mauritius"
+              }, {
+                "label" : "Mayotte",
+                "value" : "Mayotte"
+              }, {
+                "label" : "Mexico",
+                "value" : "Mexico"
+              }, {
+                "label" : "Micronesia",
+                "value" : "Micronesia"
+              }, {
+                "label" : "Moldova",
+                "value" : "Moldova"
+              }, {
+                "label" : "Monaco",
+                "value" : "Monaco"
+              }, {
+                "label" : "Mongolia",
+                "value" : "Mongolia"
+              }, {
+                "label" : "Montenegro",
+                "value" : "Montenegro"
+              }, {
+                "label" : "Montserrat",
+                "value" : "Montserrat"
+              }, {
+                "label" : "Marocco - Label: Morocco",
+                "value" : "Marocco - Label: Morocco"
+              }, {
+                "label" : "Mozambique",
+                "value" : "Mozambique"
+              }, {
+                "label" : "Myanmar",
+                "value" : "Myanmar"
+              }, {
+                "label" : "Namibia",
+                "value" : "Namibia"
+              }, {
+                "label" : "Nauru",
+                "value" : "Nauru"
+              }, {
+                "label" : "Nepal",
+                "value" : "Nepal"
+              }, {
+                "label" : "Holland - Label: Netherlands",
+                "value" : "Holland - Label: Netherlands"
+              }, {
+                "label" : "New Caledonia",
+                "value" : "New Caledonia"
+              }, {
+                "label" : "New Zealand",
+                "value" : "New Zealand"
+              }, {
+                "label" : "Nicaragua",
+                "value" : "Nicaragua"
+              }, {
+                "label" : "Niger",
+                "value" : "Niger"
+              }, {
+                "label" : "Nigeria",
+                "value" : "Nigeria"
+              }, {
+                "label" : "Niue",
+                "value" : "Niue"
+              }, {
+                "label" : "Norfolk Island",
+                "value" : "Norfolk Island"
+              }, {
+                "label" : "North Korea",
+                "value" : "North Korea"
+              }, {
+                "label" : "Northern Mariana Islands",
+                "value" : "Northern Mariana Islands"
+              }, {
+                "label" : "Norvegia - Label: Norway",
+                "value" : "Norvegia - Label: Norway"
+              }, {
+                "label" : "Oman",
+                "value" : "Oman"
+              }, {
+                "label" : "Pakistan",
+                "value" : "Pakistan"
+              }, {
+                "label" : "Palau",
+                "value" : "Palau"
+              }, {
+                "label" : "Palestinian Territory",
+                "value" : "Palestinian Territory"
+              }, {
+                "label" : "Panama",
+                "value" : "Panama"
+              }, {
+                "label" : "Papua New Guinea",
+                "value" : "Papua New Guinea"
+              }, {
+                "label" : "Paraguay",
+                "value" : "Paraguay"
+              }, {
+                "label" : "Perù - Label: Peru",
+                "value" : "Perù - Label: Peru"
+              }, {
+                "label" : "Philippines",
+                "value" : "Philippines"
+              }, {
+                "label" : "Pitcairn",
+                "value" : "Pitcairn"
+              }, {
+                "label" : "Poland",
+                "value" : "Poland"
+              }, {
+                "label" : "Portugal",
+                "value" : "Portugal"
+              }, {
+                "label" : "Puerto Rico",
+                "value" : "Puerto Rico"
+              }, {
+                "label" : "Qatar",
+                "value" : "Qatar"
+              }, {
+                "label" : "Romania",
+                "value" : "Romania"
+              }, {
+                "label" : "Russia",
+                "value" : "Russia"
+              }, {
+                "label" : "Rwanda",
+                "value" : "Rwanda"
+              }, {
+                "label" : "Réunion",
+                "value" : "Réunion"
+              }, {
+                "label" : "Saint Barthélemy",
+                "value" : "Saint Barthélemy"
+              }, {
+                "label" : "Saint Helena",
+                "value" : "Saint Helena"
+              }, {
+                "label" : "Saint Kitts and Nevis",
+                "value" : "Saint Kitts and Nevis"
+              }, {
+                "label" : "Saint Lucia",
+                "value" : "Saint Lucia"
+              }, {
+                "label" : "Saint Pierre and Miquelon",
+                "value" : "Saint Pierre and Miquelon"
+              }, {
+                "label" : "Saint Vincent and the Grenadines",
+                "value" : "Saint Vincent and the Grenadines"
+              }, {
+                "label" : "Samoa",
+                "value" : "Samoa"
+              }, {
+                "label" : "San Marino",
+                "value" : "San Marino"
+              }, {
+                "label" : "Sao Tome and Principe",
+                "value" : "Sao Tome and Principe"
+              }, {
+                "label" : "Saudi Arabia",
+                "value" : "Saudi Arabia"
+              }, {
+                "label" : "Senegal",
+                "value" : "Senegal"
+              }, {
+                "label" : "Serbia",
+                "value" : "Serbia"
+              }, {
+                "label" : "Seychelles",
+                "value" : "Seychelles"
+              }, {
+                "label" : "Sierra Leone",
+                "value" : "Sierra Leone"
+              }, {
+                "label" : "Singapore",
+                "value" : "Singapore"
+              }, {
+                "label" : "Slovacchia",
+                "value" : "Slovacchia"
+              }, {
+                "label" : "Slovenia",
+                "value" : "Slovenia"
+              }, {
+                "label" : "Solomon Islands",
+                "value" : "Solomon Islands"
+              }, {
+                "label" : "Somalia",
+                "value" : "Somalia"
+              }, {
+                "label" : "South Africa",
+                "value" : "South Africa"
+              }, {
+                "label" : "Korea",
+                "value" : "Korea"
+              }, {
+                "label" : "South Sudan",
+                "value" : "South Sudan"
+              }, {
+                "label" : "Spain",
+                "value" : "Spain"
+              }, {
+                "label" : "Sri Lanka",
+                "value" : "Sri Lanka"
+              }, {
+                "label" : "Sudan",
+                "value" : "Sudan"
+              }, {
+                "label" : "Suriname",
+                "value" : "Suriname"
+              }, {
+                "label" : "Svalbard and Jan Mayen",
+                "value" : "Svalbard and Jan Mayen"
+              }, {
+                "label" : "Swaziland",
+                "value" : "Swaziland"
+              }, {
+                "label" : "Sweden",
+                "value" : "Sweden"
+              }, {
+                "label" : "Switzerland",
+                "value" : "Switzerland"
+              }, {
+                "label" : "Syria",
+                "value" : "Syria"
+              }, {
+                "label" : "Taiwan",
+                "value" : "Taiwan"
+              }, {
+                "label" : "Tajikistan",
+                "value" : "Tajikistan"
+              }, {
+                "label" : "Tanzania",
+                "value" : "Tanzania"
+              }, {
+                "label" : "Thailand",
+                "value" : "Thailand"
+              }, {
+                "label" : "Timor-Leste",
+                "value" : "Timor-Leste"
+              }, {
+                "label" : "Togo",
+                "value" : "Togo"
+              }, {
+                "label" : "Tokelau",
+                "value" : "Tokelau"
+              }, {
+                "label" : "Tonga",
+                "value" : "Tonga"
+              }, {
+                "label" : "Trinidad and Tobago",
+                "value" : "Trinidad and Tobago"
+              }, {
+                "label" : "Tunisia",
+                "value" : "Tunisia"
+              }, {
+                "label" : "Turkey",
+                "value" : "Turkey"
+              }, {
+                "label" : "Turkmenistan",
+                "value" : "Turkmenistan"
+              }, {
+                "label" : "Turks and Caicos Islands",
+                "value" : "Turks and Caicos Islands"
+              }, {
+                "label" : "Tuvalu",
+                "value" : "Tuvalu"
+              }, {
+                "label" : "U.S. Virgin Islands",
+                "value" : "U.S. Virgin Islands"
+              }, {
+                "label" : "Uganda",
+                "value" : "Uganda"
+              }, {
+                "label" : "Ucraina",
+                "value" : "Ucraina"
+              }, {
+                "label" : "United Arab Emirates",
+                "value" : "United Arab Emirates"
+              }, {
+                "label" : "UK - Label: United Kingdom",
+                "value" : "UK - Label: United Kingdom"
+              }, {
+                "label" : "United States Minor Outlying Islands",
+                "value" : "United States Minor Outlying Islands"
+              }, {
+                "label" : "Uruguay",
+                "value" : "Uruguay"
+              }, {
+                "label" : "Uzbekistan",
+                "value" : "Uzbekistan"
+              }, {
+                "label" : "Vanuatu",
+                "value" : "Vanuatu"
+              }, {
+                "label" : "Vatican",
+                "value" : "Vatican"
+              }, {
+                "label" : "Venezuela",
+                "value" : "Venezuela"
+              }, {
+                "label" : "Viet Nam",
+                "value" : "Viet Nam"
+              }, {
+                "label" : "Wallis and Futuna",
+                "value" : "Wallis and Futuna"
+              }, {
+                "label" : "Western Sahara",
+                "value" : "Western Sahara"
+              }, {
+                "label" : "Yemen",
+                "value" : "Yemen"
+              }, {
+                "label" : "Zambia",
+                "value" : "Zambia"
+              }, {
+                "label" : "Zimbabwe",
+                "value" : "Zimbabwe"
+              } ],
+              "sfdc_cms:fieldReference" : "{!propsect.Country__c}",
+              "sfdc_cms:formInputDefaultValueDropdownProperty" : {
+                "defaultValue" : "",
+                "urlParameterValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Country",
+              "sfdc_cms:formInputNameProperty" : "Country__c",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputDropdown",
+            "id" : "3ce263d7-7a8d-4f4c-8a0f-6538af866c05",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "sfdc_cms:fieldReference" : "{!propsect.Consenso_form__c}",
+              "sfdc_cms:formInputDefaultValueBooleanProperty" : {
+                "defaultValue" : false,
+                "urlParameterValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Consenso form",
+              "sfdc_cms:formInputNameProperty" : "Consenso_form__c",
+              "sfdc_cms:formInputRequiredProperty" : true
+            },
+            "definition" : "lightning/inputCheckbox",
+            "id" : "03dc8a23-4a8d-465a-a056-bcb9c97868ed",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "9d1b8c93-9a86-44b5-af43-045397f8fb51",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "f457f8b3-a635-41be-96ab-fb8ef70d2085",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.buttonStyleGroup.primary.lightning:borderRadius}",
+              "lightning:borderWidth" : "{!$brand.buttonStyleGroup.primary.lightning:borderWidth}",
+              "lightning:buttonColorGroup" : "{!$brand.buttonStyleGroup.primary.lightning:buttonColorGroup}",
+              "lightning:click" : {
+                "actions" : [ {
+                  "definition" : "sfdc_cms/customEventAction",
+                  "attributes" : {
+                    "type" : "formsubmit",
+                    "options" : {
+                      "bubbles" : true
+                    }
+                  }
+                } ]
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.buttonStyleGroup.primary.lightning:padding}",
+              "lightning:typography" : "{!$brand.buttonStyleGroup.primary.lightning:typography}",
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "Submit",
+              "width" : "auto"
+            },
+            "definition" : "lightning/actionButton",
+            "id" : "dd19f65d-58d0-46ef-858c-68cf22004784",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:title" : "test form contattaci"
+  },
+  "urlName" : "test-form-contattaci"
+}

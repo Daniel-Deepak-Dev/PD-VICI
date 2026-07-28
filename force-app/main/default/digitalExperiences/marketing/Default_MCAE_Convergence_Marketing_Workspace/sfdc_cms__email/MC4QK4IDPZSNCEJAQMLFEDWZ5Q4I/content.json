@@ -1,0 +1,829 @@
+{
+  "type" : "sfdc_cms__email",
+  "title" : "Newsletter Calibra - tentativo 222",
+  "contentBody" : {
+    "backgroundColor" : "#F9F9F9",
+    "lightning:backgroundImage" : {
+      "position" : "center center",
+      "repeat" : "no-repeat",
+      "size" : "cover"
+    },
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:colorScheme" : {
+      "contrast" : "#000000",
+      "neutral" : "#747474",
+      "primaryAccent" : "#0176d3",
+      "primaryAccentContrast" : "#ffffff",
+      "root" : "#F9F9F9"
+    },
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "objectApiName" : "UnifiedIndividual__dlm"
+      },
+      "definition" : "sfdc_cms__unifiedIndividualDataProvider",
+      "sfdcExpressionKey" : "$unifiedIndividual"
+    } ],
+    "lightning:expressions" : [ ],
+    "lightning:padding" : {
+      "bottom" : {
+        "unit" : "px",
+        "value" : 10.0
+      },
+      "left" : {
+        "unit" : "px",
+        "value" : 20.0
+      },
+      "right" : {
+        "unit" : "px",
+        "value" : 20.0
+      },
+      "top" : {
+        "unit" : "px",
+        "value" : 10.0
+      }
+    },
+    "messagePurpose" : "promotional",
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "cf8f860a-2661-42ad-ae18-a3090a338497",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "f0857006-2236-4265-968b-3fd903869b85",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "f01fc49a-1d13-47f9-b867-a504ecbfca61",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 15.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                }
+              },
+              "rawHtml" : "<span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\"><a href=\"{!$other.View_Online}\"><span style=\"color:#666666;\">Versione Web</span></a></span></span>"
+            },
+            "definition" : "lightning/html",
+            "id" : "32b894b9-4d21-4206-b681-cdf71018d3b7",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "2953657d-f547-4fe3-b637-f5311433e38c",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "ff1c6f9d-6bf5-475a-8fe5-3c6d78d43e3c",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 40.0
+                }
+              },
+              "lightning:borderRadius" : {
+                "unit" : "px",
+                "value" : 0.0
+              },
+              "lightning:borderWidth" : {
+                "unit" : "px",
+                "value" : 0.0
+              },
+              "lightning:colorGroup" : {
+                "backgroundColor" : "#ffffff",
+                "borderColor" : "#747474",
+                "linkColor" : "#0176d3",
+                "textColor" : "#000000"
+              },
+              "lightning:horizontalAlignment" : "right",
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                }
+              },
+              "lightning:padding" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 16.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "linkUrl" : "https://www.vicivision.com/it/"
+            },
+            "definition" : "lightning/image",
+            "id" : "9d0fb6b2-3eb9-4cae-aba4-ef370a321a57",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "eeaa683b-8628-4621-a931-7476d84179d1",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "05f9bfaf-99e2-475a-8f81-ea2563912726",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 15.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                }
+              },
+              "rawHtml" : "<h1 style=\"font-size: 28px; color: rgb(0, 147, 58); font-weight: bold; margin: 0px; font-family: Arial, Helvetica, sans-serif; border-top: 1px solid rgb(243, 243, 243); padding-top: 20px; padding-bottom: 20px; text-align: center;\"><br />\n<span style=\"font-size:16px;\">Gentile {!$recipient.FirstName},</span></h1>\n\n<div style=\"text-align: center;\"><span style=\"color:#09933a;\"><span style=\"font-size:12pt\"><span style=\"line-height:115%\"><span style=\"font-family:Aptos,sans-serif\"><b>Scopri il primo servizio accreditato in Italia per la taratura ottica 2D.<br />\n<br />\nMisura. Certifica. Affidati ai migliori.</b></span></span></span></span></div>\n<br />\n "
+            },
+            "definition" : "lightning/html",
+            "id" : "f0f3e109-a9e6-4e46-8377-f0b88bfbe0bb",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 30.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "rawHtml" : "<span style=\"line-height:1.5;\"><span style=\"color:#444444;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">CALIBRA di VICI&amp;C. è il <b>primo laboratorio in Italia accreditato da ACCREDIA</b> per la taratura di macchine di misura ottica 2D su pezzi a simmetria di rivoluzione.<br />\n<br />\nUn servizio unico, <b>riconosciuto a livello nazionale e internazionale</b>, che ti offre tutta la tranquillità della conformità normativa e della precisione metrologica.</span></span></span></span>"
+            },
+            "definition" : "lightning/html",
+            "id" : "18f8d2a4-9f60-49fc-a77b-1921dfd991d1",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "rawHtml" : "<h2 style=\"font-size: 28px; color: rgb(0, 147, 58); font-weight: bold; margin: 0px; font-family: Arial, Helvetica, sans-serif; border-top: 1px solid rgb(243, 243, 243); padding-top: 20px; padding-bottom: 20px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:16px;\"><strong style=\"font-family: sans-serif, Arial, Verdana, &#34;Trebuchet MS&#34;, &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;; font-size: 14px; color: rgb(68, 68, 68);\">PERCHÉ SCEGLIERE CALIBRA?</strong></span></span></h2>\n\n<ul><li><span style=\"line-height:1.5;\"><span style=\"color:#444444;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"> Accreditamento ACCREDIA secondo la norma UNI CEI EN ISO/IEC 17025:2018</span></span></span></span></li><li><span style=\"line-height:1.5;\"><span style=\"color:#444444;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Certificati di taratura con validità legale e riconoscimento internazionale</span></span></span></span></li><li><span style=\"line-height:1.5;\"><span style=\"color:#444444;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dichiarazione di conformità inclusa, per garantire trasparenza e affidabilità delle tue misurazioni</span></span></span></span></li><li><span style=\"line-height:1.5;\"><span style=\"color:#444444;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Servizio svolto con imparzialità, competenza e massima riservatezza</span></span></span></span></li></ul>"
+            },
+            "definition" : "lightning/html",
+            "id" : "41cd25a7-358c-4ced-947f-5654c5f52016",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                }
+              },
+              "rawHtml" : "<h2 style=\"font-size: 28px; color: rgb(0, 147, 58); font-weight: bold; margin: 0px; font-family: Arial, Helvetica, sans-serif; border-top: 1px solid rgb(243, 243, 243); padding-top: 20px; padding-bottom: 20px;\"><span style=\"font-size:16px;\"><strong style=\"font-size: 16px; color: rgb(51, 51, 51);\"><span style=\"color:#444444;\">Lo sapevi?</span></strong></span></h2>\n<span style=\"color:#444444;\"><span style=\"line-height:1.5;\"><strong>Il certificato di taratura ACCREDIA</strong> è l’unico documento che attesta ufficialmente che la tua macchina misura correttamente, come richiesto da normative come ISO 9001, IATF 16949 e ISO 13485.</span></span><br />\n "
+            },
+            "definition" : "lightning/html",
+            "id" : "6117558e-62f2-4ad0-b0ab-6823959362ad",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "6ff7fe20-04cc-432e-a44b-311ddac60ba2",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "af2357f9-b51e-4946-821b-db12f7c2ed76",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 100.0
+                }
+              },
+              "lightning:borderRadius" : {
+                "unit" : "px",
+                "value" : 0.0
+              },
+              "lightning:borderWidth" : {
+                "unit" : "px",
+                "value" : 0.0
+              },
+              "lightning:colorGroup" : {
+                "backgroundColor" : "#ffffff",
+                "borderColor" : "#747474",
+                "linkColor" : "#0176d3",
+                "textColor" : "#000000"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "lightning:padding" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 16.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "linkUrl" : "https://sfdc.co"
+            },
+            "definition" : "lightning/image",
+            "id" : "b3a7f9ac-5938-4fe1-9ae9-c8ababae2bfc",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "a6baedbf-f3bc-47dd-8e14-a6d51985dbd7",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "87f4991e-f7a0-476d-a58d-e56a882c2b28",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 30.0
+                }
+              },
+              "rawHtml" : "<br />\n<span style=\"line-height:1.5;\"><strong>Affidati all’unico laboratorio in Italia accreditato da ACCREDIA per la taratura di sistemi ottici 2D. </strong><br />\nUn servizio esclusivo, pensato per aziende che non possono permettersi margini d’errore.<br />\n<br />\n<strong>Richiedi subito maggiori informazioni o una quotazione personalizzata.</strong><br />\nSiamo a tua disposizione per fornirti tutti i dettagli di cui hai bisogno.</span>"
+            },
+            "definition" : "lightning/html",
+            "id" : "df22107f-81aa-4be4-8685-13e2a420cb6a",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : {
+                "unit" : "px",
+                "value" : 5.0
+              },
+              "lightning:borderWidth" : {
+                "unit" : "px",
+                "value" : 0.0
+              },
+              "lightning:buttonColorGroup" : {
+                "backgroundColor" : "#000000",
+                "borderColor" : "#000000",
+                "textColor" : "#FFFFFF"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 40.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                }
+              },
+              "lightning:padding" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 15.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 15.0
+                }
+              },
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 16.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "RICHIEDI INFO",
+              "uri" : "mailto:laboratorio@vici.it",
+              "width" : "auto"
+            },
+            "definition" : "lightning/button",
+            "id" : "defafa96-cd83-429f-859d-3d390da56293",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "89f00bac-5d54-4b35-93b6-67daeca10510",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "be75fefc-8223-455e-9603-7a28699bd8de",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                }
+              },
+              "rawHtml" : "<strong><span style=\"font-size:16px;\">FAQ </span></strong><br />\n<br />\n<span style=\"line-height:1.5;\"><span style=\"font-size:12px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><em><strong>Che differenza c’è tra rapporto di taratura e certificato di taratura?  </strong></em><br />\nLa principale differenza risiede nel livello di validità e tracciabilità, entrambi infatti riportano i risultati della taratura, ma il certificato di taratura attesta che la taratura è stata eseguita da un laboratorio accreditato da ACCREDIA, seguendo procedure tecniche approvate da ACCREDIA, assicurando la riferibilità metrologica (riferibilità ai campioni nazionali e internazionali).<br />\n<br />\n<em><strong>Perché dovrei avere la macchina con certificato di taratura contenente la dichiarazione di conformità?  </strong></em><br />\nPer avere la garanzia che la macchina misuri correttamente rispetto ad un MPE desiderato; la dichiarazione di conformità aumenta la trasparenza e la chiarezza dei risultati.<br />\n<br />\n<em><strong>Che vantaggi ho nell’avere la macchina con certificato di taratura contenente dichiarazione di conformità?</strong></em>  <br />\nIl certificato di taratura è l’unico documento pienamente conforme alle normative di settore in merito alla strumentazione di misura ed ha anche validità legale. Consente pertanto di ottemperare alle richieste di dette normative in merito alla taratura degli strumenti di misura (tra cui ISO 9001, IATF 16949, ISO 13485).<br />\n<br />\n<em><strong>Perché dovrei rivolgermi al laboratorio Calibra?</strong></em>  <br />\n<span style=\"color:#44444;\">Perché ad oggi Calibra è l’unico laboratorio in Italia accreditato da ACCREDIA in grado di rilasciare un certificato di taratura con dichiarazione di conformità per macchine di misura di pezzi a simmetria di rivoluzione con tecnica di misura ottica 2D.</span></span></span></span><br />\n<br />\n "
+            },
+            "definition" : "lightning/html",
+            "id" : "04dfa942-5b86-4a26-bacb-36f68ce91704",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "d53192bd-1b3b-467a-9ab7-d67f250c31d9",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "dd218ffc-1cce-4e40-a142-0c034c6e23e7",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 30.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                }
+              },
+              "rawHtml" : "<div> </div>\n\n<div><span style=\"color:#ffffff;\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"line-height:115%\"><b>CALIBRA - VICI&amp;C.</b><br />\nInnovazione, precisione, garanzia.</span></span></span></span></div>\n\n<div style=\"text-align: center;\"><br />\n<br />\n<span style=\"color:#ffffff;\"><strong>VICI &amp; C. S.p.A.</strong><br />\n<span style=\"font-size:12px;\">Via J. Gutenberg 5,<br />\n47822 Santarcangelo di Romagna (RN), Italy</span><br />\n<span style=\"font-size:12px;\">&#43;39 0541 350 411 | </span></span><a href=\"https://www.vicivision.com/it/\"><span style=\"color:#ffffff;\"><span style=\"font-size:12px;\">www.vicivision.com</span></span></a></div>"
+            },
+            "definition" : "lightning/html",
+            "id" : "7629ed38-6482-4327-b40d-ed7390a49212",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "376afc90-f2bb-4889-b5ec-18bd0ec8d9a0",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "78c25fb5-c882-48dd-ab21-8841213b84a3",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 30.0
+                }
+              },
+              "rawHtml" : "<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 16px; font-weight: normal; margin: 0px; text-align: center;\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#999999;\">Se non desideri più ricevere comunicazioni da VICIVISION, </span><a href=\"{!$other.Unsubscribe}\" style=\"color:#666666;\"><span style=\"color:#999999;\">clicca qui</span></a></span></span></p>"
+            },
+            "definition" : "lightning/html",
+            "id" : "14d676ce-6488-4fe1-a4b6-bc87df5b3960",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:title" : "Newsletter Calibra - tentativo 222",
+    "subjectLine" : "Misura con riferibilità certificata: scopri il nostro servizio unico di taratura accreditato!",
+    "sfdc_cms:variants" : [ ]
+  },
+  "urlName" : "newsletter-calibra---tentativo-222"
+}

@@ -1,0 +1,222 @@
+{
+  "type" : "sfdc_cms__form",
+  "title" : "Test form Caterina",
+  "contentBody" : {
+    "formsubmission" : {
+      "actions" : [ {
+        "attributes" : {
+          "formData" : "{!$form.fields}",
+          "formId" : "{!$form.id}",
+          "formVersion" : "{!$form.version}",
+          "pageReferenceId" : "{!$page.id}"
+        },
+        "definition" : "sfdc_cms/umaFormSubmissionAction"
+      }, {
+        "attributes" : {
+          "message" : "Thank you for your submission."
+        },
+        "definition" : "sfdc_cms/showThankYouAction"
+      } ]
+    },
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "objectApiName" : "Prospect"
+      },
+      "definition" : "sfdc_cms__recordDataProvider",
+      "sfdcExpressionKey" : "Test"
+    } ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "6418c309-fa03-44a8-b6af-f146c0007ab0",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "91924975-cc69-4a3b-8369-ffd95b83f319",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "a36368d5-5352-4185-8fe5-e311e63e80dd",
+          "type" : "block",
+          "children" : [ ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "1a894fce-573e-490b-b365-0a7f5cab20b1",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "5fe0e033-b9fb-496b-adf7-d12f2c34ddcb",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 255.0,
+              "sfdc_cms:fieldReference" : "{!Test.Company}",
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "defaultValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Company",
+              "sfdc_cms:formInputNameProperty" : "Company",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "3d740260-3d07-4966-873b-948df2af0229",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 80.0,
+              "sfdc_cms:fieldReference" : "{!Test.Email}",
+              "sfdc_cms:formInputLabelProperty" : "Email",
+              "sfdc_cms:formInputNameProperty" : "Email",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputEmail",
+            "id" : "4f6ff927-32b4-4e44-8687-31af01fb68ef",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 131072.0,
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "defaultValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Message",
+              "sfdc_cms:formInputNameProperty" : "Message",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputTextArea",
+            "id" : "f795cfd6-cbd9-4dac-a1da-1c139d5aabab",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.buttonStyleGroup.primary.lightning:borderRadius}",
+              "lightning:borderWidth" : "{!$brand.buttonStyleGroup.primary.lightning:borderWidth}",
+              "lightning:buttonColorGroup" : "{!$brand.buttonStyleGroup.primary.lightning:buttonColorGroup}",
+              "lightning:click" : {
+                "actions" : [ {
+                  "definition" : "sfdc_cms/customEventAction",
+                  "attributes" : {
+                    "type" : "formsubmit",
+                    "options" : {
+                      "bubbles" : true
+                    }
+                  }
+                } ]
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.buttonStyleGroup.primary.lightning:padding}",
+              "lightning:typography" : "{!$brand.buttonStyleGroup.primary.lightning:typography}",
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "Submit",
+              "width" : "auto"
+            },
+            "definition" : "lightning/actionButton",
+            "id" : "e15e17c8-0d2f-4cac-8ca1-dfd27dee338c",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:title" : "Test form Caterina"
+  },
+  "urlName" : "test-form-caterina"
+}

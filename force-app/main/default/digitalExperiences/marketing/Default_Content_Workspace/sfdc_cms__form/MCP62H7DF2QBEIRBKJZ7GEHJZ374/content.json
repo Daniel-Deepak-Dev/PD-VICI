@@ -1,0 +1,576 @@
+{
+  "type" : "sfdc_cms__form",
+  "title" : "Copy Of form test",
+  "contentBody" : {
+    "formsubmission" : {
+      "actions" : [ {
+        "attributes" : {
+          "formData" : "{!$form.fields}",
+          "formId" : "{!$form.id}",
+          "formVersion" : "{!$form.version}",
+          "pageReferenceId" : "{!$page.id}"
+        },
+        "definition" : "sfdc_cms/umaFormSubmissionAction"
+      }, {
+        "attributes" : {
+          "message" : "Thank you for your submission."
+        },
+        "definition" : "sfdc_cms/showThankYouAction"
+      } ]
+    },
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "objectApiName" : "Lead",
+        "recordTypeId" : "012000000000000AAA"
+      },
+      "definition" : "sfdc_cms__recordDataProvider",
+      "sfdcExpressionKey" : "lead"
+    } ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "d7653300-94ea-4921-a583-6f6c94b37c48",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "a607722c-5a91-484d-8426-75f979f80ba9",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "ca23a641-f661-48e2-9d9d-7292068b2d9a",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 255.0,
+              "placeholder" : "inserire l'azienda",
+              "sfdc_cms:fieldReference" : "{!lead.Company}",
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "defaultValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Azienda",
+              "sfdc_cms:formInputNameProperty" : "Company",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "ddba14bb-5c88-4071-ba2d-aa99d7c45e02",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 40.0,
+              "sfdc_cms:fieldReference" : "{!lead.FirstName}",
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "First Name",
+              "sfdc_cms:formInputNameProperty" : "FirstName",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "50eb3df2-9954-402d-b6a9-18eab2a51cd0",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 80.0,
+              "sfdc_cms:fieldReference" : "{!lead.LastName}",
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Last Name",
+              "sfdc_cms:formInputNameProperty" : "LastName",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputText",
+            "id" : "50339610-d9bb-402c-b791-04f3383d6d67",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 80.0,
+              "sfdc_cms:fieldReference" : "{!lead.Email}",
+              "sfdc_cms:formInputLabelProperty" : "Email",
+              "sfdc_cms:formInputNameProperty" : "Email",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputEmail",
+            "id" : "f990e0a2-dced-4d66-ad77-2bd0ec71b46d",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "options" : [ {
+                "label" : "Unqualified",
+                "value" : "Unqualified"
+              }, {
+                "label" : "Open - To be treated",
+                "value" : "Open - To be treated"
+              }, {
+                "label" : "Contacted",
+                "value" : "Contacted"
+              } ],
+              "sfdc_cms:fieldReference" : "{!lead.Status}",
+              "sfdc_cms:formInputDefaultValueDropdownProperty" : {
+                "defaultValue" : "Open - To be treated",
+                "urlParameterValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : true,
+              "sfdc_cms:formInputLabelProperty" : "Status",
+              "sfdc_cms:formInputNameProperty" : "Status",
+              "sfdc_cms:formInputRequiredProperty" : true,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputDropdown",
+            "id" : "58f686fa-d558-4ed1-825e-781ac634b1ad",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "options" : [ {
+                "label" : "Albania",
+                "value" : "Albania"
+              }, {
+                "label" : "Algeria",
+                "value" : "Algeria"
+              }, {
+                "label" : "Andorra",
+                "value" : "Andorra"
+              }, {
+                "label" : "Argentina",
+                "value" : "Argentina"
+              }, {
+                "label" : "Australia",
+                "value" : "Australia"
+              }, {
+                "label" : "Austria",
+                "value" : "Austria"
+              }, {
+                "label" : "Belgium",
+                "value" : "Belgium"
+              }, {
+                "label" : "Bielorussia",
+                "value" : "Bielorussia"
+              }, {
+                "label" : "Brazil",
+                "value" : "Brazil"
+              }, {
+                "label" : "Bulgaria",
+                "value" : "Bulgaria"
+              }, {
+                "label" : "Canada",
+                "value" : "Canada"
+              }, {
+                "label" : "Chile",
+                "value" : "Chile"
+              }, {
+                "label" : "China",
+                "value" : "China"
+              }, {
+                "label" : "Colombia",
+                "value" : "Colombia"
+              }, {
+                "label" : "Costa Rica",
+                "value" : "Costa Rica"
+              }, {
+                "label" : "Croatia",
+                "value" : "Croatia"
+              }, {
+                "label" : "Czech Republic",
+                "value" : "Czech Republic"
+              }, {
+                "label" : "Denmark",
+                "value" : "Denmark"
+              }, {
+                "label" : "Ecuador",
+                "value" : "Ecuador"
+              }, {
+                "label" : "Egypt",
+                "value" : "Egypt"
+              }, {
+                "label" : "Estonia",
+                "value" : "Estonia"
+              }, {
+                "label" : "Finland",
+                "value" : "Finland"
+              }, {
+                "label" : "France",
+                "value" : "France"
+              }, {
+                "label" : "Georgia",
+                "value" : "Georgia"
+              }, {
+                "label" : "Germany",
+                "value" : "Germany"
+              }, {
+                "label" : "Ghana",
+                "value" : "Ghana"
+              }, {
+                "label" : "Greece",
+                "value" : "Greece"
+              }, {
+                "label" : "Greenland",
+                "value" : "Greenland"
+              }, {
+                "label" : "Hong Kong",
+                "value" : "Hong Kong"
+              }, {
+                "label" : "Hungary",
+                "value" : "Hungary"
+              }, {
+                "label" : "Iceland",
+                "value" : "Iceland"
+              }, {
+                "label" : "India",
+                "value" : "India"
+              }, {
+                "label" : "Indonesia",
+                "value" : "Indonesia"
+              }, {
+                "label" : "Iran",
+                "value" : "Iran"
+              }, {
+                "label" : "Iraq",
+                "value" : "Iraq"
+              }, {
+                "label" : "Ireland",
+                "value" : "Ireland"
+              }, {
+                "label" : "Israel",
+                "value" : "Israel"
+              }, {
+                "label" : "Italy",
+                "value" : "Italy"
+              }, {
+                "label" : "Ivory Coast",
+                "value" : "Ivory Coast"
+              }, {
+                "label" : "Japan",
+                "value" : "Japan"
+              }, {
+                "label" : "Kazakstan",
+                "value" : "Kazakstan"
+              }, {
+                "label" : "Kenya",
+                "value" : "Kenya"
+              }, {
+                "label" : "Korea",
+                "value" : "Korea"
+              }, {
+                "label" : "Liechtenstein",
+                "value" : "Liechtenstein"
+              }, {
+                "label" : "Lithuania",
+                "value" : "Lithuania"
+              }, {
+                "label" : "Luxembourg",
+                "value" : "Luxembourg"
+              }, {
+                "label" : "Macedonia",
+                "value" : "Macedonia"
+              }, {
+                "label" : "Malaysia",
+                "value" : "Malaysia"
+              }, {
+                "label" : "Malta",
+                "value" : "Malta"
+              }, {
+                "label" : "Mexico",
+                "value" : "Mexico"
+              }, {
+                "label" : "Moldova",
+                "value" : "Moldova"
+              }, {
+                "label" : "Monaco",
+                "value" : "Monaco"
+              }, {
+                "label" : "Morocco",
+                "value" : "Morocco"
+              }, {
+                "label" : "Netherlands",
+                "value" : "Netherlands"
+              }, {
+                "label" : "New Zealand",
+                "value" : "New Zealand"
+              }, {
+                "label" : "Nigeria",
+                "value" : "Nigeria"
+              }, {
+                "label" : "Norvegia",
+                "value" : "Norvegia"
+              }, {
+                "label" : "Philippines",
+                "value" : "Philippines"
+              }, {
+                "label" : "Poland",
+                "value" : "Poland"
+              }, {
+                "label" : "Portugal",
+                "value" : "Portugal"
+              }, {
+                "label" : "Romania",
+                "value" : "Romania"
+              }, {
+                "label" : "Russia",
+                "value" : "Russia"
+              }, {
+                "label" : "San Marino",
+                "value" : "San Marino"
+              }, {
+                "label" : "Saudi Arabia",
+                "value" : "Saudi Arabia"
+              }, {
+                "label" : "Serbia",
+                "value" : "Serbia"
+              }, {
+                "label" : "Singapore",
+                "value" : "Singapore"
+              }, {
+                "label" : "Slovakia",
+                "value" : "Slovakia"
+              }, {
+                "label" : "Slovenia",
+                "value" : "Slovenia"
+              }, {
+                "label" : "South Africa",
+                "value" : "South Africa"
+              }, {
+                "label" : "Spain",
+                "value" : "Spain"
+              }, {
+                "label" : "Sweden",
+                "value" : "Sweden"
+              }, {
+                "label" : "Switzerland",
+                "value" : "Switzerland"
+              }, {
+                "label" : "Taiwan",
+                "value" : "Taiwan"
+              }, {
+                "label" : "Thailand",
+                "value" : "Thailand"
+              }, {
+                "label" : "Turkey",
+                "value" : "Turkey"
+              }, {
+                "label" : "Ucraina",
+                "value" : "Ucraina"
+              }, {
+                "label" : "UK",
+                "value" : "UK"
+              }, {
+                "label" : "USA",
+                "value" : "USA"
+              }, {
+                "label" : "Vietnam",
+                "value" : "Vietnam"
+              } ],
+              "sfdc_cms:fieldReference" : "{!lead.Country__c}",
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Country L",
+              "sfdc_cms:formInputNameProperty" : "Country__c",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputDropdown",
+            "id" : "b21b492b-3815-4d2b-8421-fc49c5db0c26",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:formInputColorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "left",
+              "lightning:inputTypography" : "{!$brand.typography.input.input1}",
+              "lightning:labelTypography" : "{!$brand.typography.label.label1}",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "maxLength" : 32000.0,
+              "sfdc_cms:fieldReference" : "{!lead.Description}",
+              "sfdc_cms:formInputDefaultValueTextProperty" : {
+                "defaultValue" : "",
+                "valueType" : "staticValue"
+              },
+              "sfdc_cms:formInputHiddenProperty" : false,
+              "sfdc_cms:formInputLabelProperty" : "Description",
+              "sfdc_cms:formInputNameProperty" : "Description",
+              "sfdc_cms:formInputRequiredProperty" : false,
+              "width" : "auto"
+            },
+            "definition" : "lightning/inputTextArea",
+            "id" : "5662fb9c-a02c-41ff-9828-3446bc6db70c",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "b79c786d-1a86-46a4-a7a6-d27b5240b196",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "344f75d2-0aff-4409-b98b-f311ce2eb488",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "lightning:borderRadius" : "{!$brand.buttonStyleGroup.primary.lightning:borderRadius}",
+              "lightning:borderWidth" : "{!$brand.buttonStyleGroup.primary.lightning:borderWidth}",
+              "lightning:buttonColorGroup" : "{!$brand.buttonStyleGroup.primary.lightning:buttonColorGroup}",
+              "lightning:click" : {
+                "actions" : [ {
+                  "definition" : "sfdc_cms/customEventAction",
+                  "attributes" : {
+                    "type" : "formsubmit",
+                    "options" : {
+                      "bubbles" : true
+                    }
+                  }
+                } ]
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.buttonStyleGroup.primary.lightning:padding}",
+              "lightning:typography" : "{!$brand.buttonStyleGroup.primary.lightning:typography}",
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "Submit",
+              "width" : "auto"
+            },
+            "definition" : "lightning/actionButton",
+            "id" : "a2d36d3c-17b4-4921-8218-a5fcac5da123",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:title" : "Copy Of form test"
+  },
+  "urlName" : "copy-of-form-test"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Utenti autorizzati ad accedere alla sandbox Polo</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>Sandbox Polo - Access</name>
+</Group>

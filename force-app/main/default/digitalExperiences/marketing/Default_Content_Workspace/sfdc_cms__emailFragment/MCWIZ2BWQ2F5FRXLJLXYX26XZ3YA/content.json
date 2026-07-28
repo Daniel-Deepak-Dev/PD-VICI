@@ -1,0 +1,124 @@
+{
+  "type" : "sfdc_cms__emailFragment",
+  "title" : "Address details_VICIVISION",
+  "contentBody" : {
+    "backgroundColor" : "#f3f3f3",
+    "lightning:backgroundImage" : {
+      "position" : "center center",
+      "repeat" : "no-repeat",
+      "size" : "cover"
+    },
+    "lightning:brandSource" : "MCR4PSXXTR3RCETDQHDA7WVZBJ2I",
+    "lightning:colorScheme" : "{!$brand.colorScheme}",
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "objectApiName" : "UnifiedIndividual__dlm"
+      },
+      "definition" : "sfdc_cms__unifiedIndividualDataProvider",
+      "sfdcExpressionKey" : "$unifiedIndividual"
+    } ],
+    "lightning:expressions" : [ ],
+    "lightning:padding" : "{!$brand.spacing.none}",
+    "sfdc_cms:attachments" : [ ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "e213ecdd-716b-4333-86d3-ede3c0a26c26",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#666666",
+            "primaryAccent" : "#FFFFFF",
+            "primaryAccentContrast" : "#00993a",
+            "primaryAccentContrastDerived" : "#000000",
+            "primaryAccentDerived" : "#e5e5e5",
+            "root" : "#FFFFFF"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "939387ea-e7d8-49ec-a807-dc5c5d023d6e",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "90098604-5fd8-4218-a8d6-0be4b3e3170b",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "align" : "center",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#09933A"
+              },
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}",
+              "text" : "<strong><span style=\"font-size: 10px;\">VICIVISION | Vici &amp; C. S.p.A.</span></strong>"
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "0f7e1c33-c35a-40f5-8094-d90986487204",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "align" : "center",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "#666666",
+                "textColor" : "#666666"
+              },
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.baseFontFamily}",
+                "fontSize" : "{!$brand.fontSize.medium}",
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "text" : "<span style=\"font-size: 10px;\"><a href=\"https://www.vicivision.com/\" target=\"_blank\" part=\"link\" rel=\"noopener noreferrer noopener noreferrer\"></a><a href=\"https://www.vicivision.com/\" target=\"_blank\" part=\"link\" rel=\"noopener noreferrer noopener noreferrer\">www.vicivision.com</a><br />{!$organization.Address}, Italy<br />&#43;39 0541 350 411 | <a href=\"mailto:sales&#64;vici.it\" target=\"_blank\" part=\"link\" rel=\"noopener noreferrer noopener noreferrer\">sales&#64;vici.it</a><a href=\"mailto:sales&#64;vici.it\" target=\"_blank\" part=\"link\" rel=\"noopener noreferrer noopener noreferrer\"></a></span>​"
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "8ed49cc6-180f-4fea-83c9-f2a3cb447d08",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:title" : "Address details_VICIVISION",
+    "sfdc_cms:urlName" : "address-details-vicivision",
+    "sfdc_cms:variants" : [ ]
+  },
+  "urlName" : "address-details-vicivision"
+}

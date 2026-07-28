@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>how to use stages</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Congratulations!&lt;/p&gt;</info>
+        <picklistValueName>Chiuse/Conseguite</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Unfortunately we lost. Even if the customer decide to cancel the purchase our chance is lost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Please describe the situation as much as you can.&lt;/li&gt;&lt;li&gt;Select a &amp;quot;close lost reason&amp;quot; and &amp;quot;close lost reason detail&amp;quot;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Chiuse/Perse</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

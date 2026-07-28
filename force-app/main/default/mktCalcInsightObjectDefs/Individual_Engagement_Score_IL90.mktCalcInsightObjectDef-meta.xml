@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <builderExpression>PZ1:eJztVclu2zAQ/RWCZ9dIUfRQ3xzBCYw6C+K4l6IQaHIssaFIhYtTI/C/dyhRi92kt956s948zvLmkX6ljhsrdfEQFDjwdPZKNauAzqgH5+mECnDcytpLoxFEwLbMjHkojD2sJNJm3+k9mFoB/TGhUiBxufpyEU8zz1zNeEwoYMeC8k0KfWXhOYDmBzrTQakjUt29hZ38lapAZTzc2WKuJHMtxlNJ/FroghVQgY7pambxRzZEUy+Tbrh5UVgoMI6xdagwELTcSRBLLeReisBUHDyBd9ufwP28lretEJtzbp4LFZMoqZ8G2hBfCmxHepRGP3XclPtKghLpgHPG5/lS5DlPyTYj0h/1HwCHEWP62gTLocUH+hjt2K7BBk4qfTbRsW9zzrkJqG2zmwndg3XN/j9OL3ANpVQCFe+i+nz+fNhOvsY2IE9uUGwL6oRKBippqKQzzontHkvpiGviEs9GIzhSmhdSBV4SX7Zwm9Lhb4TwgLEF8Yca6UodEPVgGffkRfqSHFAR4hhamXBTVTg3JsViborFd3EBJy5LczRi1oBaao8R10kQajQ6ytYrNrpV7T5aU92w+g3GDXgWLwpeo1daG2wUE386oVxbE+roUZwnim17rKdlBiVoRmjyjIgDZ9zLPfPlu+6e/sXN0zfdk9BFxaQa6Zbs3ymaSH08K5nWoOY8Nt65dc9UiL1nq2X2Fb8NKs68sXEjz/Gutu/KYzuh83EyesSXp4iK3PXs7mE5sVLTIOFK8icC+/YBke4bU/HZ8jbAcTIs4cPn/1vY3K43l+vsYXm5+De7CNqFbYS38M5G4p8K3l7tm1u40GyrQKScvwHv02xs</builderExpression>
+    <creationType>Custom</creationType>
+    <description>This score indicates how much the individuals in this org typically interact with your sales communications.</description>
+    <masterLabel>Individual Engagement Score IL90</masterLabel>
+</MktCalcInsightObjectDef>

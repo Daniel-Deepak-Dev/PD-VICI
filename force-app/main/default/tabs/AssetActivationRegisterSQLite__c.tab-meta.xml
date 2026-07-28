@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>All imported records from SQLite database on EMS server where alla HASP license activation are stored from vvLicenseManager and then set to Sentinel EMS database</description>
+    <motif>Custom13: Box</motif>
+</CustomTab>

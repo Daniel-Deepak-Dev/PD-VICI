@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__image",
+  "title" : "[SYSTEM_DEFAULT] Standard Template confirmationHeroImage",
+  "contentBody" : {
+    "sfdc_cms:media" : {
+      "source" : {
+        "mimeType" : "image/png",
+        "type" : "file",
+        "size" : 642011,
+        "ref" : "0sNMf000000HyZH"
+      }
+    }
+  },
+  "urlName" : "system-default-standard-template-confirmationheroimage"
+}

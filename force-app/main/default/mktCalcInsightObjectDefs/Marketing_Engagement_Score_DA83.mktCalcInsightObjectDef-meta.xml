@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <builderExpression>PZ1:eJztVctu2zAQ/BVCZ9doERQocnNUpzCaF+K4lyIQaGotsaZIhQ+nRuB/71KkHnaT9tAWCFDfrN3hLnd2OH5KDFOay+LWCTBgk9OnRNIKktNkHhKEaW5Bc5qMkhwMftWWK4kADOhwKqUWCqW3F9xgha/JDahaQHI/SniOwI+TDyf+NLXU1JT54jmsqBO2KSHPNTw4kGybnEonxA6h5kbDin+PXaBSFq51MRGcmhBjsSV+TWVBC6hA+nI11fgj7bPxLqN20ElRaCgwH5qNEif5ikM+kznf8NxR4TmIwevlN2B2UvOrwMniEJtluaiwuOBy3cP6/CzH23CLzMh1i421zzmIPB4wRtksm+VZxmKxxQD0U/9bwFnyIXyunGYQ4j18GG3Rpon1mNj6YKJdd80JY8ohtZGtDWjTrP/d+C1uoeQiR8Jx6U//s5KSuRts9iilP5JSyMrD+bN+O5lXFGRRDYIuQexBSQ8lDZS0wtmT3V3JDTFNnuNZLwRDSvVIKsdKYssQDiUN/sYQHlC6IHZbI1yILUZR0pRZ8shtSbbICDEUpUyYqiqcG4tiMzPG5iu/gD2VxTkaMmtALqXFjOmcqUahI20dY4MXFvYRRHVJ62cQl2CpfyjN26wVXhQLn+xBPmnlaq9RnMeTrbtYB0sVUtCM0NQZAHvM8C431JYvqnv8CzWPn1VPjE4rysWAtyj/ltEI6vJpSaUEMWH+4q1aN1Q4f/f0YpZ+xm+FjFOrtN/Ig3+rwVfuwoTG+smSHTpP4Rm57tCtsexJqbkgYYKzNYFNMBBuvlDhbctqB7tRv4Q3749bWFzNF2fz9HZ2Nv03u3DSuKUPL+GFjfg/FXy90javcCrpUkAea953BnRJ9Ros9v+t/3TIv2Q/3Az85xnLMQPPqbreR995pYo/+s5r2MIr950f2MTd7g==</builderExpression>
+    <creationType>Custom</creationType>
+    <description>This score indicates how much this individual typically interacts with your marketing communications.</description>
+    <masterLabel>Marketing Engagement Score DA83</masterLabel>
+</MktCalcInsightObjectDef>

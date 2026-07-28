@@ -1,0 +1,24 @@
+<html>
+ <head> 
+  <title></title> 
+ </head> 
+ <body style="height: auto; min-height: 0%;">
+  Sehr geehrter&nbsp;{{{Recipient.FirstName}}}&nbsp;{{{Recipient.LastName}}}, 
+  <br /> 
+  <br /> vielen Dank f&uuml;r ...... 
+  <br /> 
+  <br /> Im Rahmen unserer st&auml;ndigen Qualit&auml;tsverbesserung f&uuml;hren wir eine Kundenbefragung durch. Nur durch Ihre Hilfe k&ouml;nnen wir unseren Service und unsere Produkte verbessern. 
+  <br /> 
+  <br /> Bitte nehmen Sie sich kurz Zeit und klicken Sie auf den folgenden Link, um die Fragen zu beantworten: 
+  <br /> 
+  <br /> 
+  <a href="https://vici.secure.force.com/survey/TakeSurvey?id=a195I000000DNNYQA4&amp;cId={{{Recipient.Id}}}&amp;caId=none"><b>KUNDENBEFRAGUNG</b></a> 
+  <br /> 
+  <br /> 
+  <br /> Wir bedanken uns f&uuml;r Ihre Mitarbeit!&nbsp; 
+  <br /> 
+  <br /> Mit freundlichen Gr&uuml;&szlig;en, 
+  <br /> 
+  <br /> Andreas Blank
+ </body>
+</html>

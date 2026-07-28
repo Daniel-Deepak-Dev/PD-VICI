@@ -1,0 +1,74 @@
+{
+  "type" : "sfdc_cms__landingPage",
+  "title" : "ContactUS",
+  "contentBody" : {
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:dataProviders" : [ ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "a33a6747-e4e0-4ada-ac6c-9e84e36738a2",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true,
+          "lightning:backgroundImage" : {
+            "repeat" : "no-repeat",
+            "position" : "center center",
+            "size" : "cover"
+          }
+        },
+        "definition" : "lightning/section",
+        "id" : "4a422750-1646-4473-acdd-6eae26d53b2d",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top",
+            "lightning:backgroundImage" : {
+              "repeat" : "no-repeat",
+              "position" : "center center",
+              "size" : "cover"
+            }
+          },
+          "definition" : "lightning/column",
+          "id" : "80e85050-faf7-4611-80bf-512a23e58488",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "formInfo" : "contactus"
+            },
+            "definition" : "lightning/form",
+            "id" : "c95aed25-8d18-4215-afb4-4f29da137acb",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:seoProperties" : {
+      "isIndexed" : false,
+      "title" : "ContactUs"
+    },
+    "sfdc_cms:title" : "ContactUS",
+    "sfdc_cms:urlName" : "contactus",
+    "sfdc_cms:variants" : [ ],
+    "lightning:backgroundImage" : {
+      "repeat" : "no-repeat",
+      "position" : "center center",
+      "size" : "cover"
+    },
+    "lightning:expressions" : [ ]
+  },
+  "urlName" : "contactus"
+}

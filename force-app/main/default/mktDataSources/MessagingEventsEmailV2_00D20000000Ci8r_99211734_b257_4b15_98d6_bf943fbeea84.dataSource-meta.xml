@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>MessagingEventsEmailV2_00D20000000Ci8r_99211734_b257_4b15_98d6_bf943fbeea84</masterLabel>
+    <prefix>Mes</prefix>
+</DataSource>

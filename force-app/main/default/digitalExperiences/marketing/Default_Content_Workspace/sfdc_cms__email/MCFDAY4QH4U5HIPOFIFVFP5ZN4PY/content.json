@@ -1,0 +1,1201 @@
+{
+  "type" : "sfdc_cms__email",
+  "title" : "Email:  Thank You - Confirmation",
+  "contentBody" : {
+    "backgroundColor" : "#f3f3f3",
+    "lightning:backgroundImage" : {
+      "position" : "center center",
+      "repeat" : "no-repeat",
+      "size" : "cover"
+    },
+    "lightning:brandSource" : {
+      "defaultBrandOption" : "sfdcBrand"
+    },
+    "lightning:colorScheme" : "{!$brand.colorScheme}",
+    "lightning:dataProviders" : [ {
+      "attributes" : {
+        "eventNameOrFormId" : "marketing--Default_Content_Workspace.sfdc_cms__form--contactus",
+        "eventType" : "trgrOnFormSubmission"
+      },
+      "definition" : "sfdc_cms__eventDataProvider",
+      "sfdcExpressionKey" : "ContactUs"
+    } ],
+    "lightning:expressions" : [ {
+      "attributes" : {
+        "expressionGroups" : [ {
+          "name" : "group0",
+          "resource" : "{!ContactUs.FirstName}"
+        } ]
+      },
+      "default" : "",
+      "definition" : "sfdc_cms__multiLevelExpression",
+      "label" : "FirstName",
+      "sfdcExpressionKey" : "FirstName"
+    } ],
+    "lightning:padding" : "{!$brand.spacing.none}",
+    "messagePurpose" : "promotional",
+    "preheader" : "Confirm the action was successful and set expectations, e.g., \"Your order is confirmed. What's next...\"",
+    "sfdc_cms:attachments" : [ ],
+    "sfdc_cms:block" : {
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "3cabd4ec-383a-46b4-b56b-fde7ad347737",
+      "type" : "block",
+      "children" : [ {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "7db2c26b-10b7-42e2-a5dd-9f152c7c8daa",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "ddab3469-b920-4860-976b-6a024148cf93",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "px",
+                  "value" : 160.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatelogoPlaceholderPurple",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCYTXX6N6IW5F5VMX4KKFYKECQME?fileName=Logo%2BPlaceholder-Purple.png&fileHash=039eed404f756e0cb30e1daa3f544055"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "a84258f7-87d6-4b76-8e2c-d32bc0ff5403",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : {
+            "bottom" : {
+              "unit" : "px",
+              "value" : 10.0
+            },
+            "left" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "right" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "top" : {
+              "unit" : "px",
+              "value" : 10.0
+            }
+          },
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "c4993896-6d6d-4397-af25-ecf9a5ccde0b",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "eed62c4d-0696-4ac2-934c-faf764c28f61",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "align" : "center",
+              "level" : 1.0,
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#393939"
+              },
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 32.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "text" : "<strong>Confirm their action with a clear message like \"You're All Set!\".</strong><br />"
+            },
+            "definition" : "lightning/heading",
+            "id" : "0860d0d3-8a89-4537-967e-bd6c7514b69a",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : {
+            "bottom" : {
+              "unit" : "px",
+              "value" : 0.0
+            },
+            "left" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "right" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "top" : {
+              "unit" : "px",
+              "value" : 0.0
+            }
+          },
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "5d27cff3-42cf-4cf1-953a-3d3411c24a95",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "6faeefba-eb5d-4f80-8c0c-954341d091cd",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 100.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplateconfirmationHeroImage",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCT4UHVEBSSFATDCZOJS7DJFSN3U?fileName=Confirmation%2BHero%2BImage.png&fileHash=11d926b02dbcccead26bbf4d80f88582"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "90808474-5f49-4e72-b94f-d4a6fb047de6",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "a84bda7f-1717-4c45-a547-f25bacc8e17f",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : {
+              "bottom" : {
+                "unit" : "px",
+                "value" : 10.0
+              },
+              "left" : {
+                "unit" : "px",
+                "value" : 50.0
+              },
+              "right" : {
+                "unit" : "px",
+                "value" : 50.0
+              },
+              "top" : {
+                "unit" : "px",
+                "value" : 0.0
+              }
+            },
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "37b47577-ec56-4949-aa9b-388f3e6e7722",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "align" : "center",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                }
+              },
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}",
+              "text" : "Present your audience with a personalized note about the action they've taken, and include additional relevant details that entices them to engage further.{!$Expression.FirstName}"
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "8e8c8704-df48-4611-a17b-0a359a4e343f",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : {
+                "unit" : "px",
+                "value" : 4.0
+              },
+              "lightning:borderWidth" : "{!$brand.buttonStyleGroup.primary.lightning:borderWidth}",
+              "lightning:buttonColorGroup" : {
+                "backgroundColor" : "#AA3001",
+                "backgroundHoverColor" : "#8e1400",
+                "borderColor" : "#AA3001",
+                "borderHoverColor" : "#8e1400",
+                "textColor" : "{!$brand.buttonStyleGroup.primary.lightning:buttonColorGroup.textColor}",
+                "textHoverColor" : "#FFFFFF"
+              },
+              "lightning:click" : {
+                "actions" : [ {
+                  "attributes" : {
+                    "openInNewTab" : true,
+                    "url" : "https://vici.my.site.com/lp/landing-page/landing-page-confirmation---thank-you-MCMYW7TDKFE5FL5HLROTO6QHU7GM"
+                  },
+                  "definition" : "sfdc_cms__navigateToUrlAction",
+                  "generatedUrl" : "https://vici.my.site.com/lp/landing-page/landing-page-confirmation---thank-you-MCMYW7TDKFE5FL5HLROTO6QHU7GM"
+                } ]
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 20.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 0.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 10.0
+                }
+              },
+              "lightning:padding" : "{!$brand.buttonStyleGroup.primary.lightning:padding}",
+              "lightning:typography" : "{!$brand.buttonStyleGroup.primary.lightning:typography}",
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "Call to Action",
+              "width" : "auto"
+            },
+            "definition" : "lightning/actionButton",
+            "id" : "04506461-f792-4e0c-a77c-39b1db8df89c",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : {
+            "bottom" : {
+              "unit" : "px",
+              "value" : 10.0
+            },
+            "left" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "right" : {
+              "unit" : "px",
+              "value" : 50.0
+            },
+            "top" : {
+              "unit" : "px",
+              "value" : 0.0
+            }
+          },
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "7b7f92f9-98cb-404a-915d-e6be754aa275",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 4.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "0fb2fd1c-8b31-4f87-8fd0-2f0aeea413b5",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 100.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplateproductImage2Medium",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCZMII66YSEFBFJAVLX74XEEJVKA?fileName=Offer%2B2%2B-%2BSmall.png&fileHash=aaac94dd50f16b6480a06fd89eccbe60"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "5667a059-3db1-4851-8c2c-526729ad62f5",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 8.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "1a56b94c-db37-4770-9bfe-40c8229203a4",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "align" : "left",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#393939"
+              },
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 18.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.bold}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "text" : "This is a Subtitle"
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "6da35fe5-db5b-4ed7-b40d-3aaf555f4520",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "content" : {
+                "attributes" : {
+                  "listStyle" : "unordered"
+                },
+                "definition" : "lightning/listElement",
+                "id" : "eca153b7-0385-47b0-bbd0-79d2db7f409e",
+                "type" : "block",
+                "children" : [ {
+                  "definition" : "lightning/listItem",
+                  "id" : "3f894b17-158c-4a39-8572-98084dee3610",
+                  "type" : "block",
+                  "children" : [ {
+                    "attributes" : {
+                      "align" : "left",
+                      "text" : "Include relevant information related to the action your audience has taken."
+                    },
+                    "definition" : "lightning/paragraph",
+                    "id" : "989ca2aa-5100-4c8a-8285-58099ae3d798",
+                    "type" : "block"
+                  } ]
+                }, {
+                  "definition" : "lightning/listItem",
+                  "id" : "fe711fc5-2047-485f-a7ca-a6580d209321",
+                  "type" : "block",
+                  "children" : [ {
+                    "attributes" : {
+                      "align" : "left",
+                      "text" : "If there is anything that needs to be known by your audience, please ensure to include it here."
+                    },
+                    "definition" : "lightning/paragraph",
+                    "id" : "7cd3e949-9dff-47a5-931f-0675a605833a",
+                    "type" : "block"
+                  } ]
+                } ]
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#393939"
+              },
+              "lightning:margin" : "{!$brand.spacing.xSmall}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/list",
+            "id" : "fa647849-dce1-4b1c-a334-a9a184ebdda2",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : "{!$brand.colorScheme}",
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "48a299e7-60b6-4d21-841a-c5cb96cf10fa",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : {
+              "bottom" : {
+                "unit" : "px",
+                "value" : 30.0
+              },
+              "left" : {
+                "unit" : "px",
+                "value" : 50.0
+              },
+              "right" : {
+                "unit" : "px",
+                "value" : 50.0
+              },
+              "top" : {
+                "unit" : "px",
+                "value" : 0.0
+              }
+            },
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "8515b110-874c-4e77-a0cc-2a5977f40c6e",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "align" : "center",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#393939"
+              },
+              "lightning:margin" : "{!$brand.spacing.small}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}",
+              "text" : "Guide your customer. Tell them to look for a calendar invite, let them know when to expect shipping, or suggest they explore related resources on your website."
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "1274760c-d951-4da5-b8e7-050400aa02f2",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "lightning:borderRadius" : {
+                "unit" : "px",
+                "value" : 4.0
+              },
+              "lightning:borderWidth" : "{!$brand.buttonStyleGroup.primary.lightning:borderWidth}",
+              "lightning:buttonColorGroup" : {
+                "backgroundColor" : "#AA3001",
+                "backgroundHoverColor" : "#8e1400",
+                "borderColor" : "#AA3001",
+                "borderHoverColor" : "#8e1400",
+                "textColor" : "{!$brand.buttonStyleGroup.primary.lightning:buttonColorGroup.textColor}",
+                "textHoverColor" : "#FFFFFF"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.xSmall}",
+              "lightning:padding" : "{!$brand.buttonStyleGroup.primary.lightning:padding}",
+              "lightning:typography" : "{!$brand.buttonStyleGroup.primary.lightning:typography}",
+              "sfdc_cms:styleGroup" : "{!$brand.buttonStyleGroup.primary}",
+              "text" : "Call to Action",
+              "width" : "auto"
+            },
+            "definition" : "lightning/actionButton",
+            "id" : "d0ae8be2-5cf5-4947-9c02-4c93c163a6a2",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#ffffff",
+            "primaryAccentContrastDerived" : "#ffffff",
+            "primaryAccentDerived" : "#004ba1",
+            "root" : "#401075"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : "{!$brand.spacing.xSmall}",
+          "stackOnMobile" : true
+        },
+        "definition" : "lightning/section",
+        "id" : "ce8de08a-2bbb-4fe4-b17f-169bbd7f2bd4",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 12.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "c34f637d-5fcd-42e0-9096-bc97ba7f02c7",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "px",
+                  "value" : 150.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatelogoPlaceholderPurpleandwhite",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCGBNVEYD7FNCKNPVNQHVFGGR6CE?fileName=Logo%2BPlaceholder-PurpleAndWhite.png&fileHash=4833a8d2c97160a0c29903945785c9cf"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.round}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "#FFFFFF",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : {
+                "bottom" : {
+                  "unit" : "px",
+                  "value" : 18.0
+                },
+                "left" : {
+                  "unit" : "px",
+                  "value" : 24.0
+                },
+                "right" : {
+                  "unit" : "px",
+                  "value" : 24.0
+                },
+                "top" : {
+                  "unit" : "px",
+                  "value" : 18.0
+                }
+              },
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "f0f65794-fd41-4895-bd7a-6011c3e01d73",
+            "type" : "block"
+          }, {
+            "attributes" : {
+              "align" : "center",
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "#FFFFFF"
+              },
+              "lightning:margin" : "{!$brand.spacing.medium}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : {
+                "fontFamily" : "{!$brand.fontFamily.arial}",
+                "fontSize" : {
+                  "unit" : "px",
+                  "value" : 12.0
+                },
+                "fontWeight" : "{!$brand.fontWeight.normal}",
+                "letterSpacing" : "normal",
+                "lineHeight" : 1.5,
+                "textTransform" : "none"
+              },
+              "text" : "<strong>[Your Company]<br /></strong>ExampleEmail&#64;YourCompany.com<br /><br /><strong>Preferences</strong><br />Organization Address - Unsubscribe"
+            },
+            "definition" : "lightning/paragraph",
+            "id" : "0267678c-b25b-447c-a01b-342601f67c0c",
+            "type" : "block"
+          } ]
+        } ]
+      }, {
+        "attributes" : {
+          "lightning:backgroundImage" : {
+            "position" : "center center",
+            "repeat" : "no-repeat",
+            "size" : "cover"
+          },
+          "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+          "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+          "lightning:colorScheme" : {
+            "contrast" : "#000000",
+            "neutral" : "#747474",
+            "primaryAccent" : "#0176d3",
+            "primaryAccentContrast" : "#FFFFFF",
+            "primaryAccentContrastDerived" : "#e5e5e5",
+            "primaryAccentDerived" : "#004ba1",
+            "root" : "#401075"
+          },
+          "lightning:margin" : "{!$brand.spacing.none}",
+          "lightning:padding" : {
+            "bottom" : {
+              "unit" : "px",
+              "value" : 40.0
+            },
+            "left" : {
+              "unit" : "px",
+              "value" : 100.0
+            },
+            "right" : {
+              "unit" : "px",
+              "value" : 100.0
+            },
+            "top" : {
+              "unit" : "px",
+              "value" : 0.0
+            }
+          },
+          "stackOnMobile" : false
+        },
+        "definition" : "lightning/section",
+        "id" : "3627a266-0aaa-45d8-96cb-da11d151b46d",
+        "type" : "block",
+        "children" : [ {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "0c618a4c-f35c-44f1-961f-75a59168a90e",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteFacebook",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCO4SVK7CIIRCCDNYWIFKKTBTPPQ?fileName=Social%2BIcons-White-Facebook.png&fileHash=32c0acd64ebb9e948ef10fbe6aaecbce"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "#401075",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "f901b3b8-0d00-4cd9-bfaa-17ff08c556f5",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "822fec19-d9aa-49c7-a336-4f03aa84b5e2",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteX",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCAETXDS4RVRBD5AV7G5CI6DXSWM?fileName=Social%2BIcons-White-X.png&fileHash=7f6bcf05d24af2ed4fe871fcbab643ce"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "d4b7eb19-c6f7-4cbf-8aec-f05054439a3d",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "5a4f614c-06b0-4c84-ae58-0c992d945a14",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteInstagram",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCCZWPXALXMZAVVB272PJJS7CU7M?fileName=Social%2BIcons-White-Instagram.png&fileHash=d77e7f04d710807d48fe1716f47aef3c"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "c6926f27-587e-44f1-88c8-79822a0d5bb8",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "76d9ffcd-3fb8-4778-b1ef-18fa1d29eb04",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteYoutube",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCL7RBVNFVT5ENNLOYYYZ5DWPQ2A?fileName=Social%2BIcons-White-YouTube.png&fileHash=d2aee29469231a2c36b8a102ea235eca"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "98e5872b-3c93-499e-877a-89567d7272dc",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "9c7f45f9-2dc4-413f-a1a2-647a99b8ae8f",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteThreads",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCMOEPU6XWJZFYLKJFY2WLU73P7Y?fileName=Social%2BIcons-White-Threads.png&fileHash=c32939efce37e2136d2ebde2e1150b4b"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "90607dbc-6066-41e9-9bdf-3e35a056de30",
+            "type" : "block"
+          } ]
+        }, {
+          "attributes" : {
+            "columnWidth" : 2.0,
+            "lightning:backgroundImage" : {
+              "position" : "center center",
+              "repeat" : "no-repeat",
+              "size" : "cover"
+            },
+            "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+            "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+            "lightning:colorScheme" : "{!$brand.colorScheme}",
+            "lightning:margin" : "{!$brand.spacing.none}",
+            "lightning:padding" : "{!$brand.spacing.xSmall}",
+            "lightning:verticalAlignment" : "top"
+          },
+          "definition" : "lightning/column",
+          "id" : "bd817c3f-8eab-45f4-977b-321b450cab3e",
+          "type" : "block",
+          "children" : [ {
+            "attributes" : {
+              "imageFitConfig" : {
+                "width" : {
+                  "unit" : "%",
+                  "value" : 75.0
+                }
+              },
+              "imageInfo" : {
+                "altText" : "",
+                "overrideAltText" : false,
+                "source" : {
+                  "ref" : "systemDefaultStandardTemplatesocialIconsWhiteWhatsapp",
+                  "type" : "imageReference"
+                },
+                "url" : "/cms/media/MCK7NYCIZG4NEFXBAB2WZYMSUCLI?fileName=Social%2BIcons-White-WhatsApp.png&fileHash=109edd03c31f032c8c6bfcc6bd7b5080"
+              },
+              "lightning:borderRadius" : "{!$brand.borderRadius.square}",
+              "lightning:borderWidth" : "{!$brand.borderWeight.none}",
+              "lightning:colorGroup" : {
+                "backgroundColor" : "{!$brand.colorScheme.root}",
+                "borderColor" : "{!$brand.colorScheme.neutral}",
+                "linkColor" : "{!$brand.colorScheme.primaryAccent}",
+                "textColor" : "{!$brand.colorScheme.contrast}"
+              },
+              "lightning:horizontalAlignment" : "center",
+              "lightning:margin" : "{!$brand.spacing.none}",
+              "lightning:padding" : "{!$brand.spacing.none}",
+              "lightning:typography" : "{!$brand.typography.paragraph.paragraph1}"
+            },
+            "definition" : "lightning/image",
+            "id" : "56ca7693-76e3-4e2e-a854-cbc0989c5231",
+            "type" : "block"
+          } ]
+        } ]
+      } ]
+    },
+    "sfdc_cms:description" : "This template is for confirming a user's action, such as a purchase, registration, or subscription. It provides reassurance and delivers important details.",
+    "sfdc_cms:title" : "Email:  Thank You - Confirmation",
+    "sfdc_cms:urlName" : "email-thank-you---confirmation",
+    "subjectLine" : "Be clear and reassuring. Use subject lines like \"Your Order Confirmation\" or \"You're Registered!\".",
+    "sfdc_cms:variants" : [ ]
+  },
+  "urlName" : "email-thank-you---confirmation"
+}

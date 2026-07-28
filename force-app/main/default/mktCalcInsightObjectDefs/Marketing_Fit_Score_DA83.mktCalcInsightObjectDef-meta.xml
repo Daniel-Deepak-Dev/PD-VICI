@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <builderExpression>PZ1:eJx9VE1v2zAM/SuCzkGwoZcht6BrhwDLGvRjl2EwFImxtSqSK1LdgiD/fZQtO+7HdhT5RD4+PukoUYdofX2bHCCQXBylV3uQC3nXJ4SOliBaJWfSAPKpJRs8AzgQ+1uXiqAO8fDVIlf4ITcQWgfy50xaw8DPy08X+bYiha3SubiBnUqOuhL+OsJTAq8PcuGTcyeG4ibCzv4pXWAfCG5ivXRWYR/TpSWfrm2u06oIfmTC4UJiNky4rOsINef7LjOZvN1ZMCtv7LM1Sbk8fAnebH+BpmVrv/ViPLzGVpVxey7urH88w875lWE2llgS/zhgS+1rC86UC4iBqmplqkqXYg8T0Jv+t8CzmCn8LqSooY+f4dPogMYudsaU1q8mOo00l1qH5GlQ6xkidnv/OP/A8jfWGRZ8yBbPrFV8BGKxK15KlR0EVdm+U1twU4hgiOggYjDIC3vdNxYFdnnLJPPCUTTht9AuILiDoAxomVbwYq9IN5ynBoRuVFQ6exbJahRh14WtAeWETkhhD1HsQhQHlkRsE1oPiHNmsMuq95Yq7DvpuInmdaoacDRPy3ZmkUZ9Ju+oV7+30Fq17yDWQCo/B34sR9kG64kLX7yAfIkhtdmRdGiztHGMjbDLwLpktbCrMwGeMVMuG0XNP708/4935+96pUSZBbHcmzzF0rApEAfDD3IOQLZTPAx+fFYuFWuzkOKO8oI5HlhtRSFy6uopv8r+57jvp0PKU8kT/y11VuNmRA9fx9REvfAWvyuXfyKKCfJNZsoTdgu+8mrrwJTrfwHg089p</builderExpression>
+    <creationType>Custom</creationType>
+    <description>This score indicates how closely this person matches the characteristics of the ideal customer for your business.</description>
+    <masterLabel>Marketing Fit Score DA83</masterLabel>
+</MktCalcInsightObjectDef>

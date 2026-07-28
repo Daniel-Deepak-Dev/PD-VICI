@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__image",
+  "title" : "[SYSTEM_DEFAULT] Standard Template logoPlaceholderPurpleandwhite",
+  "contentBody" : {
+    "sfdc_cms:media" : {
+      "source" : {
+        "mimeType" : "image/png",
+        "type" : "file",
+        "size" : 3398,
+        "ref" : "0sNMf000000HyZL"
+      }
+    }
+  },
+  "urlName" : "system-default-standard-template-logoplaceholderpurpleandwhite"
+}

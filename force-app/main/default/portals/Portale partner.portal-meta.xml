@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Portale partner</description>
+    <emailSenderAddress>erick.fantini@vici.it</emailSenderAddress>
+    <emailSenderName>erick.fantini@vici.it</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>unfiled$public/PartnerChangePwdEmail</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <logoDocument>Documenti_Vici/Logo_Vici.jpg</logoDocument>
+    <newPassTemplate>unfiled$public/PartnerChangePwdEmail</newPassTemplate>
+    <newUserTemplate>unfiled$public/PartnerNewUserEmail</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

@@ -1,0 +1,43 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "LightningOut",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : { },
+          "definition" : "force:lightningOutContainer",
+          "id" : "b481d2af-ed2e-4e1c-b1e5-1c4d4fed89a2",
+          "type" : "component"
+        } ],
+        "id" : "8f5d0319-2c8d-43f5-9092-abc6ab108626",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "External Forms Container",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "9440bb14-29fc-4919-bdb7-53dfbc9b9b6e",
+          "type" : "component"
+        } ],
+        "id" : "799407f7-9d09-4e7d-96ee-35767733fd86",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "experience_marketing_landing:lightningOutPageLayout",
+      "id" : "e25298fc-9409-4fc5-9875-d7f5e121aa52",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "LightningOutFullPage",
+    "viewType" : "lightningOut"
+  },
+  "urlName" : "lightningout"
+}

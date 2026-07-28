@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSourceObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSource>WebEngagementEventsV2_00D20000000Ci8r_83edf9b8_7764_42cb_bba4_2750a45cde69</dataSource>
+    <externalRecordIdentifier>WebEngagementEventsV2_00D20000000Ci8r_DeviceToIndividualMatch_3E36FD6E</externalRecordIdentifier>
+    <masterLabel>WebEngagementEventsV2_00D20000000Ci8r_DeviceToIndividualMatch_3E36FD6E</masterLabel>
+    <storageType>LOCAL</storageType>
+    <templateVersion>1</templateVersion>
+</DataSourceObject>

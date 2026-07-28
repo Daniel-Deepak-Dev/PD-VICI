@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServicesFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apexClass>unsubscribe</apexClass>
+    <attachmentOption>None</attachmentOption>
+    <authenticationFailureAction>Discard</authenticationFailureAction>
+    <authorizationFailureAction>Discard</authorizationFailureAction>
+    <emailServicesAddresses>
+        <developerName>20000000H24y</developerName>
+        <isActive>true</isActive>
+        <localPart>erick.fantini</localPart>
+        <runAsUser>erick.fantini@vici.it</runAsUser>
+    </emailServicesAddresses>
+    <emailServicesAddresses>
+        <developerName>20000000H253</developerName>
+        <isActive>true</isActive>
+        <localPart>unsubscribe</localPart>
+        <runAsUser>erick.fantini@vici.it</runAsUser>
+    </emailServicesAddresses>
+    <functionInactiveAction>Discard</functionInactiveAction>
+    <functionName>Unsubscribe</functionName>
+    <isActive>true</isActive>
+    <isAuthenticationRequired>false</isAuthenticationRequired>
+    <isErrorRoutingEnabled>false</isErrorRoutingEnabled>
+    <isTextAttachmentsAsBinary>false</isTextAttachmentsAsBinary>
+    <isTlsRequired>false</isTlsRequired>
+    <overLimitAction>Requeue</overLimitAction>
+</EmailServicesFunction>
